@@ -1,0 +1,101 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Variant B — Datasheet | HuanYu Terminals</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#0E1F2C;--deep:#0A1721;--surf:#16293A;--ink:#EDEEEC;--soft:#A9B7C2;--acc:#E39A45;--pale:#EDEEEC;--dk:#0E1F2C}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--deep);color:var(--ink);font-family:'IBM Plex Sans',sans-serif;font-size:16px;line-height:1.5}
+img{display:block;max-width:100%}
+h1,h2,.disp{font-family:'Archivo',sans-serif;font-weight:900;font-stretch:118%;text-transform:uppercase;letter-spacing:-.02em;line-height:.95}
+.sheet{max-width:1240px;margin:24px auto;border:2px solid var(--ink);background:var(--bg)}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:12px 20px;border-bottom:2px solid var(--ink)}
+.topbar .wm{font-family:'Archivo';font-weight:900;font-stretch:125%;font-size:17px;letter-spacing:.02em}
+.topbar .wm b{color:var(--acc)}
+.doc{font-size:12px;color:var(--soft)}
+.doc b{color:var(--ink)}
+h1{font-size:clamp(44px,7.6vw,118px);text-align:center;padding:128px 24px 8px}
+.sub{font-size:19px;color:var(--soft);text-align:center;max-width:52ch;margin:10px auto 0}
+.frameRow{display:grid;grid-template-columns:1.5fr 1fr;gap:2px;background:var(--ink);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);margin-top:40px}
+.frameRow .imgbox img{animation:drift 22s ease-in-out infinite alternate}
+.frameRow>div{background:var(--bg);padding:20px}
+.imgbox{background:#fff;display:flex;align-items:center;justify-content:center;min-height:340px}
+.imgbox img{max-height:380px;object-fit:contain;padding:24px}
+.spec{display:grid}
+table.spec{width:100%;border-collapse:collapse;background:var(--bg)}
+table.spec th,table.spec td{text-align:left;padding:10px 2px;border-bottom:1px solid var(--surf);vertical-align:top}
+table.spec tr:last-child th,table.spec tr:last-child td{border-bottom:0}
+table.spec th{color:var(--soft);font-weight:400;width:46%}
+table.spec td{font-weight:600;font-feature-settings:'tnum' 1}
+.spec .k{color:var(--soft)}
+.spec .v{font-weight:600;font-feature-settings:'tnum' 1}
+.find{display:flex;gap:0;margin:36px auto;max-width:640px;border:2px solid var(--ink)}
+.find input{flex:1;background:var(--surf);border:0;color:var(--ink);padding:16px;font:inherit;font-size:17px}
+.find input::placeholder{color:var(--soft)}
+.find button{background:var(--acc);color:var(--deep);border:0;padding:16px 28px;font-family:'Archivo';font-weight:800;font-stretch:110%;text-transform:uppercase;font-size:15px;cursor:pointer}
+#qhit{font-size:15px;text-align:center;min-height:24px;margin-bottom:8px}
+#qhit a{color:var(--acc)}
+h2{font-size:clamp(22px,2.6vw,34px);margin:0 0 16px;color:var(--acc)}
+.tbl{width:100%;border-collapse:collapse;font-size:15px}
+.tbl th,.tbl td{text-align:left;padding:12px 10px;border:1px solid var(--surf)}
+.tbl thead th{font-family:'Archivo';font-stretch:110%;text-transform:uppercase;font-size:12px;color:var(--soft);border-color:var(--ink)}
+.tbl .num{font-feature-settings:'tnum' 1}
+.sec{padding:44px 32px}
+.foot{display:flex;justify-content:space-between;align-items:center;padding:18px 20px;border-top:2px solid var(--ink);flex-wrap:wrap;gap:12px}
+.bigcta{display:block;text-align:center;padding:56px 24px;margin-top:96px;font-family:'Archivo';font-weight:900;font-stretch:118%;text-transform:uppercase;font-size:clamp(30px,4.4vw,64px);letter-spacing:-.02em;color:var(--acc);text-decoration:none}
+.bigcta:hover{background:var(--surf)}
+.note{font-size:13px;color:var(--soft)}
+.wm2{font-family:'Archivo';font-weight:900;font-stretch:125%;font-size:15px}
+.wm2 b{color:var(--acc)}
+@media(max-width:768px){.frameRow{grid-template-columns:1fr}.sheet{margin:8px}}
+</style></head><body>
+<div class="sheet">
+  <h1 class="rise">Automotive<br>terminals</h1>
+  <p class="sub rise">75 stamped harness terminals, cross-referenced to TE, Aptiv and Yazaki numbers. This page is the catalogue: every field published, nothing behind a form.</p>
+  <div class="find rise"><input id="q" placeholder="Find no. — 964284-2, 1062-16-0144, HY8501-2" aria-label="Cross-reference lookup"><button>Find</button></div>
+  <p id="qhit" aria-live="polite"></p>
+  <div class="frameRow rise">
+    <div class="imgbox"><img src="../../img/hy8801-1/1.jpg" alt="HY8801-1 terminal render"></div>
+    <table class="spec">
+      <tr><th>SHEETS</th><td>75</td></tr>
+      <tr><th>CROSS-REF'D</th><td>74</td></tr>
+      <tr><th>SERIES</th><td>6</td></tr>
+      <tr><th>SEALED TYPES</th><td>32</td></tr>
+      <tr><th>MATERIALS</th><td>phosphor bronze · brass · copper alloy</td></tr>
+      <tr><th>PLATINGS</th><td>pre-tin · silver · nickel · semi-gold</td></tr>
+      <tr><th>GROUP IATF</th><td>16949 · No. 0543831</td></tr>
+      <tr><th>REPLY</th><td>24h business days</td></tr>
+    </table>
+  </div>
+  <div class="sec rise"><h2 class="rise">Series index</h2>
+    <table class="tbl"><thead><tr><th>Series</th><th>SKUs</th><th>Ecosystem</th><th>Coverage</th></tr></thead><tbody><tr><td class="num">HY880</td><td>20</td><td>TE · Yazaki</td><td class="num">20/20 cross-referenced</td></tr><tr><td class="num">HY881</td><td>14</td><td>TE</td><td class="num">13/14 cross-referenced</td></tr><tr><td class="num">HY882</td><td>22</td><td>TE · Yazaki · Aptiv</td><td class="num">22/22 cross-referenced</td></tr><tr><td class="num">HY883</td><td>9</td><td>Aptiv · TE</td><td class="num">9/9 cross-referenced</td></tr><tr><td class="num">HY860</td><td>2</td><td>Yazaki</td><td class="num">2/2 cross-referenced</td></tr><tr><td class="num">HY850</td><td>8</td><td>Yazaki</td><td class="num">8/8 cross-referenced</td></tr></tbody></table>
+  </div>
+  <div class="sec rise" style="padding-top:96px"><h2 class="rise">Sample sheets</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:2px;background:var(--surf)">
+      <a href="../../terminals/hy8801-1/" style="background:#fff;padding:10px;text-decoration:none;color:var(--dk)"><img src="../../img/hy8801-1/1.jpg" alt="HY8801-1" style="aspect-ratio:4/3;object-fit:contain"><b style="font-size:13px">HY8801-1</b><div style="font-size:12px;color:#4E6070">964284-2</div></a><a href="../../terminals/hy8801-2/" style="background:#fff;padding:10px;text-decoration:none;color:var(--dk)"><img src="../../img/hy8801-2/1.jpg" alt="HY8801-2" style="aspect-ratio:4/3;object-fit:contain"><b style="font-size:13px">HY8801-2</b><div style="font-size:12px;color:#4E6070">965999-2</div></a><a href="../../terminals/hy8802-2/" style="background:#fff;padding:10px;text-decoration:none;color:var(--dk)"><img src="../../img/hy8802-2/1.jpg" alt="HY8802-2" style="aspect-ratio:4/3;object-fit:contain"><b style="font-size:13px">HY8802-2</b><div style="font-size:12px;color:#4E6070">929974-1</div></a><a href="../../terminals/hy8802-3/" style="background:#fff;padding:10px;text-decoration:none;color:var(--dk)"><img src="../../img/hy8802-3/1.jpg" alt="HY8802-3" style="aspect-ratio:4/3;object-fit:contain"><b style="font-size:13px">HY8802-3</b><div style="font-size:12px;color:#4E6070">929975-1</div></a><a href="../../terminals/hy8802-4/" style="background:#fff;padding:10px;text-decoration:none;color:var(--dk)"><img src="../../img/hy8802-4/1.jpg" alt="HY8802-4" style="aspect-ratio:4/3;object-fit:contain"><b style="font-size:13px">HY8802-4</b><div style="font-size:12px;color:#4E6070">929974-9</div></a><a href="../../terminals/hy8803/" style="background:#fff;padding:10px;text-decoration:none;color:var(--dk)"><img src="../../img/hy8803/1.jpg" alt="HY8803" style="aspect-ratio:4/3;object-fit:contain"><b style="font-size:13px">HY8803</b><div style="font-size:12px;color:#4E6070">26538201141</div></a>
+    </div>
+  </div>
+  <a class="bigcta rise" href="../../rfq/">Paste your BOM →</a>
+  <div class="foot"><span class="wm2">HUANYU<b>·</b>CONNECTOR</span><span class="note">HuanYu Connector Technology Co., Ltd · Jinan · sales@uecable.com</span><span class="note">DOC <b>HY-CAT-001</b> · REV C · 2026-11 · SHEET 1/1 · 75 PARTS</span></div>
+</div>
+<script>
+  const B='../../';
+  const input=document.getElementById('q'),hit=document.getElementById('qhit');
+  const norm=s=>(s||'').replace(/[！-～]/g,c=>String.fromCharCode(c.charCodeAt(0)-0xFEE0)).replace(/[-—–\s]/g,'').toUpperCase();
+  let idx=null;
+  input.addEventListener('input',()=>{const q=norm(input.value);if(!q){hit.textContent='';return;}
+    (idx||(idx=fetch(B+'part-index.json').then(r=>r.json()))).then(d=>{
+      const k=Object.keys(d).find(k=>k===q)||Object.keys(d).filter(k=>k.startsWith(q)).slice(0,3);
+      hit.innerHTML=k.length?'→ '+k.map(x=>'<a href="'+B+'terminals/'+d[x].sku.toLowerCase()+'/">'+d[x].sku+'</a>').join(' · '):'No match — browse the catalogue below.';
+    });});
+</script>
+<style>
+.drift{animation:drift 20s ease-in-out infinite alternate}
+@keyframes drift{from{transform:scale(1)}to{transform:scale(1.05)}}
+.js .rise{opacity:0;transform:translateY(18px);transition:opacity .3s ease,transform .3s ease}
+.js .rise.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.drift{animation:none}.js .rise{opacity:1;transform:none;transition:none}}
+</style>
+<script>document.documentElement.classList.add('js');
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.rise').forEach(el=>io.observe(el));</script>
+</body></html>
