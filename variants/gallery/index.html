@@ -1,0 +1,108 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Variant D — Gallery | HuanYu Terminals</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{--paper:#EDEEEC;--paper2:#E0E2DF;--dk:#0E1F2C;--soft:#4E6070;--acc:#B4763A}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--dk);font-family:'IBM Plex Sans',sans-serif;font-size:16px;line-height:1.6}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2{font-family:'Archivo';font-weight:900;font-stretch:116%;text-transform:uppercase;letter-spacing:-.015em;line-height:1}
+.hd{display:grid;grid-template-columns:1fr 1fr;min-height:96svh}
+.hdl{padding:28px 28px 40px;display:flex;flex-direction:column;gap:0}
+.brand{display:flex;justify-content:space-between;font-size:13px;color:var(--soft);letter-spacing:.01em}
+.brand b{color:var(--dk);font-family:'Archivo';font-stretch:125%;font-size:15px;letter-spacing:.02em}
+.hdl h1{font-size:clamp(36px,4.6vw,64px);margin-top:auto}
+.hdl .sub{max-width:44ch;color:var(--soft);margin-top:16px}
+.find{display:flex;margin-top:24px;max-width:420px}
+.find input{flex:1;background:#fff;border:0;padding:14px 16px;font:inherit;color:var(--dk)}
+.find input::placeholder{color:var(--soft)}
+.find button{background:var(--dk);color:var(--paper);border:0;padding:14px 22px;font-family:'Archivo';font-weight:800;text-transform:uppercase;font-size:14px;cursor:pointer}
+#qhit{margin-top:10px;font-size:14px;min-height:20px}
+#qhit a{color:var(--acc);font-weight:600}
+.hdr{position:relative;background:#fff;display:flex;align-items:flex-end;justify-content:center;overflow:hidden}
+.hdr img{width:100%;height:100%;object-fit:cover;transform:scale(1.45);animation:drift 26s ease-in-out infinite alternate}
+.hdr .tag{position:absolute;top:24px;right:24px;background:var(--paper2);padding:8px 14px;font-size:13px;color:var(--soft)}
+.wall{padding:14vh 28px 8vh}
+.wall h2{font-size:clamp(26px,3vw,40px);max-width:16ch}
+.wall .cols{display:grid;grid-template-columns:220px 1fr;gap:40px;margin-top:48px}
+.notes{display:flex;flex-direction:column;gap:56px;font-size:14px;color:var(--soft)}
+.notes b{color:var(--dk)}
+.frames{display:flex;flex-wrap:wrap;gap:34px 28px;align-items:flex-start;justify-content:center}
+.fr{background:#fff;padding:12px 12px 10px}
+.fr img{aspect-ratio:4/3;object-fit:contain;width:100%;animation:drift 24s ease-in-out infinite alternate}
+.fr figcaption{display:flex;justify-content:space-between;gap:10px;padding-top:8px;font-size:12.5px}
+.fr b{font-size:13px}
+.fr span{color:var(--soft);font-feature-settings:'tnum' 1}
+.f1{margin-top:70px}.f3{margin-top:-26px}.f4{margin-top:96px}.f5{margin-top:30px}
+.tblsec{padding:12vh 28px}
+.tblsec h2{font-size:clamp(34px,4.4vw,64px);text-indent:3vw}
+.tblwrap{display:grid;grid-template-columns:1fr 5fr;gap:40px;margin-top:64px}
+.tblnote{font-size:14px;color:var(--soft);max-width:24ch;align-self:end}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{text-align:left;padding:13px 8px;border-bottom:1px solid var(--paper2)}
+thead th{font-family:'Archivo';font-stretch:110%;text-transform:uppercase;font-size:12px;color:var(--soft);font-weight:700}
+td.num{font-feature-settings:'tnum' 1}
+tbody tr:hover{background:#fff}
+.close{background:var(--dk);color:var(--paper);padding:16svh 28px}
+.close h2{font-size:clamp(40px,6vw,100px);color:var(--paper)}
+.close p{max-width:46ch;color:#A9B7C2;margin-top:20px}
+.close a{display:inline-block;background:var(--acc);color:var(--dk);padding:16px 28px;margin-top:32px;font-family:'Archivo';font-weight:800;text-transform:uppercase;text-decoration:none;font-size:14px}
+.foot{background:var(--dk);color:var(--soft);font-size:13px;padding:18px 28px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+@media(max-width:820px){.hd{grid-template-columns:1fr}.hdr{min-height:52svh}.wall .cols,.tblwrap{grid-template-columns:1fr}.f1,.f3,.f4,.f5{margin-top:0}.hdl{padding:20px}.brand{order:9;margin-top:40px}}
+</style></head><body>
+<section class="hd">
+  <div class="hdl">
+    <div class="brand"><b>HUANYU CONNECTOR</b><span>Catalogue · Jinan</span></div>
+    <h1 class="rise">Seventy-five,<br>plainly.</h1>
+    <p class="sub rise">Stamped automotive harness terminals, cross-referenced to TE, Aptiv and Yazaki numbers. The whole catalogue on the wall; take one down and read it.</p>
+    <div class="find rise"><input id="q" placeholder="A number: 964284-2, HY8501-2 …" aria-label="Cross-reference lookup"><button>Find</button></div>
+    <p id="qhit" aria-live="polite"></p>
+  </div>
+  <div class="hdr"><span class="tag">HY8801-1 · phosphor bronze</span><img src="../../img/hy8801-1/1.jpg" alt="HY8801-1 terminal render on white"></div>
+</section>
+<section class="wall rise">
+  <h2>From the catalogue</h2>
+  <div class="cols">
+    <div class="notes">
+      <p><b>Every field published.</b> Material, plating, wire range, thickness, seal, reel count — on the sheet, not behind a form.</p>
+      <p><b>74 cross numbers.</b> Paste a competitor number above; the equivalent sheet opens.</p>
+    </div>
+    <div class="frames"><figure class="fr f0" style="width:300px"><img src="../../img/hy8801-1/1.jpg" alt="HY8801-1 render"><figcaption><b>HY8801-1</b><span>964284-2</span></figcaption></figure><figure class="fr f1" style="width:220px"><img src="../../img/hy8801-2/1.jpg" alt="HY8801-2 render"><figcaption><b>HY8801-2</b><span>965999-2</span></figcaption></figure><figure class="fr f2" style="width:340px"><img src="../../img/hy8802-2/1.jpg" alt="HY8802-2 render"><figcaption><b>HY8802-2</b><span>929974-1</span></figcaption></figure><figure class="fr f3" style="width:240px"><img src="../../img/hy8802-3/1.jpg" alt="HY8802-3 render"><figcaption><b>HY8802-3</b><span>929975-1</span></figcaption></figure><figure class="fr f4" style="width:280px"><img src="../../img/hy8802-4/1.jpg" alt="HY8802-4 render"><figcaption><b>HY8802-4</b><span>929974-9</span></figcaption></figure><figure class="fr f5" style="width:210px"><img src="../../img/hy8803/1.jpg" alt="HY8803 render"><figcaption><b>HY8803</b><span>26538201141</span></figcaption></figure></div>
+  </div>
+</section>
+<section class="tblsec rise">
+  <h2>Six series,<br>one factory.</h2>
+  <div class="tblwrap">
+    <p class="tblnote">Molds cut in-house; plating in-house; every reel inspected optically before it ships. Group IATF 16949 No. 0543831.</p>
+    <table><thead><tr><th>Series</th><th>Ecosystem</th><th>SKUs</th></tr></thead><tbody><tr><td class="num">HY880</td><td>TE · Yazaki</td><td class="num">20</td></tr><tr><td class="num">HY881</td><td>TE</td><td class="num">14</td></tr><tr><td class="num">HY882</td><td>TE · Yazaki · Aptiv</td><td class="num">22</td></tr><tr><td class="num">HY883</td><td>Aptiv · TE</td><td class="num">9</td></tr><tr><td class="num">HY860</td><td>Yazaki</td><td class="num">2</td></tr><tr><td class="num">HY850</td><td>Yazaki</td><td class="num">8</td></tr></tbody></table>
+  </div>
+</section>
+<section class="close rise">
+  <h2>Paste your BOM.</h2>
+  <p>One line or two hundred — every number checked against the catalogue, one quotation, one reply within 24 hours on business days.</p>
+  <a href="../../rfq/">Send the Batch RFQ</a>
+</section>
+<footer class="foot"><span>HuanYu Connector Technology Co., Ltd · Licheng, Jinan</span><span>sales@uecable.com · +86 531 8861 2778</span></footer>
+<script>
+  const B='../../';
+  const input=document.getElementById('q'),hit=document.getElementById('qhit');
+  const norm=s=>(s||'').replace(/[！-～]/g,c=>String.fromCharCode(c.charCodeAt(0)-0xFEE0)).replace(/[-—–\s]/g,'').toUpperCase();
+  let idx=null;
+  input.addEventListener('input',()=>{const q=norm(input.value);if(!q){hit.textContent='';return;}
+    (idx||(idx=fetch(B+'part-index.json').then(r=>r.json()))).then(d=>{
+      const k=Object.keys(d).find(k=>k===q)||Object.keys(d).filter(k=>k.startsWith(q)).slice(0,3);
+      hit.innerHTML=k.length?'→ '+k.map(x=>'<a href="'+B+'terminals/'+d[x].sku.toLowerCase()+'/">'+d[x].sku+'</a>').join(' · '):'No match — browse the catalogue below.';
+    });});
+</script>
+<style>
+.drift{animation:drift 20s ease-in-out infinite alternate}
+@keyframes drift{from{transform:scale(1)}to{transform:scale(1.05)}}
+.js .rise{opacity:0;transform:translateY(18px);transition:opacity .3s ease,transform .3s ease}
+.js .rise.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.drift{animation:none}.js .rise{opacity:1;transform:none;transition:none}}
+</style>
+<script>document.documentElement.classList.add('js');
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.rise').forEach(el=>io.observe(el));</script>
+</body></html>
