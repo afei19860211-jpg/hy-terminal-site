@@ -3,11 +3,18 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
 <style>
 :root{--paper:#EDEEEC;--paper2:#E0E2DF;--dk:#0E1F2C;--soft:#4E6070;--acc:#B4763A}
+html[data-pal="1"]{--paper:#EDEEEC;--paper2:#E0E2DF;--acc:#B4763A}html[data-pal="2"]{--paper:#F0EAE0;--paper2:#E2D9CB;--acc:#C2410C}html[data-pal="3"]{--paper:#E7EDEA;--paper2:#D8E2DE;--acc:#0F766E}html[data-pal="4"]{--paper:#F0EAEA;--paper2:#E3D9D9;--acc:#9F1239}html[data-pal="5"]{--paper:#EBEAF2;--paper2:#DCDBE7;--acc:#4338CA}html[data-pal="6"]{--paper:#EFE8DB;--paper2:#E0D6C3;--acc:#713F12}
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--paper);color:var(--dk);font-family:'IBM Plex Sans',sans-serif;font-size:16px;line-height:1.6}
 img{display:block;max-width:100%}
 a{color:inherit}
 h1,h2{font-family:'Archivo';font-weight:900;font-stretch:116%;text-transform:uppercase;letter-spacing:-.015em;line-height:1}
+.topnav{display:flex;align-items:center;gap:24px;padding:18px 28px;flex-wrap:wrap}
+.topnav .wm{font-family:'Archivo';font-weight:900;font-stretch:125%;font-size:16px;text-decoration:none;margin-right:auto}
+.topnav .wm b{color:var(--acc)}
+.topnav a{font-size:14px;color:var(--soft);text-decoration:none}
+.topnav a:hover{color:var(--acc)}
+.topnav a.rfq{color:var(--acc);font-weight:600}
 .hd{display:grid;grid-template-columns:1fr 1fr;min-height:96svh}
 .hdl{padding:28px 28px 40px;display:flex;flex-direction:column;gap:0}
 .brand{display:flex;justify-content:space-between;font-size:13px;color:var(--soft);letter-spacing:.01em}
@@ -22,7 +29,7 @@ h1,h2{font-family:'Archivo';font-weight:900;font-stretch:116%;text-transform:upp
 #qhit a{color:var(--acc);font-weight:600}
 .hdr{position:relative;background:#fff;display:flex;align-items:flex-end;justify-content:center;overflow:hidden}
 .hdr img{width:100%;height:100%;object-fit:cover;transform:scale(1.45);animation:drift 26s ease-in-out infinite alternate}
-.hdr .tag{position:absolute;top:24px;right:24px;background:var(--paper2);padding:8px 14px;font-size:13px;color:var(--soft)}
+.hdr .tag{position:absolute;top:24px;right:24px;background:var(--paper2);padding:8px 14px;font-size:13.5px;color:var(--soft)}
 .wall{padding:14vh 28px 8vh}
 .wall h2{font-size:clamp(26px,3vw,40px);max-width:16ch}
 .wall .cols{display:grid;grid-template-columns:220px 1fr;gap:40px;margin-top:48px}
@@ -31,10 +38,11 @@ h1,h2{font-family:'Archivo';font-weight:900;font-stretch:116%;text-transform:upp
 .frames{display:flex;flex-wrap:wrap;gap:34px 28px;align-items:flex-start;justify-content:center}
 .fr{background:#fff;padding:12px 12px 10px}
 .fr img{aspect-ratio:4/3;object-fit:contain;width:100%;animation:drift 24s ease-in-out infinite alternate}
-.fr figcaption{display:flex;justify-content:space-between;gap:10px;padding-top:8px;font-size:12.5px}
+.fr figcaption{display:flex;justify-content:space-between;gap:10px;padding-top:8px;font-size:13px}
 .fr b{font-size:13px}
-.fr span{color:var(--soft);font-feature-settings:'tnum' 1}
+.fr span{color:var(--soft);font-feature-settings:'tnum' 1;font-size:13px}
 .f1{margin-top:70px}.f3{margin-top:-26px}.f4{margin-top:96px}.f5{margin-top:30px}
+.fx1{margin-top:56px}.fx2{margin-top:-18px}
 .tblsec{padding:12vh 28px}
 .tblsec h2{font-size:clamp(34px,4.4vw,64px);text-indent:3vw}
 .tblwrap{display:grid;grid-template-columns:1fr 5fr;gap:40px;margin-top:64px}
@@ -44,13 +52,40 @@ th,td{text-align:left;padding:13px 8px;border-bottom:1px solid var(--paper2)}
 thead th{font-family:'Archivo';font-stretch:110%;text-transform:uppercase;font-size:12px;color:var(--soft);font-weight:700}
 td.num{font-feature-settings:'tnum' 1}
 tbody tr:hover{background:#fff}
+/* —— Company / Factory / Quality —— */
+.cowall{padding:10vh 28px 6vh}
+.cowall h2,.quall h2{font-size:clamp(30px,3.8vw,56px)}
+.cowall .cols{display:grid;grid-template-columns:260px 1fr;gap:44px;margin-top:40px}
+.colede{font-size:15px;color:var(--soft)}
+.colede b{color:var(--dk)}
+.cofacts{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-top:28px}
+.cofacts .cf{border-top:3px solid var(--acc);padding-top:10px}
+.cofacts .cf .v{font-family:'Archivo';font-weight:900;font-stretch:116%;font-size:clamp(22px,2.2vw,32px);line-height:1;font-feature-settings:'tnum' 1}
+.cofacts .cf .k{font-size:13px;color:var(--soft);margin-top:6px}
+.cogrid{display:flex;flex-wrap:wrap;gap:26px;align-items:flex-start;justify-content:center;margin-top:8vh}
+.cogrid .fr{width:280px}
+.cogrid .g1{margin-top:44px}.cogrid .g3{margin-top:64px}
+.facwall{padding:10vh 28px}
+.facwall h2{font-size:clamp(30px,3.8vw,56px)}
+.faclede{font-size:15px;color:var(--soft);max-width:52ch;margin-top:20px}
+.facframes{display:flex;flex-wrap:wrap;gap:40px 34px;align-items:flex-start;justify-content:center;margin-top:7vh}
+.quall{padding:12vh 28px}
+.quall .qcols{display:grid;grid-template-columns:minmax(300px,4fr) 6fr;gap:48px;margin-top:48px;align-items:start}
+.qcert{background:#fff;padding:16px;position:sticky;top:8vh}
+.qcert img{width:100%;max-width:420px;margin:0 auto}
+.qcert .cap{font-size:13px;color:var(--soft);padding-top:10px}
+.ql{list-style:none;display:grid;gap:8px}
+.ql li{display:grid;grid-template-columns:minmax(150px,1fr) 2fr;gap:14px;padding:16px 18px;background:#fff}
+.ql b{font-family:'Archivo';font-stretch:110%;text-transform:uppercase;font-size:14px}
+.ql p{font-size:15px;color:var(--soft)}
 .close{background:var(--dk);color:var(--paper);padding:16svh 28px}
 .close h2{font-size:clamp(40px,6vw,100px);color:var(--paper)}
 .close p{max-width:46ch;color:#A9B7C2;margin-top:20px}
 .close a{display:inline-block;background:var(--acc);color:var(--dk);padding:16px 28px;margin-top:32px;font-family:'Archivo';font-weight:800;text-transform:uppercase;text-decoration:none;font-size:14px}
 .foot{background:var(--dk);color:var(--soft);font-size:13px;padding:18px 28px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
-@media(max-width:820px){.hd{grid-template-columns:1fr}.hdr{min-height:52svh}.wall .cols,.tblwrap{grid-template-columns:1fr}.f1,.f3,.f4,.f5{margin-top:0}.hdl{padding:20px}.brand{order:9;margin-top:40px}}
+@media(max-width:820px){.hd{grid-template-columns:1fr}.hdr{min-height:52svh}.wall .cols,.tblwrap,.cowall .cols,.quall .qcols{grid-template-columns:1fr}.f1,.f3,.f4,.f5,.fx1,.fx2{margin-top:0}.hdl{padding:20px}.brand{order:9;margin-top:40px}.cogrid .g1,.cogrid .g3{margin-top:0}.cogrid .fr{width:min(76vw,320px)}.qcert{position:static}.cowall h2,.facwall h2,.quall h2{font-size:clamp(24px,7.5vw,30px)}.topnav{gap:14px}.topnav a{font-size:13px}}
 </style></head><body>
+<nav class="topnav"><a class="wm" href="../../">HUANYU<b>·</b>CONNECTOR</a><a href="../../terminals/">Catalogue</a><a href="#company">Company</a><a href="#factory">Factory</a><a href="#quality">Quality</a><a href="https://uecable.com">Cables ↗</a><a class="rfq" href="../../rfq/">Batch RFQ →</a></nav>
 <section class="hd">
   <div class="hdl">
     <div class="brand"><b>HUANYU CONNECTOR</b><span>Catalogue · Jinan</span></div>
@@ -76,6 +111,38 @@ tbody tr:hover{background:#fff}
   <div class="tblwrap">
     <p class="tblnote">Molds cut in-house; plating in-house; every reel inspected optically before it ships. Group IATF 16949 No. 0543831.</p>
     <table><thead><tr><th>Series</th><th>Ecosystem</th><th>SKUs</th></tr></thead><tbody><tr><td class="num">HY880</td><td>TE · Yazaki</td><td class="num">20</td></tr><tr><td class="num">HY881</td><td>TE</td><td class="num">14</td></tr><tr><td class="num">HY882</td><td>TE · Yazaki · Aptiv</td><td class="num">22</td></tr><tr><td class="num">HY883</td><td>Aptiv · TE</td><td class="num">9</td></tr><tr><td class="num">HY860</td><td>Yazaki</td><td class="num">2</td></tr><tr><td class="num">HY850</td><td>Yazaki</td><td class="num">8</td></tr></tbody></table>
+  </div>
+</section>
+<section class="cowall rise" id="company">
+  <h2>One campus,<br>two works.</h2>
+  <div class="cols">
+    <div class="notes">
+      <p><b>Est. 2016 — the connector works.</b> HuanYu Connector Technology builds the terminals on this wall.</p>
+      <p><b>Est. 1993 — the cable works.</b> Shandong Universal Cables, same Jinan campus: wire, harnesses, EV charging parts.</p>
+      <p><b>Shared lines.</b> Tooling, plating and inspection are common works — one yard, two factories.</p>
+    </div>
+    <div>
+      <div class="cofacts">
+        <div class="cf"><div class="v">1993</div><div class="k">group founded</div></div><div class="cf"><div class="v">30,000 m²</div><div class="k">production floor</div></div><div class="cf"><div class="v">400+</div><div class="k">group staff</div></div><div class="cf"><div class="v">¥609M</div><div class="k">group revenue, 2020</div></div><div class="cf"><div class="v">30 / 28</div><div class="k">patents filed / granted</div></div>
+      </div>
+      <div class="cogrid">
+        <figure class="fr g0" style="width:280px"><img src="../../img/factory/p17.png" alt="PVC low-voltage wire"><figcaption><b>PVC low-voltage wire</b><span>Group cable works, since 1993</span></figcaption></figure><figure class="fr g1" style="width:280px"><img src="../../img/factory/p18.png" alt="Harness assemblies"><figcaption><b>Harness assemblies</b><span>Vehicle & new-energy harnesses</span></figcaption></figure><figure class="fr g2" style="width:280px"><img src="../../img/factory/p19.png" alt="EV charging connectors"><figcaption><b>EV charging connectors</b><span>Group new-energy line</span></figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="facwall rise" id="factory">
+  <h2>The tool room,<br>the floor.</h2>
+  <p class="faclede">Molds are designed, cut and finished in our own tool room; stamping, plating and 100% optical inspection all happen on the Jinan campus. Photographs below are from the group's 2021 brochure — fresh shop-floor photography is being commissioned.</p>
+  <div class="facframes"><figure class="fr fx0" style="width:380px"><img src="../../img/factory/p13.png" alt="Tooling shop — CNC wire-cut EDM"><figcaption><b>Tooling shop — CNC wire-cut EDM</b><span>Molds cut and finished on site, Jinan</span></figcaption></figure><figure class="fr fx1" style="width:300px"><img src="../../img/factory/p20.png" alt="Injection mold — parting face"><figcaption><b>Injection mold — parting face</b><span>In-house mold design and build</span></figcaption></figure><figure class="fr fx2" style="width:340px"><img src="../../img/factory/p03.png" alt="Jinan campus offices"><figcaption><b>Jinan campus offices</b><span>Engineering beside the floor</span></figcaption></figure></div>
+</section>
+<section class="quall rise" id="quality">
+  <h2>Certified where<br>it counts.</h2>
+  <div class="qcols">
+    <div class="qcert"><img src="../../img/certs_iatf.png" alt="IATF 16949:2016 certificate No. 0543831"><div class="cap">IATF 16949:2016 · No. 0543831 · NQA · valid through 2027-09-08</div></div>
+    <ul class="ql">
+      <li><b>100% optical inspection</b><p>Every reel passes self-built vision systems (generation 1 and 2) before it ships.</p></li><li><b>In-house plating</b><p>Pre-tin, silver, nickel and semi-gold plating lines run on campus — no outsourced finish.</p></li><li><b>OEM-grade process control</b><p>Process management inherited from contract manufacturing for international brands.</p></li><li><b>Certificate on the wall</b><p>IATF 16949:2016 No. 0543831, held by the group cable company; connector-entity certification status on request.</p></li>
+    </ul>
   </div>
 </section>
 <section class="close rise">
@@ -105,4 +172,26 @@ tbody tr:hover{background:#fff}
 <script>document.documentElement.classList.add('js');
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
 document.querySelectorAll('.rise').forEach(el=>io.observe(el));</script>
+<div class="palbar" role="group" aria-label="Colour palette"><button type="button" class="dot" title="Palette" aria-label="Open palette"></button><div class="row"><button type="button" class="sw" data-pal="1" title="Stone" aria-label="Stone" style="background:#B4763A"></button><button type="button" class="sw" data-pal="2" title="Sand" aria-label="Sand" style="background:#C2410C"></button><button type="button" class="sw" data-pal="3" title="Mist" aria-label="Mist" style="background:#0F766E"></button><button type="button" class="sw" data-pal="4" title="Rose" aria-label="Rose" style="background:#9F1239"></button><button type="button" class="sw" data-pal="5" title="Haze" aria-label="Haze" style="background:#4338CA"></button><button type="button" class="sw" data-pal="6" title="Cream" aria-label="Cream" style="background:#713F12"></button><span class="pname"></span></div></div>
+<style>
+.palbar{position:fixed;right:16px;bottom:16px;z-index:99;display:flex;flex-direction:column;gap:8px;align-items:flex-end}
+.palbar .row{display:flex;gap:7px;align-items:center;background:rgba(0,0,0,.72);padding:9px 12px;border-radius:999px}
+.palbar .dot{width:38px;height:38px;border-radius:50%;border:2px solid #fff;background:var(--acc);cursor:pointer;padding:0;box-shadow:0 0 0 3px rgba(0,0,0,.45)}
+.palbar button.sw{width:17px;height:17px;border-radius:50%;border:2px solid transparent;cursor:pointer;padding:0}
+.palbar button.sw[aria-pressed="true"]{border-color:#fff}
+.palbar .pname{color:#fff;font-size:12px;min-width:64px;text-align:center}
+.palbar:not(.open) .row{display:none}
+@media(max-width:768px){.palbar{position:static;align-items:center;margin:8px auto 16px}.palbar:not(.open) .row{display:flex}.palbar .dot{display:none}}
+</style>
+<script>
+(function(){
+  var KEY='pal'+location.pathname,bar=document.querySelector('.palbar');
+  if(!bar)return;
+  function sel(v){bar.querySelectorAll('button.sw').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.pal===v?'true':'false')});var t=bar.querySelector('button.sw[data-pal="'+v+'"]');if(t)bar.querySelector('.pname').textContent=t.title;}
+  var dot=bar.querySelector('.dot');if(dot)dot.addEventListener('click',function(){bar.classList.toggle('open')});
+  var v=null;try{v=localStorage.getItem(KEY)}catch(e){}
+  if(v){document.documentElement.dataset.pal=v;sel(v);}else{sel('1');}
+  bar.addEventListener('click',function(e){var t=e.target.closest('button.sw');if(!t)return;document.documentElement.dataset.pal=t.dataset.pal;try{localStorage.setItem(KEY,t.dataset.pal)}catch(e){}sel(t.dataset.pal);});
+})();
+</script>
 </body></html>
