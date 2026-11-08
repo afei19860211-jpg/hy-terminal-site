@@ -2,17 +2,20 @@
 <title>Variant B — Datasheet | HuanYu Terminals</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
 <style>
-:root{--bg:#0E1F2C;--deep:#0A1721;--surf:#16293A;--ink:#EDEEEC;--soft:#A9B7C2;--acc:#E39A45;--pale:#EDEEEC;--dk:#0E1F2C}
+:root{--bg:#0E1F2C;--deep:#0A1721;--surf:#16293A;--surf2:#1E3448;--ink:#EDEEEC;--soft:#A9B7C2;--acc:#E39A45;--pale:#EDEEEC;--dk:#0E1F2C}
+html[data-pal="1"]{--bg:#0E1F2C;--deep:#0A1721;--surf:#16293A;--surf2:#1E3448;--acc:#E39A45}html[data-pal="2"]{--bg:#15130F;--deep:#0E0D0A;--surf:#25211A;--surf2:#332D22;--acc:#FF5A1F}html[data-pal="3"]{--bg:#0A1517;--deep:#06100F;--surf:#122629;--surf2:#1B363A;--acc:#3BD6BB}html[data-pal="4"]{--bg:#1C1013;--deep:#140A0C;--surf:#2C191E;--surf2:#3D2329;--acc:#E45260}html[data-pal="5"]{--bg:#0E1526;--deep:#091019;--surf:#19233C;--surf2:#243154;--acc:#7DA2FF}html[data-pal="6"]{--bg:#101812;--deep:#0A100C;--surf:#1C2A20;--surf2:#28392C;--acc:#A6C951}
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--deep);color:var(--ink);font-family:'IBM Plex Sans',sans-serif;font-size:16px;line-height:1.5}
 img{display:block;max-width:100%}
 h1,h2,.disp{font-family:'Archivo',sans-serif;font-weight:900;font-stretch:118%;text-transform:uppercase;letter-spacing:-.02em;line-height:.95}
+a{color:inherit}
+.vnav{display:flex;align-items:center;gap:26px;padding:14px 22px;flex-wrap:wrap}
+.vnav .wm{font-family:'Archivo';font-weight:900;font-stretch:125%;font-size:17px;text-decoration:none;margin-right:auto}
+.vnav .wm b{color:var(--acc)}
+.vnav a{font-size:14px;color:var(--soft);text-decoration:none}
+.vnav a:hover{color:var(--acc)}
+.vnav a.rfq{color:var(--acc);font-weight:600}
 .sheet{max-width:1240px;margin:24px auto;border:2px solid var(--ink);background:var(--bg)}
-.topbar{display:flex;justify-content:space-between;align-items:center;padding:12px 20px;border-bottom:2px solid var(--ink)}
-.topbar .wm{font-family:'Archivo';font-weight:900;font-stretch:125%;font-size:17px;letter-spacing:.02em}
-.topbar .wm b{color:var(--acc)}
-.doc{font-size:12px;color:var(--soft)}
-.doc b{color:var(--ink)}
 h1{font-size:clamp(44px,7.6vw,118px);text-align:center;padding:128px 24px 8px}
 .sub{font-size:19px;color:var(--soft);text-align:center;max-width:52ch;margin:10px auto 0}
 .frameRow{display:grid;grid-template-columns:1.5fr 1fr;gap:2px;background:var(--ink);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);margin-top:40px}
@@ -26,8 +29,6 @@ table.spec th,table.spec td{text-align:left;padding:10px 2px;border-bottom:1px s
 table.spec tr:last-child th,table.spec tr:last-child td{border-bottom:0}
 table.spec th{color:var(--soft);font-weight:400;width:46%}
 table.spec td{font-weight:600;font-feature-settings:'tnum' 1}
-.spec .k{color:var(--soft)}
-.spec .v{font-weight:600;font-feature-settings:'tnum' 1}
 .find{display:flex;gap:0;margin:36px auto;max-width:640px;border:2px solid var(--ink)}
 .find input{flex:1;background:var(--surf);border:0;color:var(--ink);padding:16px;font:inherit;font-size:17px}
 .find input::placeholder{color:var(--soft)}
@@ -40,14 +41,35 @@ h2{font-size:clamp(22px,2.6vw,34px);margin:0 0 16px;color:var(--acc)}
 .tbl thead th{font-family:'Archivo';font-stretch:110%;text-transform:uppercase;font-size:12px;color:var(--soft);border-color:var(--ink)}
 .tbl .num{font-feature-settings:'tnum' 1}
 .sec{padding:44px 32px}
+.sec+.sec{border-top:2px solid var(--ink)}
+.prose{color:var(--soft);max-width:64ch;margin-bottom:18px}
+.prose b{color:var(--ink)}
+.shots{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--ink)}
+.shots figure{background:var(--bg);padding:12px}
+.shots img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.shots figcaption{font-size:13px;color:var(--soft);padding-top:10px}
+.shots figcaption b{color:var(--ink);display:block;font-size:14px}
+.certgrid{display:grid;grid-template-columns:minmax(280px,5fr) 7fr;gap:32px;align-items:start}
+.certimg{background:#fff;padding:18px}
+.certimg img{width:100%;max-width:420px;margin:0 auto}
+.qlist{list-style:none;display:grid;gap:6px}
+.qlist li{display:grid;grid-template-columns:minmax(140px,1fr) 2fr;gap:14px;padding:12px 14px;background:var(--surf)}
+.qlist b{font-family:'Archivo';font-stretch:110%;text-transform:uppercase;font-size:14px;letter-spacing:.01em}
+.qlist p{font-size:15px;color:var(--soft)}
+.strip{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--surf)}
+.strip figure{background:#fff;padding:12px}
+.strip img{width:100%;aspect-ratio:4/3;object-fit:contain}
+.strip figcaption{font-size:13px;color:#4E6070;padding-top:8px}
+.strip figcaption b{color:#0E1F2C;display:block;font-size:14px}
 .foot{display:flex;justify-content:space-between;align-items:center;padding:18px 20px;border-top:2px solid var(--ink);flex-wrap:wrap;gap:12px}
-.bigcta{display:block;text-align:center;padding:56px 24px;margin-top:96px;font-family:'Archivo';font-weight:900;font-stretch:118%;text-transform:uppercase;font-size:clamp(30px,4.4vw,64px);letter-spacing:-.02em;color:var(--acc);text-decoration:none}
+.bigcta{display:block;text-align:center;padding:56px 24px;margin-top:0;font-family:'Archivo';font-weight:900;font-stretch:118%;text-transform:uppercase;font-size:clamp(30px,4.4vw,64px);letter-spacing:-.02em;color:var(--acc);text-decoration:none}
 .bigcta:hover{background:var(--surf)}
 .note{font-size:13px;color:var(--soft)}
 .wm2{font-family:'Archivo';font-weight:900;font-stretch:125%;font-size:15px}
 .wm2 b{color:var(--acc)}
-@media(max-width:768px){.frameRow{grid-template-columns:1fr}.sheet{margin:8px}}
+@media(max-width:768px){.frameRow{grid-template-columns:1fr}.sheet{margin:8px}.shots,.strip{grid-template-columns:1fr 1fr}.certgrid{grid-template-columns:1fr}.vnav{gap:14px}.vnav a{font-size:13px}.tbl{font-size:13px}.tbl th,.tbl td{padding:8px 5px;word-break:break-word}.spec th,.spec td{padding:8px 2px}h1{font-size:clamp(30px,9.6vw,44px)}}
 </style></head><body>
+<nav class="vnav"><a class="wm" href="../../">HUANYU<b>·</b>CONNECTOR</a><a href="../../terminals/">Catalogue</a><a href="#company">Company</a><a href="#factory">Factory</a><a href="#quality">Quality</a><a href="https://uecable.com">Cables ↗</a><a class="rfq" href="../../rfq/">Batch RFQ →</a></nav>
 <div class="sheet">
   <h1 class="rise">Automotive<br>terminals</h1>
   <p class="sub rise">75 stamped harness terminals, cross-referenced to TE, Aptiv and Yazaki numbers. This page is the catalogue: every field published, nothing behind a form.</p>
@@ -69,9 +91,38 @@ h2{font-size:clamp(22px,2.6vw,34px);margin:0 0 16px;color:var(--acc)}
   <div class="sec rise"><h2 class="rise">Series index</h2>
     <table class="tbl"><thead><tr><th>Series</th><th>SKUs</th><th>Ecosystem</th><th>Coverage</th></tr></thead><tbody><tr><td class="num">HY880</td><td>20</td><td>TE · Yazaki</td><td class="num">20/20 cross-referenced</td></tr><tr><td class="num">HY881</td><td>14</td><td>TE</td><td class="num">13/14 cross-referenced</td></tr><tr><td class="num">HY882</td><td>22</td><td>TE · Yazaki · Aptiv</td><td class="num">22/22 cross-referenced</td></tr><tr><td class="num">HY883</td><td>9</td><td>Aptiv · TE</td><td class="num">9/9 cross-referenced</td></tr><tr><td class="num">HY860</td><td>2</td><td>Yazaki</td><td class="num">2/2 cross-referenced</td></tr><tr><td class="num">HY850</td><td>8</td><td>Yazaki</td><td class="num">8/8 cross-referenced</td></tr></tbody></table>
   </div>
-  <div class="sec rise" style="padding-top:96px"><h2 class="rise">Sample sheets</h2>
+  <div class="sec rise"><h2 class="rise">Sample sheets</h2>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:2px;background:var(--surf)">
       <a href="../../terminals/hy8801-1/" style="background:#fff;padding:10px;text-decoration:none;color:var(--dk)"><img src="../../img/hy8801-1/1.jpg" alt="HY8801-1" style="aspect-ratio:4/3;object-fit:contain"><b style="font-size:13px">HY8801-1</b><div style="font-size:12px;color:#4E6070">964284-2</div></a><a href="../../terminals/hy8801-2/" style="background:#fff;padding:10px;text-decoration:none;color:var(--dk)"><img src="../../img/hy8801-2/1.jpg" alt="HY8801-2" style="aspect-ratio:4/3;object-fit:contain"><b style="font-size:13px">HY8801-2</b><div style="font-size:12px;color:#4E6070">965999-2</div></a><a href="../../terminals/hy8802-2/" style="background:#fff;padding:10px;text-decoration:none;color:var(--dk)"><img src="../../img/hy8802-2/1.jpg" alt="HY8802-2" style="aspect-ratio:4/3;object-fit:contain"><b style="font-size:13px">HY8802-2</b><div style="font-size:12px;color:#4E6070">929974-1</div></a><a href="../../terminals/hy8802-3/" style="background:#fff;padding:10px;text-decoration:none;color:var(--dk)"><img src="../../img/hy8802-3/1.jpg" alt="HY8802-3" style="aspect-ratio:4/3;object-fit:contain"><b style="font-size:13px">HY8802-3</b><div style="font-size:12px;color:#4E6070">929975-1</div></a><a href="../../terminals/hy8802-4/" style="background:#fff;padding:10px;text-decoration:none;color:var(--dk)"><img src="../../img/hy8802-4/1.jpg" alt="HY8802-4" style="aspect-ratio:4/3;object-fit:contain"><b style="font-size:13px">HY8802-4</b><div style="font-size:12px;color:#4E6070">929974-9</div></a><a href="../../terminals/hy8803/" style="background:#fff;padding:10px;text-decoration:none;color:var(--dk)"><img src="../../img/hy8803/1.jpg" alt="HY8803" style="aspect-ratio:4/3;object-fit:contain"><b style="font-size:13px">HY8803</b><div style="font-size:12px;color:#4E6070">26538201141</div></a>
+    </div>
+  </div>
+  <div class="sec rise" id="company"><h2 class="rise">The company behind the sheet</h2>
+    <div class="certgrid">
+      <table class="spec"><tr><th>GROUP FOUNDED</th><td class="num">1993</td></tr><tr><th>PRODUCTION FLOOR</th><td class="num">30,000 m²</td></tr><tr><th>GROUP STAFF</th><td class="num">400+</td></tr><tr><th>GROUP REVENUE, 2020</th><td class="num">¥609M</td></tr><tr><th>PATENTS FILED / GRANTED</th><td class="num">30 / 28</td></tr></table>
+      <div>
+        <p class="prose">HuanYu Connector Technology Co., Ltd (est. 2016) builds the terminals on this site in Jinan, Shandong — a wholly-owned subsidiary of HuanYu Technology Group, working alongside Shandong Universal Cables (est. 1993) on the same campus. Tooling, plating and inspection are shared works: one yard, two factories.</p>
+        <p class="prose" style="margin-bottom:22px">The group supplies global OEMs and listed vehicle makers (customer names shared on request). 30 patents filed, 28 granted. On this site, every reel ships only after 100% optical inspection on self-built vision lines.</p>
+        <div class="strip">
+          <figure><img src="../../img/factory/p17.png" alt="PVC low-voltage wire"><figcaption><b>PVC low-voltage wire</b>Group cable works, since 1993</figcaption></figure><figure><img src="../../img/factory/p18.png" alt="Harness assemblies"><figcaption><b>Harness assemblies</b>Vehicle & new-energy harnesses</figcaption></figure><figure><img src="../../img/factory/p19.png" alt="EV charging connectors"><figcaption><b>EV charging connectors</b>Group new-energy line</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sec rise" id="factory"><h2 class="rise">Factory, plainly</h2>
+    <p class="prose">Molds are designed, cut and finished in our own tool room; stamping, plating and 100% optical inspection all happen on the Jinan campus. Photographs below are from the group's 2021 brochure — fresh shop-floor photography is being commissioned.</p>
+    <div class="shots">
+      <figure><img class="drift" src="../../img/factory/p13.png" alt="Tooling shop — CNC wire-cut EDM"><figcaption><b>Tooling shop — CNC wire-cut EDM</b>Molds cut and finished on site, Jinan</figcaption></figure><figure><img class="drift" src="../../img/factory/p20.png" alt="Injection mold — parting face"><figcaption><b>Injection mold — parting face</b>In-house mold design and build</figcaption></figure><figure><img class="drift" src="../../img/factory/p03.png" alt="Jinan campus offices"><figcaption><b>Jinan campus offices</b>Engineering beside the floor</figcaption></figure>
+    </div>
+  </div>
+  <div class="sec rise" id="quality"><h2 class="rise">Certified where it counts</h2>
+    <div class="certgrid">
+      <div class="certimg rise"><img src="../../img/certs_iatf.png" alt="IATF 16949:2016 certificate No. 0543831"></div>
+      <div>
+        <table class="spec" style="margin-bottom:22px"><tr><th>STANDARD</th><td>IATF 16949:2016</td></tr><tr><th>CERTIFICATE</th><td>No. 0543831</td></tr><tr><th>ISSUER</th><td>NQA (NQA Certification Limited, UK)</td></tr><tr><th>HOLDER</th><td>Shandong Universal Cables Limited — the group cable company</td></tr><tr><th>SCOPE</th><td>Manufacture of PVC insulated low-voltage wires</td></tr><tr><th>VALID THROUGH</th><td>2027-09-08</td></tr></table>
+        <ul class="qlist">
+          <li><b>100% optical inspection</b><p>Every reel passes self-built vision systems (generation 1 and 2) before it ships.</p></li><li><b>In-house plating</b><p>Pre-tin, silver, nickel and semi-gold plating lines run on campus — no outsourced finish.</p></li><li><b>OEM-grade process control</b><p>Process management inherited from contract manufacturing for international brands.</p></li><li><b>Certificate on the wall</b><p>IATF 16949:2016 No. 0543831, held by the group cable company; connector-entity certification status on request.</p></li>
+        </ul>
+      </div>
     </div>
   </div>
   <a class="bigcta rise" href="../../rfq/">Paste your BOM →</a>
@@ -98,4 +149,26 @@ h2{font-size:clamp(22px,2.6vw,34px);margin:0 0 16px;color:var(--acc)}
 <script>document.documentElement.classList.add('js');
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
 document.querySelectorAll('.rise').forEach(el=>io.observe(el));</script>
+<div class="palbar" role="group" aria-label="Colour palette"><button type="button" class="dot" title="Palette" aria-label="Open palette"></button><div class="row"><button type="button" class="sw" data-pal="1" title="Copper" aria-label="Copper" style="background:#E39A45"></button><button type="button" class="sw" data-pal="2" title="Signal" aria-label="Signal" style="background:#FF5A1F"></button><button type="button" class="sw" data-pal="3" title="Teal" aria-label="Teal" style="background:#3BD6BB"></button><button type="button" class="sw" data-pal="4" title="Oxblood" aria-label="Oxblood" style="background:#E45260"></button><button type="button" class="sw" data-pal="5" title="Cobalt" aria-label="Cobalt" style="background:#7DA2FF"></button><button type="button" class="sw" data-pal="6" title="Verdigris" aria-label="Verdigris" style="background:#A6C951"></button><span class="pname"></span></div></div>
+<style>
+.palbar{position:fixed;right:16px;bottom:16px;z-index:99;display:flex;flex-direction:column;gap:8px;align-items:flex-end}
+.palbar .row{display:flex;gap:7px;align-items:center;background:rgba(0,0,0,.72);padding:9px 12px;border-radius:999px}
+.palbar .dot{width:38px;height:38px;border-radius:50%;border:2px solid #fff;background:var(--acc);cursor:pointer;padding:0;box-shadow:0 0 0 3px rgba(0,0,0,.45)}
+.palbar button.sw{width:17px;height:17px;border-radius:50%;border:2px solid transparent;cursor:pointer;padding:0}
+.palbar button.sw[aria-pressed="true"]{border-color:#fff}
+.palbar .pname{color:#fff;font-size:12px;min-width:64px;text-align:center}
+.palbar:not(.open) .row{display:none}
+@media(max-width:768px){.palbar{position:static;align-items:center;margin:8px auto 16px}.palbar:not(.open) .row{display:flex}.palbar .dot{display:none}}
+</style>
+<script>
+(function(){
+  var KEY='pal'+location.pathname,bar=document.querySelector('.palbar');
+  if(!bar)return;
+  function sel(v){bar.querySelectorAll('button.sw').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.pal===v?'true':'false')});var t=bar.querySelector('button.sw[data-pal="'+v+'"]');if(t)bar.querySelector('.pname').textContent=t.title;}
+  var dot=bar.querySelector('.dot');if(dot)dot.addEventListener('click',function(){bar.classList.toggle('open')});
+  var v=null;try{v=localStorage.getItem(KEY)}catch(e){}
+  if(v){document.documentElement.dataset.pal=v;sel(v);}else{sel('1');}
+  bar.addEventListener('click',function(e){var t=e.target.closest('button.sw');if(!t)return;document.documentElement.dataset.pal=t.dataset.pal;try{localStorage.setItem(KEY,t.dataset.pal)}catch(e){}sel(t.dataset.pal);});
+})();
+</script>
 </body></html>
