@@ -1,0 +1,110 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>原型评审报告 — HuanYu Terminal 四方向</title>
+<style>
+:root{--bg:#0E1F2C;--surf:#16293A;--surf2:#1E3448;--ink:#EDEEEC;--soft:#A9B7C2;--acc:#E39A45}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',sans-serif;font-size:16px;line-height:1.65;padding:48px 28px 96px}
+h1{font-family:'Archivo';font-weight:900;font-stretch:118%;text-transform:uppercase;font-size:clamp(30px,4.6vw,56px);line-height:1;margin-bottom:10px}
+h2{font-family:'Archivo';font-weight:900;font-stretch:114%;text-transform:uppercase;font-size:22px;color:var(--acc);margin:52px 0 16px}
+p.lead{color:var(--soft);max-width:72ch;margin-bottom:8px}
+table{width:100%;border-collapse:collapse;font-size:15px;margin:12px 0}
+th,td{text-align:left;padding:11px 10px;border-bottom:1px solid var(--surf2)}
+thead th{font-family:'Archivo';font-stretch:110%;text-transform:uppercase;font-size:12.5px;color:var(--soft)}
+td b{color:var(--acc);font-feature-settings:'tnum' 1}
+ul{padding-left:20px;color:var(--soft);max-width:80ch}
+li{margin:6px 0}
+li b{color:var(--ink)}
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px;margin-top:16px}
+.shots figure{background:var(--surf);padding:10px}
+.shots img{width:100%}
+.shots figcaption{font-size:13px;color:var(--soft);padding-top:8px}
+.shots figcaption b{color:var(--ink)}
+.note{font-size:14px;color:var(--soft);border-left:3px solid var(--acc);padding:10px 16px;background:var(--surf);max-width:80ch;margin:16px 0}
+a{color:var(--acc)}
+.pills{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 4px}
+.pills span{background:var(--surf);padding:6px 12px;font-size:13.5px}
+.pills span i{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:7px;vertical-align:-1px}
+.verdict{display:grid;gap:10px;margin-top:14px}
+.verdict .v{background:var(--surf);padding:18px 20px}
+.verdict .v b{font-family:'Archivo';font-stretch:112%;text-transform:uppercase;color:var(--ink)}
+.verdict .v .sc{color:var(--acc);font-feature-settings:'tnum' 1;font-weight:700}
+.verdict .v p{color:var(--soft);font-size:14.5px;margin-top:6px}
+</style></head><body>
+<h1>Prototype review<br>— four directions.</h1>
+<p class="lead">评审技能：design-taste-frontend（tasteskill v2）。两道关卡：<b>① inspect.mjs 真浏览器门禁</b>（1440 / 768 / 390 三宽度实测：FAIL 必须清零）＋ <b>② Look 评审</b>（视觉模型按 Awwwards 评审人 rubric 打分）。日期：2026-11-06。</p>
+
+<h2>① 门禁结果（gate）</h2>
+<table>
+<thead><tr><th>原型</th><th>方向</th><th>FAIL（三宽度合计）</th><th>WARN</th><th>判定</th></tr></thead>
+<tbody>
+<tr><td><a href="../">A · 主站</a></td><td>loud-flat-poster</td><td><b>0</b></td><td>4</td><td>通过</td></tr>
+<tr><td><a href="../datasheet/">B · 规格书</a></td><td>page-is-the-object</td><td><b>0</b></td><td>6</td><td>通过</td></tr>
+<tr><td><a href="../object/">C · 实物巨物</a></td><td>hero-object</td><td><b>0</b></td><td>4</td><td>通过</td></tr>
+<tr><td><a href="../gallery/">D · 画廊墙</a></td><td>uneven-photographs</td><td><b>0</b></td><td>7</td><td>通过</td></tr>
+</tbody>
+</table>
+<p class="lead">WARN 均为不阻断项：无视频素材（no-footage，B2B 目录站可豁免，待朋友提供产线视频）、型级尺度提示、滚动间隙提示等。全部明细存 <code>.taste-skill/insp-{A,B,C,D}/report.json</code>。</p>
+
+<h2>② 评审人打分（juror）</h2>
+<table>
+<thead><tr><th>原型</th><th>Design 40%</th><th>Usability 30%</th><th>Creativity 20%</th><th>Content 10%</th><th>Overall</th></tr></thead>
+<tbody>
+<tr><td>A · Loud flat poster</td><td>8</td><td>8</td><td>7</td><td>9</td><td><b>7.9</b></td></tr>
+<tr><td>B · The datasheet</td><td>8</td><td>7</td><td>8</td><td>7</td><td><b>7.6</b></td></tr>
+<tr><td>C · The object, large</td><td>8</td><td>8</td><td>7</td><td>7</td><td><b>7.7</b></td></tr>
+<tr><td>D · Gallery wall</td><td>8</td><td>8</td><td>7</td><td>8</td><td><b>7.8</b></td></tr>
+</tbody>
+</table>
+<p class="lead">校准线：真实 Site of the Day 落在 7.5–8.0。四方向全部进入该区间，差异在定位而不在质量。</p>
+<div class="verdict">
+<div class="v"><b>A · Loud flat poster</b> <span class="sc">7.9</span><p>五秒测试满分通过；交叉号检索的 live thing 最强；内容具体度最高（9 分）。评审意见：导航 7 项略稀释焦点、高桌面屏首屏看不到检索框。适合：获客主站。</p></div>
+<div class="v"><b>B · The datasheet</b> <span class="sc">7.6</span><p>「页面即图纸」概念与端子主题最贴（创意 8）；标题栏统计表是竞品没有的形态。评审意见：图纸概念承诺「目录即本页」但首屏未证明。适合：工程师深度阅读入口 / PDF 规格书网页化。</p></div>
+<div class="v"><b>C · The object, large</b> <span class="sc">7.7</span><p>巨物裁屏的电影感最强；sticky 分栏浏览效率高。评审意见：巨物手法属已知套路（创意 7）。适合：单系列落地页 / 展会屏。</p></div>
+<div class="v"><b>D · Gallery wall</b> <span class="sc">7.8</span><p>纸地反转与同行全黑站差异最大；placeholder 用真实料号是「文案做 UX」（内容 8）。评审意见：首屏左上象限偏空、标题贴输入框略紧。适合：高端单页 / 品牌册数字化。</p></div>
+</div>
+
+<h2>本轮新增内容（四变体齐备）</h2>
+<ul>
+<li><b>功能菜单</b>：Catalogue / Company / Factory / Quality / Cables ↗ / Batch RFQ —— A 顶栏 + B 图纸外导航 + C/D 顶栏，手机端保 Company+RFQ。</li>
+<li><b>公司介绍</b>：两公司一园区（连接器 2016 + 线缆 1993）+ 事实瓦片（30,000 m² / 400+ 人 / ¥609M / 专利 30/28）+ 集团产品三条（PVC 电线 / 线束 / EV 充电枪，简介册原图）。</li>
+<li><b>工厂实景</b>：CNC 电火花线切割机车間 / 注塑模具分型面 / 园区办公楼（简介册原图，注明 2021 版来源、新摄影在筹）。</li>
+<li><b>资质证书</b>：IATF 16949 No. 0543831 扫描件 + 证书事实表（主体=集团线缆公司、范围=PVC 低压线、有效期 2027-09-08）+ 四条质量要点。ISO 14001/45001 两证 <b>2026-11-19 到期，未上图</b>（换证扫描件到位后再上）。</li>
+<li><b>配色主题</b>：每页右下角圆点展开切换 —— 深色系 6 款（Copper/Signal/Teal/Oxblood/Cobalt/Verdigris）× 纸色系 6 款（Stone/Sand/Mist/Rose/Haze/Cream），选择按页记忆。</li>
+</ul>
+<div class="pills">
+<span><i style="background:#E39A45"></i>Copper</span><span><i style="background:#FF5A1F"></i>Signal</span><span><i style="background:#3BD6BB"></i>Teal</span><span><i style="background:#E45260"></i>Oxblood</span><span><i style="background:#7DA2FF"></i>Cobalt</span><span><i style="background:#A6C951"></i>Verdigris</span>
+</div>
+<div class="pills">
+<span><i style="background:#B4763A"></i>Stone</span><span><i style="background:#C2410C"></i>Sand</span><span><i style="background:#0F766E"></i>Mist</span><span><i style="background:#9F1239"></i>Rose</span><span><i style="background:#4338CA"></i>Haze</span><span><i style="background:#713F12"></i>Cream</span>
+</div>
+
+<h2>本轮修掉的真问题（评审抓出）</h2>
+<ul>
+<li><b>首页 hero 图线上 404</b>（根绝对路径未走 BASE_URL）—— 门禁 broken-image 抓出，已修；本轮部署一并修复线上。</li>
+<li><b>工厂图编号映射错位</b>：并行视觉调用的返回与调用顺序不对应，首轮分类有 4 张张冠李戴（奖牌当模具、片尾页当充电枪…）。全部 6 张在用图逐一单独锚定复核后改正：工厂=p13/p20/p03，集团产品=p17/p18/p19。教训已记：批量图像分类必须逐张锚定。</li>
+<li><b>配色条压字</b>：固定右下悬浮条在滚动中覆盖正文（视觉评审发现）→ 收成 38px 折叠圆点、点击展开；手机端改为页尾静态。</li>
+<li><b>B 手机端横向溢出 14px</b>：系列索引表最小内容宽 404px —— 表格手机端紧凑化 + 标题 vw 钳制。</li>
+<li><b>hairline×3 组</b>：质量要点列表的细分隔线（反装饰线规则）→ 改色块瓦片。</li>
+<li><b>证书卡过大</b>（白卡主导版面）→ 收窄 420px 居中。</li>
+</ul>
+
+<h2>截图存档（终版 desktop fold）</h2>
+<div class="shots">
+<figure><img src="../review-shots/A-fold.jpg" alt="A fold"><figcaption><b>A · Loud flat poster</b>1440px 首屏</figcaption></figure>
+<figure><img src="../review-shots/B-fold.jpg" alt="B fold"><figcaption><b>B · The datasheet</b>1440px 首屏</figcaption></figure>
+<figure><img src="../review-shots/C-fold.jpg" alt="C fold"><figcaption><b>C · The object, large</b>1440px 首屏</figcaption></figure>
+<figure><img src="../review-shots/D-fold.jpg" alt="D fold"><figcaption><b>D · Gallery wall</b>1440px 首屏</figcaption></figure>
+</div>
+
+<h2>待朋友拍板 / 待素材</h2>
+<ul>
+<li>四选一（或组合：如 A 主站 + D 做品牌页）＋ 配色定稿。</li>
+<li><b>ISO 14001 / 45001 两证 11-19 到期</b>：换证扫描件到位后补证书墙。</li>
+<li><b>连接器主体自己的证书</b>（目录册宣称 IATF/CCC/UL）：扫描件未见，需提供。</li>
+<li><b>工厂摄影升级</b>：现用 2021 简介册图（已注明来源）；建议补拍高清产线照（冲压/电镀/视觉检测各一张）。</li>
+<li><b>客户名授权</b>：Tesla/Siemens 等名字上线前需书面授权（现用 "global OEMs, names on request"）。</li>
+<li>产线视频一条（门禁 no-footage 项的最优解）。</li>
+</ul>
+
+<p style="margin-top:56px"><a href="../">← 返回四方向对比页</a></p>
+</body></html>
