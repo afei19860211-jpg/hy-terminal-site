@@ -1,0 +1,211 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Variant D — Specimen | HuanYu Terminals</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Sora:wght@300;400;600&display=swap">
+<style>
+:root{--paper:#F7F7F4;--paper-2:#EFEFEB;--ink:#1A1A18;--soft:#6B6B66;--rule:#E4E4DF;--acc:#0E5A3A}
+html[data-pal="2"]{--acc:#7A1E2B}
+html[data-pal="3"]{--acc:#23456E}
+html[data-pal="4"]{--acc:#4A2A5E}
+html[data-pal="5"]{--acc:#8A4B12}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{overflow-x:clip}
+body{background:var(--paper);color:var(--ink);font-family:'Sora',sans-serif;font-weight:300;font-size:16.5px;line-height:1.65}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2{font-family:'Instrument Serif',serif;font-weight:400;line-height:1.04;letter-spacing:-.01em}
+h1{font-size:clamp(44px,6.4vw,92px)}
+h2{font-size:clamp(30px,3.8vw,54px)}
+em{font-style:italic}
+:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+.frame{max-width:1280px;margin:0 auto;padding:0 28px}
+nav.top{display:flex;align-items:baseline;gap:30px;padding:22px 0;flex-wrap:wrap}
+nav.top .wm{font-family:'Instrument Serif',serif;font-size:22px;text-decoration:none;margin-right:auto}
+nav.top a{font-size:15px;text-decoration:none;color:var(--soft)}
+nav.top a:hover{color:var(--acc)}
+nav.top a.rfq{color:var(--acc);border-bottom:1px solid var(--acc);padding-bottom:2px}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:end;padding:64px 0 72px}
+.hero h1{max-width:14ch}
+.hero .sub{color:var(--soft);max-width:46ch;margin-top:24px}
+.find{display:flex;margin-top:32px;max-width:480px;border:1px solid var(--ink)}
+.find input{flex:1;min-width:0;border:0;background:transparent;padding:14px 14px;font:inherit;font-size:16px}
+.find input::placeholder{color:var(--soft)}
+.find button{border:0;background:transparent;font-family:'Instrument Serif',serif;font-size:19px;color:var(--acc);cursor:pointer;padding:14px 4px}
+.find button:hover{text-decoration:underline}
+#qhit{margin-top:12px;font-size:14.5px;min-height:20px;color:var(--soft)}
+#qhit a{color:var(--acc)}
+.plate{position:relative;border:1px solid var(--rule);background:#fff;padding:26px}
+.plate::before{content:"";position:absolute;inset:8px;border:1px solid var(--paper-2);pointer-events:none}
+.plate img{width:100%;aspect-ratio:1/1;object-fit:contain}
+.plate figcaption{font-family:'Instrument Serif',serif;font-style:italic;font-size:17px;color:var(--soft);text-align:center;padding-top:14px}
+.plate figcaption b{font-style:normal;font-weight:400;color:var(--ink)}
+.measure{display:flex;align-items:center;gap:14px;margin-top:26px;color:var(--soft);font-size:13px}
+.measure .line{flex:1;height:1px;background:var(--rule)}
+section.sect{padding:84px 0}
+.sect .prose{max-width:60ch;color:var(--soft);margin-top:18px;font-size:17px}
+.sect .prose b{color:var(--ink);font-weight:400}
+.index{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 64px;margin-top:36px}
+.index a{display:flex;justify-content:space-between;align-items:baseline;gap:16px;text-decoration:none;padding:15px 10px}
+.index a:hover{background:var(--paper-2)}
+.index a:hover .nm{color:var(--acc)}
+.index .nm{font-family:'Instrument Serif',serif;font-size:26px}
+.index .meta{color:var(--soft);font-size:14px;text-align:right}
+.plates3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:34px}
+.plates3 .plate img{aspect-ratio:4/3;object-fit:cover;filter:grayscale(.35) contrast(1.02)}
+.plates3 .plate figcaption{font-size:15px;text-align:left}
+.facts{display:flex;flex-wrap:wrap;gap:14px 56px;margin-top:34px}
+.facts div .v{font-family:'Instrument Serif',serif;font-size:clamp(34px,4vw,54px);line-height:1}
+.facts div .k{font-size:13.5px;color:var(--soft);margin-top:4px}
+.duo{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:44px;align-items:start;margin-top:34px}
+.qlist{list-style:none}
+.qlist li{padding:17px 12px;background:#fff;margin-bottom:10px}
+.qlist li:last-child{margin-bottom:0}
+.qlist b{font-weight:600;font-size:16px;display:block}
+.qlist p{color:var(--soft);font-size:15px;margin-top:4px}
+.samples{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,minmax(0,1fr)));gap:22px;margin-top:34px}
+.samples a{text-decoration:none}
+.samples .plate{padding:16px}
+.samples img{aspect-ratio:4/3;object-fit:contain}
+.samples b{font-size:13.5px;font-weight:600;display:block;text-align:center;padding-top:10px}
+.samples .x{text-align:center;color:var(--soft);font-size:13px}
+.cta{padding:110px 0;text-align:center}
+.cta h2{font-size:clamp(38px,6.4vw,96px);max-width:16ch;margin:0 auto}
+.cta p{color:var(--soft);max-width:44ch;margin:22px auto 0}
+.cta a{display:inline-block;margin-top:34px;font-family:'Instrument Serif',serif;font-size:22px;color:var(--acc);text-decoration:none;border-bottom:1px solid var(--acc);padding-bottom:3px}
+.cta a:hover{background:var(--acc);color:var(--paper)}
+footer.foot{padding:26px 0 44px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;color:var(--soft);font-size:13.5px}
+.palbar{position:fixed;right:16px;bottom:16px;z-index:99;display:flex;gap:7px;align-items:center;background:var(--paper);border:1px solid var(--rule);padding:8px 10px}
+.palbar button{width:16px;height:16px;border-radius:50%;border:1px solid rgba(0,0,0,.25);cursor:pointer;padding:0}
+.palbar button[aria-pressed="true"]{outline:2px solid var(--ink);outline-offset:1px}
+/* 一次编排入场（单一时刻；reduced-motion 关） */
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.hero>*{animation:rise .6s cubic-bezier(.2,.6,.2,1) both}
+.hero>*:nth-child(2){animation-delay:.12s}
+.hero>*:nth-child(3){animation-delay:.24s}
+.hero>*:nth-child(4){animation-delay:.36s}
+.hero .plate-col{animation:rise .7s .2s cubic-bezier(.2,.6,.2,1) both}
+@keyframes drift{from{transform:scale(1)}to{transform:scale(1.05)}}
+.hero .plate img{animation:drift 22s ease-in-out infinite alternate}
+.js .fade{opacity:0;transform:translateY(10px);transition:opacity .5s ease,transform .5s ease}
+.js .fade.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.hero>*,.hero .plate-col,.hero .plate img{animation:none}.js .fade{opacity:1;transform:none;transition:none}}
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr;gap:36px;padding-top:36px}
+  .plates3{grid-template-columns:1fr 1fr}
+  .plates3 .plate:nth-child(3){grid-column:1/3;max-width:70%;margin:0 auto}
+  .duo{grid-template-columns:1fr}
+  .index{grid-template-columns:1fr}
+  .palbar{position:static;justify-content:center;margin:20px auto;width:max-content}
+}
+</style></head><body>
+<div class="frame">
+<nav class="top">
+  <a class="wm" href="../../">HuanYu Connector</a>
+  <a href="../../terminals/">Catalogue</a>
+  <a href="#company">Company</a>
+  <a href="#factory">Factory</a>
+  <a href="#quality">Quality</a>
+  <a href="https://uecable.com">Cables</a>
+  <a class="rfq" href="../../rfq/">Batch RFQ</a>
+</nav>
+<section class="hero">
+  <div>
+    <h1>Seventy-five,<br>in full.</h1>
+    <p class="sub">Stamped automotive harness terminals from one works in Jinan, cross-referenced to TE, Aptiv and Yazaki numbers. Every field on its sheet, every sheet on this site.</p>
+    <div class="find"><input id="q" placeholder="Search a part number: 964284-2, HY8501-2" aria-label="Cross-reference lookup"><button>Find</button></div>
+    <p id="qhit" aria-live="polite"></p>
+  </div>
+  <div class="plate-col">
+    <figure class="plate">
+      <img src="../../img/hy8801-1/1.jpg" alt="HY8801-1 phosphor bronze terminal">
+      <figcaption><b>Specimen HY8801-1</b> &mdash; stamped phosphor bronze, tin plated, Jinan</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="sect" id="index">
+  <h2>Six series.</h2>
+  <div class="index fade">
+    <a href="../../terminals/#HY880"><span class="nm">Hy 880</span><span class="meta">20 sheets &middot; TE, Yazaki</span></a><a href="../../terminals/#HY881"><span class="nm">Hy 881</span><span class="meta">14 sheets &middot; TE</span></a><a href="../../terminals/#HY882"><span class="nm">Hy 882</span><span class="meta">22 sheets &middot; TE, Yazaki, Aptiv</span></a><a href="../../terminals/#HY883"><span class="nm">Hy 883</span><span class="meta">9 sheets &middot; Aptiv, TE</span></a><a href="../../terminals/#HY860"><span class="nm">Hy 860</span><span class="meta">2 sheets &middot; Yazaki</span></a><a href="../../terminals/#HY850"><span class="nm">Hy 850</span><span class="meta">8 sheets &middot; Yazaki</span></a>
+  </div>
+</section>
+
+<section class="sect" id="samples">
+  <h2>Read a sheet.</h2>
+  <div class="samples fade">
+    <a href="../../terminals/hy8801-1/"><span class="plate"><img src="../../img/hy8801-1/1.jpg" alt="HY8801-1"></span><b>HY8801-1</b><div class="x">964284-2</div></a><a href="../../terminals/hy8801-2/"><span class="plate"><img src="../../img/hy8801-2/1.jpg" alt="HY8801-2"></span><b>HY8801-2</b><div class="x">965999-2</div></a><a href="../../terminals/hy8802-2/"><span class="plate"><img src="../../img/hy8802-2/1.jpg" alt="HY8802-2"></span><b>HY8802-2</b><div class="x">929974-1</div></a><a href="../../terminals/hy8802-3/"><span class="plate"><img src="../../img/hy8802-3/1.jpg" alt="HY8802-3"></span><b>HY8802-3</b><div class="x">929975-1</div></a><a href="../../terminals/hy8802-4/"><span class="plate"><img src="../../img/hy8802-4/1.jpg" alt="HY8802-4"></span><b>HY8802-4</b><div class="x">929974-9</div></a><a href="../../terminals/hy8803/"><span class="plate"><img src="../../img/hy8803/1.jpg" alt="HY8803"></span><b>HY8803</b><div class="x">26538201141</div></a>
+  </div>
+</section>
+
+<section class="sect" id="company">
+  <h2>One campus, two works.</h2>
+  <p class="prose">HuanYu Connector Technology Co., Ltd (est. 2016) builds the terminals on this site in Jinan, Shandong, a wholly-owned subsidiary of HuanYu Technology Group working alongside Shandong Universal Cables (est. 1993) on the same campus. Tooling, plating and inspection are shared works: one yard, two factories.</p>
+  <p class="prose">The group supplies global OEMs and listed vehicle makers, customer names shared on request. On this site every reel ships only after 100% optical inspection on self-built vision lines.</p>
+  <div class="facts fade">
+    <div><div class="v">1993</div><div class="k">group founded</div></div><div><div class="v">30,000 m²</div><div class="k">production floor</div></div><div><div class="v">400+</div><div class="k">group staff</div></div><div><div class="v">¥609M</div><div class="k">group revenue, 2020</div></div><div><div class="v">30 / 28</div><div class="k">patents filed / granted</div></div>
+  </div>
+  <div class="plates3 fade">
+    <figure class="plate"><img src="../../img/factory/p17.png" alt="PVC low-voltage wire"><figcaption><b>PVC low-voltage wire</b> &mdash; Group cable works, since 1993</figcaption></figure><figure class="plate"><img src="../../img/factory/p18.png" alt="Harness assemblies"><figcaption><b>Harness assemblies</b> &mdash; Vehicle and new-energy harnesses</figcaption></figure><figure class="plate"><img src="../../img/factory/p19.png" alt="EV charging connectors"><figcaption><b>EV charging connectors</b> &mdash; Group new-energy line</figcaption></figure>
+  </div>
+</section>
+
+<section class="sect" id="factory">
+  <h2>Molds cut on site.</h2>
+  <p class="prose">Molds are designed, cut and finished in our own tool room; stamping, plating and 100% optical inspection all happen on the Jinan campus. The photographs are from the group 2021 brochure; fresh shop-floor photography is being commissioned.</p>
+  <div class="plates3 fade">
+    <figure class="plate"><img src="../../img/factory/p13.png" alt="Tooling shop, CNC wire-cut EDM"><figcaption><b>Tooling shop, CNC wire-cut EDM</b> &mdash; Molds cut and finished on site, Jinan</figcaption></figure><figure class="plate"><img src="../../img/factory/p20.png" alt="Injection mold, parting face"><figcaption><b>Injection mold, parting face</b> &mdash; In-house mold design and build</figcaption></figure><figure class="plate"><img src="../../img/factory/p03.png" alt="Jinan campus offices"><figcaption><b>Jinan campus offices</b> &mdash; Engineering beside the floor</figcaption></figure>
+  </div>
+</section>
+
+<section class="sect" id="quality">
+  <h2>Certified where it counts.</h2>
+  <div class="duo">
+    <figure class="plate"><img src="../../img/certs_iatf.png" alt="IATF 16949:2016 certificate No. 0543831"><figcaption><b>IATF 16949:2016, No. 0543831</b> &mdash; NQA, valid through 2027-09-08</figcaption></figure>
+    <ul class="qlist">
+      <li><b>100% optical inspection</b><p>Every reel passes self-built vision systems, generation 1 and 2, before it ships.</p></li><li><b>In-house plating</b><p>Pre-tin, silver, nickel and semi-gold plating lines run on campus, no outsourced finish.</p></li><li><b>OEM-grade process control</b><p>Process management inherited from contract manufacturing for international brands.</p></li><li><b>Certificate on the wall</b><p>IATF 16949:2016 No. 0543831, held by the group cable company; connector-entity certification status on request.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Bring your list of numbers.</h2>
+  <p>One line or two hundred: every number checked against the catalogue, one quotation, one reply within 24 hours on business days.</p>
+  <a href="../../rfq/">Send the batch RFQ</a>
+</section>
+
+<footer class="foot">
+  <span>HuanYu Connector Technology Co., Ltd &mdash; Jinan, Shandong</span>
+  <span>sales@uecable.com &middot; +86 531 8861 2778</span>
+  <span><a href="../">All variants</a></span>
+</footer>
+</div>
+<script>document.documentElement.classList.add('js');
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.fade').forEach(function(el){io.observe(el)});</script>
+<div class="palbar" role="group" aria-label="Accent">
+  <button type="button" data-pal="1" title="Green" aria-label="Green" style="background:#0E5A3A"></button>
+  <button type="button" data-pal="2" title="Oxblood" aria-label="Oxblood" style="background:#7A1E2B"></button>
+  <button type="button" data-pal="3" title="Ink blue" aria-label="Ink blue" style="background:#23456E"></button>
+  <button type="button" data-pal="4" title="Aubergine" aria-label="Aubergine" style="background:#4A2A5E"></button>
+  <button type="button" data-pal="5" title="Chestnut" aria-label="Chestnut" style="background:#8A4B12"></button>
+</div>
+<script>
+  const B='../../';
+  const input=document.getElementById('q'),hit=document.getElementById('qhit');
+  const norm=s=>(s||'').replace(/[！-～]/g,c=>String.fromCharCode(c.charCodeAt(0)-0xFEE0)).replace(/[-—–\s]/g,'').toUpperCase();
+  let idx=null;
+  input.addEventListener('input',()=>{const q=norm(input.value);if(!q){hit.textContent='';return;}
+    (idx||(idx=fetch(B+'part-index.json').then(r=>r.json()))).then(d=>{
+      const k=Object.keys(d).find(k=>k===q)||Object.keys(d).filter(k=>k.startsWith(q)).slice(0,3);
+      hit.innerHTML=k.length?'&rarr; '+k.map(x=>'<a href="'+B+'terminals/'+d[x].sku.toLowerCase()+'/">'+d[x].sku+'</a>').join(' &middot; '):'No match, browse the catalogue below.';
+    });});
+</script>
+<script>
+(function(){
+  var bar=document.querySelector('.palbar');if(!bar)return;
+  function sel(v){bar.querySelectorAll('button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.pal===v?'true':'false')});}
+  var v=null;try{v=localStorage.getItem('hy-specimen-pal')||'1'}catch(e){v='1'}
+  document.documentElement.dataset.pal=v;sel(v);
+  bar.addEventListener('click',function(e){var t=e.target.closest('button');if(!t)return;document.documentElement.dataset.pal=t.dataset.pal;try{localStorage.setItem('hy-specimen-pal',t.dataset.pal)}catch(e){}sel(t.dataset.pal);});
+})();
+</script>
+</body></html>
