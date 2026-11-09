@@ -31,21 +31,21 @@ a{color:var(--acc)}
 .verdict .v p{color:var(--soft);font-size:14.5px;margin-top:6px}
 </style></head><body>
 <h1>Prototype review<br>— four directions.</h1>
-<p class="lead">评审技能：design-taste-frontend（tasteskill v2）。两道关卡：<b>① inspect.mjs 真浏览器门禁</b>（1440 / 768 / 390 三宽度实测：FAIL 必须清零）＋ <b>② Look 评审</b>（视觉模型按 Awwwards 评审人 rubric 打分）。日期：2026-11-06。</p>
+<p class="lead">评审技能：四页四 skill（A=design-taste-frontend，B=hallmark，C=ui-ux-pro-max，D=frontend-design）。两道关卡：<b>① inspect.mjs 真浏览器门禁</b>（1440 / 768 / 390 三宽度实测：FAIL 必须清零；B 额外过 hallmark sloplint）＋ <b>② Look 评审</b>（视觉模型按 Awwwards 评审人 rubric 打分）。日期：2026-11-06 一轮 / 2026-11-09 二轮（B/C/D 按各自 skill 重设计后重跑）。</p>
 
-<h2>① 门禁结果（gate）</h2>
+<h2>① 门禁结果（gate，二轮终版）</h2>
 <table>
-<thead><tr><th>原型</th><th>方向</th><th>FAIL（三宽度合计）</th><th>WARN</th><th>判定</th></tr></thead>
+<thead><tr><th>原型</th><th>skill · 方向</th><th>FAIL（三宽度合计）</th><th>WARN</th><th>判定</th></tr></thead>
 <tbody>
-<tr><td><a href="../">A · 主站</a></td><td>loud-flat-poster</td><td><b>0</b></td><td>4</td><td>通过</td></tr>
-<tr><td><a href="../datasheet/">B · 规格书</a></td><td>page-is-the-object</td><td><b>0</b></td><td>6</td><td>通过</td></tr>
-<tr><td><a href="../object/">C · 实物巨物</a></td><td>hero-object</td><td><b>0</b></td><td>4</td><td>通过</td></tr>
-<tr><td><a href="../gallery/">D · 画廊墙</a></td><td>uneven-photographs</td><td><b>0</b></td><td>7</td><td>通过</td></tr>
+<tr><td><a href="../">A · 主站</a></td><td>design-taste-frontend · loud-flat-poster</td><td><b>0</b></td><td>4</td><td>通过</td></tr>
+<tr><td><a href="../hallmark/">B · 蓝图图纸</a></td><td>hallmark · Blueprint</td><td><b>0</b></td><td>7</td><td>通过（sloplint 0/0/0）</td></tr>
+<tr><td><a href="../brutal/">C · 粗野主义</a></td><td>ui-ux-pro-max · Brutalism</td><td><b>0</b></td><td>6</td><td>通过</td></tr>
+<tr><td><a href="../specimen/">D · 博物馆标本</a></td><td>frontend-design · museum-specimen</td><td><b>0</b></td><td>9</td><td>通过</td></tr>
 </tbody>
 </table>
 <p class="lead">WARN 均为不阻断项：无视频素材（no-footage，B2B 目录站可豁免，待朋友提供产线视频）、型级尺度提示、滚动间隙提示等。全部明细存 <code>.taste-skill/insp-{A,B,C,D}/report.json</code>。</p>
 
-<h2>② 评审人打分（juror）</h2>
+<h2>② 一轮评审人打分（存档——一轮 B/C/D 已重设计，仅供对照）</h2>
 <table>
 <thead><tr><th>原型</th><th>Design 40%</th><th>Usability 30%</th><th>Creativity 20%</th><th>Content 10%</th><th>Overall</th></tr></thead>
 <tbody>
@@ -61,6 +61,23 @@ a{color:var(--acc)}
 <div class="v"><b>B · The datasheet</b> <span class="sc">7.6</span><p>「页面即图纸」概念与端子主题最贴（创意 8）；标题栏统计表是竞品没有的形态。评审意见：图纸概念承诺「目录即本页」但首屏未证明。适合：工程师深度阅读入口 / PDF 规格书网页化。</p></div>
 <div class="v"><b>C · The object, large</b> <span class="sc">7.7</span><p>巨物裁屏的电影感最强；sticky 分栏浏览效率高。评审意见：巨物手法属已知套路（创意 7）。适合：单系列落地页 / 展会屏。</p></div>
 <div class="v"><b>D · Gallery wall</b> <span class="sc">7.8</span><p>纸地反转与同行全黑站差异最大；placeholder 用真实料号是「文案做 UX」（内容 8）。评审意见：首屏左上象限偏空、标题贴输入框略紧。适合：高端单页 / 品牌册数字化。</p></div>
+</div>
+
+<h2>②′ 二轮评审人打分（B/C/D 重设计版，2026-11-09）</h2>
+<table>
+<thead><tr><th>原型</th><th>Design 40%</th><th>Usability 30%</th><th>Creativity 20%</th><th>Content 10%</th><th>Overall</th></tr></thead>
+<tbody>
+<tr><td>A · Loud flat poster（保留）</td><td>8</td><td>8</td><td>7</td><td>9</td><td><b>7.9</b></td></tr>
+<tr><td>B · Blueprint（hallmark）</td><td>7</td><td>6</td><td>8</td><td>6</td><td><b>6.8</b></td></tr>
+<tr><td>C · Brutalist（ui-ux-pro-max）</td><td>7</td><td>7</td><td>8</td><td>7</td><td><b>7.2</b></td></tr>
+<tr><td>D · Museum specimen（frontend-design）</td><td>8</td><td>7</td><td>9</td><td>6</td><td><b>7.7</b></td></tr>
+</tbody>
+</table>
+<p class="lead">评审基线不变（SOTD 7.5–8.0）。四方向现在真正互不相像：A 平涂海报、B 普鲁士蓝图纸、C 黑白+信号黄粗野主义、D 冷白博物馆标本——差异来自四个 skill 各自的设计语言，而非同一骨架换构图。评审抓出的微瑕当场修掉一批（见附录）。</p>
+<div class="verdict">
+<div class="v"><b>B · Blueprint</b> <span class="sc">6.8</span><p>「工程目录册」气质立得住，检索/开图纸动线清晰；扣分在首屏元素偏挤（标题与尺寸标注串贴得近）、图纸隐喻上半屏只有两处线索。评审建议：放大首屏图纸证据（尺寸串下移、表格首行进首屏）。</p></div>
+<div class="v"><b>C · Brutalist</b> <span class="sc">7.2</span><p>信号黄大标题「一眼停滑」成立，FIND 动线不可错过；扣分在边框交接毛糙、产品图对比度被吃掉。已修：光标块基线、调色板容器。剩：产品图加描边或加深底。</p></div>
+<div class="v"><b>D · Museum specimen</b> <span class="sc">7.7</span><p>「标本盘」概念被评为最贴产品本质（创意 9）：把冲压端子当馆藏品装裱。扣分在主标题「Seventy-five, in full.」语义太隐、首屏缺信任信号。适合与 A 组合：A 获客 + D 品牌册。</p></div>
 </div>
 
 <h2>本轮新增内容（四变体齐备）</h2>
@@ -90,10 +107,10 @@ a{color:var(--acc)}
 
 <h2>截图存档（终版 desktop fold）</h2>
 <div class="shots">
-<figure><img src="../review-shots/A-fold.jpg" alt="A fold"><figcaption><b>A · Loud flat poster</b>1440px 首屏</figcaption></figure>
-<figure><img src="../review-shots/B-fold.jpg" alt="B fold"><figcaption><b>B · The datasheet</b>1440px 首屏</figcaption></figure>
-<figure><img src="../review-shots/C-fold.jpg" alt="C fold"><figcaption><b>C · The object, large</b>1440px 首屏</figcaption></figure>
-<figure><img src="../review-shots/D-fold.jpg" alt="D fold"><figcaption><b>D · Gallery wall</b>1440px 首屏</figcaption></figure>
+<figure><img src="../review-shots/A-fold.jpg" alt="A fold"><figcaption><b>A · Loud flat poster</b>（design-taste-frontend）1440px 首屏</figcaption></figure>
+<figure><img src="../review-shots/B-fold.jpg" alt="B fold"><figcaption><b>B · Blueprint</b>（hallmark）1440px 首屏</figcaption></figure>
+<figure><img src="../review-shots/C-fold.jpg" alt="C fold"><figcaption><b>C · Brutalist</b>（ui-ux-pro-max）1440px 首屏</figcaption></figure>
+<figure><img src="../review-shots/D-fold.jpg" alt="D fold"><figcaption><b>D · Museum specimen</b>（frontend-design）1440px 首屏</figcaption></figure>
 </div>
 
 <h2>待朋友拍板 / 待素材</h2>
@@ -104,6 +121,17 @@ a{color:var(--acc)}
 <li><b>工厂摄影升级</b>：现用 2021 简介册图（已注明来源）；建议补拍高清产线照（冲压/电镀/视觉检测各一张）。</li>
 <li><b>客户名授权</b>：Tesla/Siemens 等名字上线前需书面授权（现用 "global OEMs, names on request"）。</li>
 <li>产线视频一条（门禁 no-footage 项的最优解）。</li>
+</ul>
+
+<h2>2026-11-09 二轮附录：按 skill 重设计 + 购物车 + 询价单</h2>
+<ul>
+<li><b>重设计起因</b>：用户判定一轮四变体「风格非常相似」——属实：一轮 B/C/D 与 A 同出 design-taste-frontend（同字体家族/同色板骨架/同内容结构），只是构图不同。</li>
+<li><b>二轮分工</b>：A 保留（design-taste-frontend）；B=<b>hallmark</b>（theme.mjs 抽中 Blueprint，普鲁士蓝图纸/白线/尺寸标注串/蓝晒照片，sloplint 门禁 <b>0 FAIL / 0 REFLEX / 0 WARN</b>）；C=<b>ui-ux-pro-max</b>（styles/typography 库命中 Brutalism + Brutalist Raw：黑白+信号黄、Space Mono、3px 硬边框、无平滑过渡）；D=<b>frontend-design</b>（自定 museum-specimen：冷白、Instrument Serif 句式标题、深绿、单次编排入场）。旧 datasheet/object/gallery 三页已下线。</li>
+<li><b>购物车（RFQ list）</b>：目录表 75 行勾选 + 全选/批量加入；规格单页「Add to RFQ list」；左下角悬浮钮 + 抽屉（数量步进/移除）；localStorage 持久，跨页共享；询价单自动带出明细。</li>
+<li><b>询价单升级</b>（参考 B2B RFQ 最佳实践：AddToQuote/Importivity 等）：五节——联系（姓名/公司/邮箱必填+电话WhatsApp+国家）、Parts（购物车明细+粘贴BOM+年用量+询价类型）、Requirements（应用/目标价/规格偏差）、Trade terms（Incoterms/目的港/付款/交期）、Message+来源+同意声明；mailto 结构化正文（P3 换 Formspree 后补附件上传）。</li>
+<li><b>门禁（终版）</b>：A 0 FAIL / 4 WARN；B 0 FAIL / 7 WARN ＋ hallmark sloplint <b>0 FAIL / 0 REFLEX / 0 WARN</b>；C 0 FAIL / 6 WARN；D 0 FAIL / 9 WARN。目录页 / RFQ 页同轮过门禁（均 0 FAIL）。</li>
+<li><b>二轮评审微瑕当场修掉</b>（视觉评审抓出→round6 补丁→门禁复跑仍全绿）：B 检索占位符像预填值（加「Paste a number:」前缀）＋右下换纸钮加「sheet」标签；C 黄块光标基线错位（改纯色块对齐）＋调色板骑在统计行边框上（加纸底描边容器）；D 占位符动词化（「Search a part number:」）。未修的留档在上方各 verdict（B 首屏密度、C 产品图对比度、D 标题语义——属设计取舍，待用户拍板）。</li>
+<li><b>购物车功能实测</b>（CDP 真浏览器流）：目录勾 2 行→批量加入→抽屉 2 行带交叉号；步进 +1；RFQ 页明细表渲染 2 行；规格页 Add 累加同 SKU 数量——全链路通过，localStorage 跨页共享。</li>
 </ul>
 
 <p style="margin-top:56px"><a href="../">← 返回四方向对比页</a></p>
