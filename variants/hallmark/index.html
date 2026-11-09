@@ -1,0 +1,265 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="HuanYu automotive harness terminals specified as a blueprint drawing sheet: 75 sheets, series register, factory cyanotypes, IATF certificate.">
+<title>Variant B Blueprint | HuanYu Terminals</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Hallmark · shape: register-sheet · genre: modern-minimal · theme: Blueprint (deal 2/3, seed b2b-automotive-terminal-manufacturer-2369·88efc37f·2026-11-09·r0) · job: buy · draw: seed
+ * hero: sheet · nav: rule · footer: title block · imagery: cyanotypes · signature: the dimension string · blueprint: cyanotype
+ * axes: mid/geometric-sans/neutral · posture: drenched · contrast: pass · fold: pass · v2.0.0 */
+/* Hallmark · pre-emit critique: P_pass H_pass E_pass S_swap R_pass V_pass · weakest: grid, kept only under the register per the do-nots */
+:root {
+  --color-paper: oklch(35% 0.105 256); --color-paper-2: oklch(31% 0.10 257); --color-paper-3: oklch(26.5% 0.095 258);
+  --color-ink: oklch(97% 0.012 240); --color-ink-2: oklch(90% 0.025 242); --color-muted: oklch(80% 0.045 244);
+  --color-rule: oklch(93% 0.02 240 / 0.85); --color-rule-2: oklch(93% 0.02 240 / 0.32);
+  --color-grid: oklch(97% 0.01 240 / 0.09); --color-grid-2: oklch(97% 0.01 240 / 0.2);
+  --color-accent: oklch(97% 0.012 240); --color-accent-ink: oklch(33% 0.105 256); --color-focus: oklch(97% 0.012 240);
+  --font-display: "Chakra Petch", ui-sans-serif, sans-serif; --font-body: "IBM Plex Sans", ui-sans-serif, sans-serif;
+  --font-outlier: "IBM Plex Mono", ui-monospace, monospace;
+  --radius-card: 0; --radius-pill: 0; --rule-hair: 1px; --rule-heavy: 2px; --shadow-card: none;
+  --tracking-display: -0.012em; --display-weight: 600; --sheet-inset: 20px; --tick: 14px;
+  /* 三张图纸全套色值（cyanotype 即默认值；whiteprint/brownline 供切换与色卡引用） */
+  --cyan-paper: oklch(35% 0.105 256);
+  --wp-paper: oklch(97.5% 0.006 240); --wp-paper-2: oklch(94% 0.008 240); --wp-paper-3: oklch(90% 0.01 240);
+  --wp-ink: oklch(35% 0.105 256); --wp-ink-2: oklch(45% 0.1 256); --wp-muted: oklch(52% 0.07 255);
+  --wp-rule: oklch(35% 0.105 256 / 0.6); --wp-rule-2: oklch(35% 0.105 256 / 0.25);
+  --wp-grid: oklch(35% 0.105 256 / 0.08); --wp-grid-2: oklch(35% 0.105 256 / 0.16);
+  --bl-paper: oklch(86% 0.045 80); --bl-paper-2: oklch(81% 0.045 78); --bl-paper-3: oklch(76% 0.045 76);
+  --bl-ink: oklch(28% 0.05 50); --bl-ink-2: oklch(36% 0.05 52); --bl-muted: oklch(45% 0.05 55);
+  --bl-rule: oklch(28% 0.05 50 / 0.6); --bl-rule-2: oklch(28% 0.05 50 / 0.25);
+  --bl-grid: oklch(28% 0.05 50 / 0.08); --bl-grid-2: oklch(28% 0.05 50 / 0.16);
+  --bl-red: oklch(45% 0.19 28); --bl-accent-ink: oklch(97% 0.01 60);
+}
+html[data-sheet="whiteprint"] {
+  --color-paper: var(--wp-paper); --color-paper-2: var(--wp-paper-2); --color-paper-3: var(--wp-paper-3);
+  --color-ink: var(--wp-ink); --color-ink-2: var(--wp-ink-2); --color-muted: var(--wp-muted);
+  --color-rule: var(--wp-rule); --color-rule-2: var(--wp-rule-2);
+  --color-grid: var(--wp-grid); --color-grid-2: var(--wp-grid-2);
+  --color-accent: var(--wp-ink); --color-accent-ink: var(--wp-paper); --color-focus: var(--wp-ink);
+}
+html[data-sheet="brownline"] {
+  --color-paper: var(--bl-paper); --color-paper-2: var(--bl-paper-2); --color-paper-3: var(--bl-paper-3);
+  --color-ink: var(--bl-ink); --color-ink-2: var(--bl-ink-2); --color-muted: var(--bl-muted);
+  --color-rule: var(--bl-rule); --color-rule-2: var(--bl-rule-2);
+  --color-grid: var(--bl-grid); --color-grid-2: var(--bl-grid-2);
+  --color-accent: var(--bl-red); --color-accent-ink: var(--bl-accent-ink); --color-focus: var(--bl-red);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { overflow-x: clip; }
+body { background: var(--color-paper); color: var(--color-ink); font-family: var(--font-body); font-size: 16px; line-height: 1.55; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+h1, h2 { font-family: var(--font-display); font-weight: 600; text-transform: uppercase; letter-spacing: var(--tracking-display); line-height: 1.02; }
+h1 { font-size: clamp(38px, 6vw, 84px); }
+h2 { font-size: clamp(22px, 2.8vw, 36px); }
+.num { font-family: var(--font-outlier); font-weight: 500; font-feature-settings: 'tnum' 1; }
+:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 3px; }
+.sheet-wrap { max-width: 1240px; margin: 0 auto; padding: 0 20px; }
+.topnav { display: flex; align-items: baseline; gap: 24px; padding: 16px 0; flex-wrap: wrap; max-width: 1240px; margin: 0 auto; padding-left: 20px; padding-right: 20px; }
+.topnav .wm { font-family: var(--font-display); font-weight: 600; font-size: 18px; text-decoration: none; margin-right: auto; text-transform: none; letter-spacing: 0; }
+.topnav a { font-size: 15px; text-decoration: none; color: var(--color-muted); }
+.topnav a:hover { color: var(--color-ink); }
+.topnav a.rfq { color: var(--color-ink); font-weight: 500; }
+/* 尺寸标注串：量真实的东西（首末 SKU 之间的 75 张规格单） */
+.dim { position: relative; height: var(--rule-hair); background: var(--color-rule); margin: 28px 0 0; }
+.dim::before, .dim::after { content: ""; position: absolute; top: calc(var(--tick) / -2); width: var(--rule-hair); height: var(--tick); background: var(--color-rule); transform: rotate(45deg); }
+.dim::before { left: 0; } .dim::after { right: 0; }
+.dim .val { position: absolute; left: 0; top: -34px; font-family: var(--font-display); font-weight: 600; font-size: clamp(30px, 3.6vw, 52px); line-height: 1; }
+.dimrow { display: flex; justify-content: space-between; margin-top: 8px; }
+.hero { padding: 72px 0 40px; }
+.hero p.lede { max-width: 58ch; margin-top: 24px; color: var(--color-muted); font-size: 17px; }
+/* 检索 = 标题栏单元格 */
+.titleblock { display: grid; grid-template-columns: minmax(0, 2fr) auto; border: var(--rule-heavy) solid var(--color-rule); margin-top: 40px; max-width: 720px; }
+.titleblock .cell { padding: 16px; }
+.titleblock label { display: block; font-size: 13px; color: var(--color-muted); margin-bottom: 4px; }
+.titleblock input { width: 100%; background: var(--color-paper-2); border: var(--rule-hair) solid var(--color-rule-2); color: var(--color-ink); padding: 12px; font: inherit; font-size: 16px; }
+.titleblock input::placeholder { color: var(--color-muted); }
+.titleblock .go { border-left: var(--rule-heavy) solid var(--color-rule); }
+.titleblock button { height: 100%; min-height: 48px; background: transparent; color: var(--color-ink); border: var(--rule-hair) solid var(--color-rule); padding: 12px 24px; font-family: var(--font-body); font-weight: 500; font-size: 15px; cursor: pointer; }
+.titleblock button:hover { background: var(--color-paper-2); }
+.titleblock button:active { background: var(--color-paper-3); }
+.titleblock button:disabled { opacity: 0.5; cursor: not-allowed; }
+.cta a.btn:active { background: var(--color-paper-3); }
+::selection { background: var(--color-accent); color: var(--color-accent-ink); }
+html { scrollbar-color: var(--color-rule) transparent; caret-color: var(--color-ink); }
+h1, h2 { text-wrap: balance; }
+#qhit { font-size: 15px; min-height: 22px; margin-top: 12px; }
+#qhit a { color: var(--color-ink); text-decoration: underline; }
+/* 图框（双 keyline）与蓝晒照片 */
+.fig { position: relative; border: var(--rule-hair) solid var(--color-rule); background: var(--color-paper-2); }
+.fig::after { content: ""; position: absolute; inset: 5px; z-index: 2; border: var(--rule-hair) solid var(--color-rule-2); pointer-events: none; }
+.fig img { width: 100%; display: block; }
+.cy img { filter: grayscale(1) contrast(1.06); mix-blend-mode: luminosity; opacity: 0.94; }
+html[data-sheet="whiteprint"] .cy img, html[data-sheet="brownline"] .cy img { mix-blend-mode: normal; opacity: 1; }
+figcaption { font-size: 13.5px; color: var(--color-muted); padding: 12px 2px 0; }
+figcaption b { color: var(--color-ink); font-weight: 500; }
+/* 图纸登记表 */
+.register { border-collapse: collapse; width: 100%; background-image: repeating-linear-gradient(to right, var(--color-grid) 0 1px, transparent 1px 24px), repeating-linear-gradient(to right, var(--color-grid-2) 0 1px, transparent 1px 120px); background-position: var(--sheet-inset) 0; }
+.register th, .register td { text-align: left; padding: 12px; border: var(--rule-hair) solid var(--color-rule-2); vertical-align: top; }
+.register thead th { font-weight: 500; font-size: 13.5px; color: var(--color-muted); border-bottom: var(--rule-heavy) solid var(--color-rule); }
+.register .num { white-space: nowrap; }
+.register tr:hover td { background: var(--color-paper-2); }
+section.blk { padding: 56px 0; }
+section.blk h2 { margin-bottom: 16px; }
+.p2 { color: var(--color-muted); max-width: 62ch; margin-bottom: 16px; }
+.spec { border-collapse: collapse; }
+.spec th, .spec td { text-align: left; padding: 12px; border: var(--rule-hair) solid var(--color-rule-2); }
+.spec th { font-weight: 400; font-size: 13.5px; color: var(--color-muted); width: 44%; }
+.spec td { font-weight: 500; }
+.duo { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 32px; align-items: start; }
+.shots3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; margin-top: 28px; }
+.samples { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, minmax(0, 1fr))); gap: 20px; }
+.samples a { text-decoration: none; color: var(--color-ink); }
+.samples .fig { background: var(--color-ink); }
+.samples img { aspect-ratio: 4/3; object-fit: contain; }
+.samples b { font-size: 13px; font-weight: 500; }
+.samples .x { font-size: 12.5px; color: var(--color-muted); }
+.qlist { list-style: none; }
+.qlist li { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 16px; padding: 12px; border: var(--rule-hair) solid var(--color-rule-2); margin-bottom: 8px; }
+.qlist b { font-weight: 500; }
+.qlist p { font-size: 14.5px; color: var(--color-muted); }
+.cta { text-align: center; padding: 96px 0; }
+.cta h2 { font-size: clamp(30px, 4.6vw, 64px); }
+.cta a.btn { display: inline-block; margin-top: 28px; background: var(--color-accent); color: var(--color-accent-ink); padding: 16px 32px; text-decoration: none; font-weight: 500; font-size: 16px; }
+.cta a.btn:hover { background: var(--color-ink-2); }
+.titlefoot { display: flex; flex-wrap: wrap; gap: 12px 32px; border-top: var(--rule-heavy) solid var(--color-rule); padding: 16px 0 40px; font-size: 13px; color: var(--color-muted); }
+/* 换图纸（hallmark 三张 sheet 作为配色切换） */
+.sheetbar { position: fixed; right: 16px; bottom: 16px; z-index: 99; display: flex; gap: 8px; align-items: center; }
+.sheetbar::before { content: "sheet"; font-size: 11px; color: var(--color-muted); margin-right: 2px; }
+.sheetbar button { width: 34px; height: 34px; border: var(--rule-hair) solid var(--color-rule); background: var(--color-paper-2); cursor: pointer; position: relative; }
+.sheetbar button::after { content: ""; position: absolute; inset: 4px; border: var(--rule-hair) solid var(--color-rule-2); }
+.sheetbar button[aria-pressed="true"] { outline: 2px solid var(--color-focus); outline-offset: 2px; }
+.sheetbar .b1 { background: var(--cyan-paper); } .sheetbar .b2 { background: var(--wp-paper); } .sheetbar .b3 { background: var(--bl-paper); }
+@media (max-width: 860px) {
+  .duo { grid-template-columns: minmax(0, 1fr); }
+  .shots3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .titleblock { grid-template-columns: 1fr; }
+  .titleblock .go { border-left: 0; border-top: var(--rule-heavy) solid var(--color-rule); }
+  .register { font-size: 14px; background-image: none; }
+  .register th, .register td { padding: 8px 4px; word-break: break-word; }
+  h1 { font-size: clamp(30px, 9.6vw, 44px); }
+  .hero { padding-top: 48px; }
+  .sheetbar { position: static; justify-content: center; margin: 16px auto 32px; }
+}
+@keyframes drawdim { from { transform: scaleX(0); } }
+.dim { transform-origin: left center; animation: drawdim 1.4s cubic-bezier(.2,.6,.2,1) both; }
+@keyframes herofade { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+.hero h1 { animation: herofade .5s ease-out both; }
+.hero .lede { animation: herofade .5s .15s ease-out both; }
+.hero .titleblock { animation: herofade .5s .3s ease-out both; }
+.dimrow { animation: herofade .5s .2s ease-out both; }
+.samples a { animation: herofade .5s .1s ease-out both; }
+.shots3 figure { animation: herofade .5s .15s ease-out both; }
+.register thead { animation: herofade .5s .4s ease-out both; }
+@media (prefers-reduced-motion: reduce) { .dim, .hero h1, .hero .lede, .hero .titleblock, .register thead, .dimrow, .samples a, .shots3 figure { animation: none !important; } }
+</style></head><body>
+<nav class="topnav">
+  <a class="wm" href="../../">HuanYu Connector</a>
+  <a href="../../terminals/">Catalogue</a>
+  <a href="#company">Company</a>
+  <a href="#factory">Factory</a>
+  <a href="#quality">Quality</a>
+  <a href="https://uecable.com">Cables</a>
+  <a class="rfq" href="../../rfq/">Batch RFQ</a>
+</nav>
+<div class="sheet-wrap">
+  <header class="hero">
+    <h1>Automotive<br>terminals</h1>
+    <div class="dim"><span class="val num">75 sheets</span></div>
+    <div class="dimrow"><span class="num">HY8501-2</span><span class="num">HY8836-3</span></div>
+    <p class="lede">Every field published on its own sheet; nothing behind a form.</p><p class="p2" style="margin-top:10px">75 stamped harness terminals, cross-referenced to TE, Aptiv and Yazaki numbers.</p>
+    <form class="titleblock" onsubmit="return false">
+      <div class="cell"><label for="q">Cross-reference number</label><input id="q" placeholder="Paste a number: 964284-2, HY8501-2"></div>
+      <div class="cell go"><button>Open sheet</button></div>
+    </form>
+    <p id="qhit" aria-live="polite"></p>
+  </header>
+
+  <section class="blk" id="register">
+    <h2>Series register</h2>
+    <table class="register">
+      <thead><tr><th>Series</th><th>Sheets</th><th>Ecosystem</th><th>Coverage</th></tr></thead>
+      <tbody><tr><td class="num">HY880</td><td>20</td><td>TE, Yazaki</td><td class="num">20/20 cross-referenced</td></tr><tr><td class="num">HY881</td><td>14</td><td>TE</td><td class="num">13/14 cross-referenced</td></tr><tr><td class="num">HY882</td><td>22</td><td>TE, Yazaki, Aptiv</td><td class="num">22/22 cross-referenced</td></tr><tr><td class="num">HY883</td><td>9</td><td>Aptiv, TE</td><td class="num">9/9 cross-referenced</td></tr><tr><td class="num">HY860</td><td>2</td><td>Yazaki</td><td class="num">2/2 cross-referenced</td></tr><tr><td class="num">HY850</td><td>8</td><td>Yazaki</td><td class="num">8/8 cross-referenced</td></tr></tbody>
+    </table>
+  </section>
+
+  <section class="blk">
+    <h2>Sample sheets</h2>
+    <div class="samples fade">
+      <a href="../../terminals/hy8801-1/"><span class="fig"><img src="../../img/hy8801-1/1.jpg" alt="HY8801-1"></span><b>HY8801-1</b><div class="x">964284-2</div></a><a href="../../terminals/hy8801-2/"><span class="fig"><img src="../../img/hy8801-2/1.jpg" alt="HY8801-2"></span><b>HY8801-2</b><div class="x">965999-2</div></a><a href="../../terminals/hy8802-2/"><span class="fig"><img src="../../img/hy8802-2/1.jpg" alt="HY8802-2"></span><b>HY8802-2</b><div class="x">929974-1</div></a><a href="../../terminals/hy8802-3/"><span class="fig"><img src="../../img/hy8802-3/1.jpg" alt="HY8802-3"></span><b>HY8802-3</b><div class="x">929975-1</div></a><a href="../../terminals/hy8802-4/"><span class="fig"><img src="../../img/hy8802-4/1.jpg" alt="HY8802-4"></span><b>HY8802-4</b><div class="x">929974-9</div></a><a href="../../terminals/hy8803/"><span class="fig"><img src="../../img/hy8803/1.jpg" alt="HY8803"></span><b>HY8803</b><div class="x">26538201141</div></a>
+    </div>
+  </section>
+
+  <section class="blk" id="company">
+    <h2>The company</h2>
+    <div class="duo">
+      <table class="spec"><tr><th>group founded</th><td class="num">1993</td></tr><tr><th>production floor</th><td class="num">30,000 m²</td></tr><tr><th>group staff</th><td class="num">400+</td></tr><tr><th>group revenue, 2020</th><td class="num">¥609M</td></tr><tr><th>patents filed / granted</th><td class="num">30 / 28</td></tr></table>
+      <div>
+        <p class="p2">HuanYu Connector Technology Co., Ltd (est. 2016) builds the terminals on this site in Jinan, Shandong, a wholly-owned subsidiary of HuanYu Technology Group working alongside Shandong Universal Cables (est. 1993) on the same campus. Tooling, plating and inspection are shared works: one yard, two factories.</p>
+        <p class="p2">The group supplies global OEMs and listed vehicle makers, customer names shared on request. On this site every reel ships only after 100% optical inspection on self-built vision lines.</p>
+        <div class="shots3" style="margin-top:22px">
+          <figure class="fig cy"><img src="../../img/factory/p17.png" alt="PVC low-voltage wire"><figcaption><b>PVC low-voltage wire</b> Group cable works, since 1993</figcaption></figure><figure class="fig cy"><img src="../../img/factory/p18.png" alt="Harness assemblies"><figcaption><b>Harness assemblies</b> Vehicle and new-energy harnesses</figcaption></figure><figure class="fig cy"><img src="../../img/factory/p19.png" alt="EV charging connectors"><figcaption><b>EV charging connectors</b> Group new-energy line</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" id="factory">
+    <h2>The works</h2>
+    <p class="p2">Molds are designed, cut and finished in our own tool room; stamping, plating and 100% optical inspection all happen on the Jinan campus. The photographs are from the group 2021 brochure; fresh shop-floor photography is being commissioned.</p>
+    <div class="shots3">
+      <figure class="fig cy"><img src="../../img/factory/p13.png" alt="Tooling shop, CNC wire-cut EDM"><figcaption><b>Tooling shop, CNC wire-cut EDM</b> Molds cut and finished on site, Jinan</figcaption></figure><figure class="fig cy"><img src="../../img/factory/p20.png" alt="Injection mold, parting face"><figcaption><b>Injection mold, parting face</b> In-house mold design and build</figcaption></figure><figure class="fig cy"><img src="../../img/factory/p03.png" alt="Jinan campus offices"><figcaption><b>Jinan campus offices</b> Engineering beside the floor</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="blk" id="quality">
+    <h2>Certified where it counts</h2>
+    <div class="duo">
+      <figure class="fig cy"><img src="../../img/certs_iatf.png" alt="IATF 16949:2016 certificate No. 0543831"><figcaption><b>IATF 16949:2016, No. 0543831</b> NQA, valid through 2027-09-08</figcaption></figure>
+      <div>
+        <table class="spec" style="margin-bottom:18px"><tr><th>Standard</th><td>IATF 16949:2016</td></tr><tr><th>Certificate</th><td>No. 0543831</td></tr><tr><th>Issuer</th><td>NQA (NQA Certification Limited, UK)</td></tr><tr><th>Holder</th><td>Shandong Universal Cables Limited, the group cable company</td></tr><tr><th>Scope</th><td>Manufacture of PVC insulated low-voltage wires</td></tr><tr><th>Valid through</th><td>2027-09-08</td></tr></table>
+        <ul class="qlist">
+          <li><b>100% optical inspection</b><p>Every reel passes self-built vision systems, generation 1 and 2, before it ships.</p></li><li><b>In-house plating</b><p>Pre-tin, silver, nickel and semi-gold plating lines run on campus, no outsourced finish.</p></li><li><b>OEM-grade process control</b><p>Process management inherited from contract manufacturing for international brands.</p></li><li><b>Certificate on the wall</b><p>IATF 16949:2016 No. 0543831, held by the group cable company; connector-entity certification status on request.</p></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Paste your BOM</h2>
+    <a class="btn" href="../../rfq/">Send the batch RFQ</a>
+  </section>
+
+  <footer class="titlefoot">
+    <span class="wm">HuanYu Connector Technology Co., Ltd</span>
+    <span>Jinan, Shandong</span>
+    <span>sales@uecable.com</span>
+    <span class="num">DOC HY-CAT-001, REV C, 2026-11, SHEET 1/1, 75 PARTS</span>
+    <span><a href="../">All variants</a></span>
+  </footer>
+</div>
+<div class="sheetbar" role="group" aria-label="Sheet">
+  <button type="button" class="b1" data-sheet="cyanotype" title="Cyanotype" aria-label="Cyanotype sheet"></button>
+  <button type="button" class="b2" data-sheet="whiteprint" title="Whiteprint" aria-label="Whiteprint sheet"></button>
+  <button type="button" class="b3" data-sheet="brownline" title="Brownline" aria-label="Brownline sheet"></button>
+</div>
+<script>
+  const B='../../';
+  const input=document.getElementById('q'),hit=document.getElementById('qhit');
+  const norm=s=>(s||'').replace(/[！-～]/g,c=>String.fromCharCode(c.charCodeAt(0)-0xFEE0)).replace(/[-—–\s]/g,'').toUpperCase();
+  let idx=null;
+  input.addEventListener('input',()=>{const q=norm(input.value);if(!q){hit.textContent='';return;}
+    (idx||(idx=fetch(B+'part-index.json').then(r=>r.json()))).then(d=>{
+      const k=Object.keys(d).find(k=>k===q)||Object.keys(d).filter(k=>k.startsWith(q)).slice(0,3);
+      hit.innerHTML=k.length?'&rarr; '+k.map(x=>'<a href="'+B+'terminals/'+d[x].sku.toLowerCase()+'/">'+d[x].sku+'</a>').join(' &middot; '):'No match, browse the catalogue below.';
+    });});
+</script>
+<script>
+(function(){
+  var bar=document.querySelector('.sheetbar');if(!bar)return;
+  function sel(v){bar.querySelectorAll('button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.sheet===v?'true':'false')});}
+  var v=null;try{v=localStorage.getItem('hy-sheet')||'cyanotype'}catch(e){v='cyanotype'}
+  document.documentElement.dataset.sheet=v;sel(v);
+  bar.addEventListener('click',function(e){var t=e.target.closest('button');if(!t)return;document.documentElement.dataset.sheet=t.dataset.sheet;try{localStorage.setItem('hy-sheet',t.dataset.sheet)}catch(e){}sel(t.dataset.sheet);});
+})();
+</script>
+</body></html>
