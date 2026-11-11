@@ -1,0 +1,91 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>How we cross-reference — Method | HuanYu Connector</title><meta name="description" content="How HuanYu validates cross-references to TE, Aptiv and Yazaki part numbers: dimension and crimp-profile equivalence, stated as equivalents. 74 published crosses, methodology in the open."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=IBM+Plex+Sans:wght@400;500;600&display=swap"><script>document.documentElement.classList.add('js')</script><link rel="stylesheet" href="/hy-terminal-site/_astro/cross-references.BXZjkpay.css"></head> <body> <nav class="nav" aria-label="Main"> <a class="wordmark" href="/hy-terminal-site">HUANYU<span>·</span>CONNECTOR</a> <a class="plain" href="/hy-terminal-site/terminals/">Terminals</a> <a class="plain" href="/hy-terminal-site/#company">Company</a> <a class="plain" href="/hy-terminal-site/#factory">Factory</a> <a class="plain" href="/hy-terminal-site/#quality">Quality</a> <a class="plain" href="/hy-terminal-site/#faq">How to buy</a> <button class="nav-cart" id="cartbtn" type="button" aria-label="Open RFQ list" hidden><span class="w-l">RFQ list</span><span class="w-s">RFQ</span> <span class="cc tnum" id="cartcount">0</span></button> <a class="nav-rfq" href="/hy-terminal-site/rfq/">Batch RFQ →</a> </nav> <main>  <section class="method"> <h1 class="rise">Stated as<br>equivalents.</h1> <p class="hero-sub rise">74 published cross numbers across 75 SKUs — 50 TE,
+11 Aptiv, 13 Yazaki — each one stated as an equivalent, never as the OEM part.</p> <div class="method-rows"> <div class="mrow rise"> <div><h2>What a cross means</h2><p>A HuanYu cross-reference says: this HuanYu terminal is the dimensional and functional equivalent of the named OEM part. It is not the OEM part and never claimed to be one.</p></div> </div><div class="mrow rise"> <div><h2>How a cross is validated</h2><p>Side-by-side measurement of the stamped part against the OEM drawing — overall envelope, crimp barrel profile, wire-range windows, material thickness and plating class. A cross is published only when the crimp profile matches; &quot;close but not equal&quot; parts are listed without a cross.</p></div> </div><div class="mrow rise"> <div><h2>What we send you</h2><p>On request: a dimension report (measured vs drawing), crimp cross-sections, and a sample reel for your own pull-and-section tests. Ask in the RFQ and the reply carries it.</p></div> </div><div class="mrow rise"> <div><h2>When not to trust any cross</h2><p>Sealed systems. A terminal cross inside a connector housing also depends on the seal, the housing and the secondary lock — for sealed applications send us the mating system, not just the terminal number.</p></div> </div> <figure class="mfig rise"> <div class="mfig-row"> <img class="drift" src="/hy-terminal-site/img/hy8801-1/2.jpg" alt="HY8801-1 dimensioned drawing view" loading="lazy"> <img class="drift" src="/hy-terminal-site/img/hy8805-2/2.jpg" alt="HY8805-2 dimensioned drawing view" loading="lazy"> </div> <figcaption class="rise">Dimensioned views of HY8801-1 and HY8805-2 — the evidence every cross is built on.
+          Full sheets on the <a href="/hy-terminal-site/terminals/hy8801-1/">spec pages</a>.</figcaption> </figure> </div> <p class="hero-sub rise">Want a cross we do not publish yet? Paste the OEM number into the
+<a href="/hy-terminal-site/rfq/">RFQ</a> — unlisted crosses are answered with the same dimension evidence when the
+      tooling exists, and a straight "no" when it does not.</p> </section>  </main> <aside class="cartdrawer" id="cartdrawer" hidden aria-label="RFQ list"> <div class="cart-head"><b>RFQ list</b><button class="cart-x" id="cartclose" type="button">Close</button></div> <div class="cart-items" id="cartitems"></div> <div class="cart-foot"> <div class="cart-sum" id="cartsum"></div> <a class="btn btn-accent" href="/hy-terminal-site/rfq/#parts" id="cartgo">Request quote for these</a> </div> </aside> <div class="cart-scrim" id="cartscrim" hidden></div> <script>
+(function () {
+  var KEY = 'hy-cart';
+  function load() { try { return JSON.parse(localStorage.getItem(KEY)) || []; } catch (e) { return []; } }
+  function save(a) { try { localStorage.setItem(KEY, JSON.stringify(a)); } catch (e) {} render(); }
+  function find(a, sku) { for (var i = 0; i < a.length; i++) if (a[i].sku === sku) return i; return -1; }
+  function add(sku, ref, qty) {
+    qty = qty || 1;
+    var a = load(), i = find(a, sku);
+    if (i >= 0) a[i].qty += qty; else a.push({ sku: sku, ref: ref || '', qty: qty });
+    save(a); open();
+  }
+  function setQty(sku, q) { var a = load(), i = find(a, sku); if (i < 0) return; if (q < 1) a.splice(i, 1); else a[i].qty = q; save(a); }
+  function count() { return load().length; }  // 口径=SKU 数（与目录页「N part numbers selected」一致）
+  function pcs() { return load().reduce(function (s, x) { return s + x.qty; }, 0); }
+  function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+
+  var btn = document.getElementById('cartbtn');
+  var dw = document.getElementById('cartdrawer');
+  var scrim = document.getElementById('cartscrim');
+
+  function render() {
+    var a = load(), box = document.getElementById('cartitems');
+    if (btn) btn.hidden = a.length === 0;  // 显式控制 hidden（评审：CSS 特异性压 UA 规则=脆弱）
+    document.getElementById('cartcount').textContent = count();
+    if (!box) return;
+    if (!a.length) {
+      box.innerHTML = '<p class="cart-empty">Empty. Tick part numbers in the catalogue, or press "Add to RFQ list" on a spec sheet.</p>';
+    } else {
+      box.innerHTML = a.map(function (x) {
+        return '<div class="cart-it"><b class="tnum">' + esc(x.sku) + '</b><span class="cx">' + esc(x.ref || '') + '</span>'
+          + '<div class="cq"><button type="button" data-a="-" data-sku="' + esc(x.sku) + '" aria-label="Less">&minus;</button>'
+          + '<span class="tnum">' + x.qty + '</span>'
+          + '<button type="button" data-a="+" data-sku="' + esc(x.sku) + '" aria-label="More">+</button></div>'
+          + '<button type="button" class="crm" data-a="x" data-sku="' + esc(x.sku) + '">Remove</button></div>';
+      }).join('');
+    }
+    var sum = document.getElementById('cartsum');
+    if (sum) sum.textContent = a.length ? a.length + ' part number' + (a.length > 1 ? 's' : '') + ', ' + pcs() + ' pcs in total' : '';
+  }
+  function open() { if (dw) { dw.hidden = false; scrim.hidden = false; } render(); }
+  function close() { dw.hidden = true; scrim.hidden = true; }
+  if (btn) btn.addEventListener('click', function () { dw.hidden ? open() : close(); });
+  if (btn) btn.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); dw.hidden ? open() : close(); } });
+  var cl = document.getElementById('cartclose'); if (cl) cl.addEventListener('click', close);
+  if (scrim) scrim.addEventListener('click', close);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+  if (dw) dw.addEventListener('click', function (e) {
+    var t = e.target.closest('button[data-a]'); if (!t) return;
+    var a = load(), i = find(a, t.dataset.sku); if (i < 0) return;
+    if (t.dataset.a === '+') a[i].qty++;
+    else if (t.dataset.a === '-') { a[i].qty--; if (a[i].qty < 1) a.splice(i, 1); }
+    else a.splice(i, 1);
+    save(a);
+  });
+
+  window.HYCart = { add: add, setQty: setQty, items: load, count: count, render: render };
+  document.addEventListener('hy-cart-sync', render);
+  render();
+})();
+</script> <footer class="site-footer"> <div class="blockmark" aria-hidden="true"> <span class="blk" style="height:72%">H</span><span class="blk" style="height:92%">U</span><span class="blk" style="height:64%">A</span><span class="blk" style="height:100%">N</span><span class="blk" style="height:80%">Y</span><span class="blk" style="height:88%">U</span> </div> <div class="footer-cols"> <nav aria-label="Footer"> <a href="/hy-terminal-site/terminals/">All terminals</a> <a href="/hy-terminal-site/terminals/#HY880">HY880 series</a> <a href="/hy-terminal-site/terminals/#HY882">HY882 series</a> <a href="/hy-terminal-site/terminals/#HY850">Yazaki types</a> <a href="/hy-terminal-site/rfq/">Batch RFQ</a> <a href="/hy-terminal-site/cross-references/">How we cross-reference</a> <a href="/hy-terminal-site/#faq">How to buy</a> <a href="/hy-terminal-site/#proof">The factory</a> <a href="https://uecable.com" rel="noopener" target="_blank">Cable products ↗</a> </nav> <div class="contact">
+HuanYu Connector Technology Co., Ltd<br>
+Licheng District, Jinan, Shandong, China<br>
+sales@uecable.com · +86 531 8861 2778<br>
+A member of the Universal Cables group
+</div> </div> <div class="footer-last"> <span>© 2026 HuanYu Connector Technology. Terminals manufactured to customer specification.</span> <a class="btn btn-ghost" href="/hy-terminal-site/rfq/" style="color:var(--dark)">Get a quote</a> </div> </footer> <script type="module">const a=document.querySelectorAll(".rise"),r=new IntersectionObserver(e=>{e.forEach(t=>{if(!t.isIntersecting)return;const s=[...t.target.parentElement.children].filter(i=>i.classList.contains("rise")),n=Math.max(0,s.indexOf(t.target));t.target.style.transitionDelay=Math.min(n*60,160)+"ms",t.target.classList.add("in"),r.unobserve(t.target)})},{threshold:.15});a.forEach(e=>r.observe(e));</script> <div class="palbar" role="group" aria-label="Colour palette"> <button type="button" class="dot" title="Palette" aria-label="Open palette"></button> <div class="row"> <button type="button" class="sw" data-pal="1" title="Copper" aria-label="Copper" style="background:#E39A45"></button><button type="button" class="sw" data-pal="2" title="Signal" aria-label="Signal" style="background:#FF5A1F"></button><button type="button" class="sw" data-pal="3" title="Teal" aria-label="Teal" style="background:#3BD6BB"></button><button type="button" class="sw" data-pal="4" title="Oxblood" aria-label="Oxblood" style="background:#E45260"></button><button type="button" class="sw" data-pal="5" title="Cobalt" aria-label="Cobalt" style="background:#7DA2FF"></button><button type="button" class="sw" data-pal="6" title="Verdigris" aria-label="Verdigris" style="background:#A6C951"></button> <span class="pname"></span> </div> </div> <script>
+      // 配色主题切换（评审用）：折叠圆点展开；localStorage 按路径记忆
+      (function () {
+        var bar = document.querySelector('.palbar');
+        if (!bar) return;
+        var sel = function (v) {
+          bar.querySelectorAll('button.sw').forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.pal === v ? 'true' : 'false'); });
+          var t = bar.querySelector('button.sw[data-pal="' + v + '"]');
+          if (t) bar.querySelector('.pname').textContent = t.title;
+        };
+        var v = null; try { v = localStorage.getItem('pal' + location.pathname); } catch (e) {}
+        if (v) { document.documentElement.dataset.pal = v; sel(v); } else { sel('1'); }
+        var dot = bar.querySelector('.dot');
+        if (dot) dot.addEventListener('click', function () { bar.classList.toggle('open'); });
+        bar.addEventListener('click', function (e) {
+          var t = e.target.closest('button.sw'); if (!t) return;
+          document.documentElement.dataset.pal = t.dataset.pal;
+          try { localStorage.setItem('pal' + location.pathname, t.dataset.pal); } catch (e) {}
+          sel(t.dataset.pal);
+        });
+      })();
+    </script> </body> </html>
