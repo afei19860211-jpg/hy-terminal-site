@@ -1,0 +1,213 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<title>HY8835-2 — spec sheet | HuanYu (Variant D Almanac)</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{--bg:#E9EBF1;--sheet:#F4F5F8;--ink:#1B2340;--ink2:#4A5170;--rule:#C6CAD8;--heavy:#1B2340;--acc:#C2245C;--accink:#ffffff;--prose:#2A2F45}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font:16px/1.55 'Newsreader',serif;overflow-x:clip}
+h1,h2,h3,.gro{font-family:'Hanken Grotesk',sans-serif}
+.tnum,.mono{font-family:'IBM Plex Mono',monospace;font-feature-settings:'tnum' 1}
+a{color:var(--ink)}
+.mast{background:var(--sheet);border-top:4px solid var(--heavy);border-bottom:1px solid var(--rule);padding:20px 32px 0;max-width:1240px;margin:0 auto}
+.mast .row1{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px}
+.mast .wm{font-family:'Hanken Grotesk';font-weight:800;font-size:24px;text-decoration:none;letter-spacing:-0.01em}
+.mast .wm i{font-style:normal;color:var(--acc)}
+.mast .ed{font-size:14px;color:var(--ink2)}
+@keyframes fadeup{from{opacity:0}to{opacity:1}}
+.hero-d>*,.secd>*{animation:fadeup .5s ease-out both}
+.mast nav{display:flex;gap:4px;margin:16px -32px 0;padding:0 48px 0 32px;overflow-x:auto}
+.mast nav a{font-family:'Hanken Grotesk';font-weight:500;font-size:14.5px;color:var(--ink2);text-decoration:none;padding:10px 12px;border-bottom:3px solid transparent;white-space:nowrap}
+.mast nav a.on{color:var(--ink);border-color:var(--acc)}
+.mast nav .cn{font-weight:600;color:var(--ink)}
+.wrap{max-width:1240px;margin:0 auto;padding:48px 32px 72px}
+.hero-d{border-bottom:2px solid var(--heavy);padding-bottom:40px}
+.hero-d h1{font-size:clamp(36px,5vw,68px);font-weight:800;letter-spacing:-0.02em;line-height:1.02;max-width:24ch}
+.hero-d .lede{font-size:19px;color:var(--prose);max-width:62ch;margin-top:16px}
+.hero-d .st{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:32px;background:var(--sheet)}
+.hero-d .st>div{background:var(--sheet);padding:20px}
+.hero-d .st .v{font-size:26px;font-weight:700;color:var(--ink)}
+.hero-d .st .v b{color:var(--acc);font-weight:700}
+.hero-d .st .k{font-size:15px;color:var(--ink2);margin-top:4px}
+.lookd{margin-top:28px;max-width:640px}
+.lookd input{width:100%;padding:14px 16px;border:1px solid var(--ink);background:var(--sheet);font:16px 'Hanken Grotesk';color:var(--ink)}
+.lookd input:focus-visible{outline:3px solid var(--acc);outline-offset:1px}
+.lookd .hit{font-size:14.5px;margin-top:8px;color:var(--ink2);min-height:1.3em}
+.lookd .hit a{color:var(--acc);font-weight:600}
+.secd{margin-top:56px}
+.secd>h2{font-size:24px;font-weight:800;border-bottom:1px solid var(--heavy);padding-bottom:8px;margin-bottom:4px}
+.secd>.sk{font-size:14.5px;color:var(--ink2);margin-bottom:20px}
+.idx{width:100%;border-collapse:collapse;font-size:15.5px}
+.idx th{font-family:'Hanken Grotesk';font-weight:600;font-size:14px;text-align:left;padding:10px 8px;border-bottom:2px solid var(--heavy)}
+.idx td{padding:11px 8px;border-bottom:1px solid var(--rule);vertical-align:top;font-size:16px}
+.idx td.mono{font-size:14px}
+.idx .xr{color:var(--acc);font-weight:500}
+.apps-d{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.apps-d figure{background:var(--sheet);border:1px solid var(--rule)}
+.apps-d img{width:100%;height:180px;object-fit:cover;display:block;filter:saturate(.75)}
+.apps-d figcaption{padding:14px 16px}
+.apps-d h3{font-size:16px;margin-bottom:6px}
+.apps-d p{font-size:15.5px;color:var(--prose)}
+.rec{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px}
+.rec>div{background:var(--sheet);border-top:3px solid var(--heavy);padding:20px}
+.rec h3{font-size:16px;margin-bottom:8px}
+.rec p{font-size:15.5px;color:var(--prose)}
+.certd{display:grid;grid-template-columns:360px 1fr;gap:24px;align-items:start}
+.certd img{width:100%;display:block;background:#fff;border:1px solid var(--rule)}
+table.rec-t{width:100%;border-collapse:collapse;font-size:15px}
+.rec-t th,.rec-t td{text-align:left;padding:9px 8px;border-bottom:1px solid var(--rule)}
+.rec-t th{font-family:'Hanken Grotesk';font-weight:600;font-size:14px;width:140px}
+.ctad{margin-top:56px;background:var(--heavy);color:#F4F5F8;padding:48px 32px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.ctad h2{font-size:26px;font-weight:800}
+.ctad p{color:#B9BFD4;margin-top:6px}
+.btnd{display:inline-block;font-family:'Hanken Grotesk';font-weight:600;font-size:15px;text-decoration:none;padding:13px 24px;background:var(--acc);color:var(--accink)}
+.btnd.sec{background:transparent;border:1.5px solid #F4F5F8;color:#F4F5F8}
+.ftrd{border-top:2px solid var(--heavy);margin-top:0;padding:22px 32px;font-size:14.5px;color:var(--ink2);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;max-width:1240px;margin:0 auto}
+.ftrd a{color:var(--ink2)}
+/* 功能页 */
+.pickbar{position:sticky;bottom:0;background:var(--sheet);border-top:2px solid var(--heavy);padding:12px 0;font-size:14.5px;color:var(--ink2);z-index:20;display:flex;justify-content:space-between;align-items:center}
+.pickbar b{color:var(--ink)}
+.tbl{overflow-x:auto;margin-top:16px}
+table.grid{width:100%;min-width:880px;border-collapse:collapse;font-size:14.5px}
+.grid th{font-family:'Hanken Grotesk';font-weight:600;font-size:13.5px;text-align:left;padding:10px 8px;border-bottom:2px solid var(--heavy)}
+.grid td{padding:10px 8px;border-bottom:1px solid var(--rule)}
+.grid tbody tr:hover{background:var(--sheet)}
+.grid a{text-decoration:none;font-family:'Hanken Grotesk';font-weight:600}
+.grid a:hover{color:var(--acc)}
+.grid .xr{color:var(--acc)}
+.grid .pickc{width:36px}
+.grid input[type=checkbox]{accent-color:var(--acc);width:17px;height:17px}
+.spec3{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:32px}
+@media(max-width:900px){.spec3{grid-template-columns:1fr}}
+.gal{background:var(--sheet);border:1px solid var(--rule);padding:16px}
+.gal img{width:100%;display:block}
+.gal .th{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:8px}
+.spec3 h1{font-size:42px;font-weight:800}
+.spec3 .xref{color:var(--acc);font-family:'Hanken Grotesk';font-weight:600;margin-top:8px}
+.spec3 .ser{color:var(--ink2);margin-top:6px;font-size:15.5px}
+.spectab{width:100%;border-collapse:collapse;font-size:15.5px}
+.spectab th{font-family:'Hanken Grotesk';font-weight:600;font-size:14px;text-align:left;padding:9px 8px;border-bottom:1px solid var(--rule);width:150px}
+.spectab td{padding:9px 8px;border-bottom:1px solid var(--rule)}
+.spectab .grp th{border-bottom:2px solid var(--heavy);padding-top:20px}
+.spec-cta{margin-top:20px;display:flex;gap:10px;flex-wrap:wrap}
+.btnd.ink{background:var(--ink);color:#F4F5F8}
+.rfq3{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:32px;align-items:start}
+@media(max-width:900px){.rfq3{grid-template-columns:1fr}}
+fieldset{border:0;border-top:2px solid var(--heavy);padding:18px 0 6px}
+legend{font-family:'Hanken Grotesk';font-weight:600;font-size:15px;color:var(--acc);padding:0 8px 0 0}
+label{font-family:'Hanken Grotesk';font-weight:500;font-size:14px;display:block;margin:10px 0 6px}
+input[type=text],input[type=email],input[type=tel],select,textarea{width:100%;padding:11px 12px;border:1px solid var(--ink);background:var(--sheet);font:15.5px 'Newsreader';color:var(--ink)}
+input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--acc);outline-offset:1px}
+textarea{min-height:110px}
+.req{color:var(--acc)}
+.fg2{display:grid;grid-template-columns:1fr 1fr;gap:12px 16px}
+@media(max-width:640px){.fg2{grid-template-columns:1fr}}
+.cartbox{background:var(--sheet);border-top:3px solid var(--heavy);padding:20px}
+.cartbox h2{font-size:18px;font-weight:700}
+.rt{width:100%;border-collapse:collapse;font-size:14px;margin-top:12px}
+.rt th{font-family:'Hanken Grotesk';font-weight:600;font-size:13px;text-align:left;padding:7px 6px;border-bottom:1px solid var(--rule)}
+.rt td{padding:7px 6px;border-bottom:1px solid var(--rule)}
+.cq{display:inline-flex;gap:6px;align-items:center}
+.cq button{width:26px;height:26px;border:1px solid var(--ink);background:var(--sheet);cursor:pointer;font-family:'Hanken Grotesk'}
+.crm{background:none;border:0;color:var(--ink2);font-size:13px;text-decoration:underline;cursor:pointer}
+.empty{color:var(--ink2);font-size:14.5px;margin:12px 0}
+.done{border:2px solid var(--acc);background:var(--sheet);padding:20px;margin-top:22px}
+.done[hidden]{display:none}
+.done h2{font-size:20px;font-weight:700}
+.done textarea{width:100%;min-height:150px;margin:10px 0;font-family:'IBM Plex Mono';font-size:13px}
+.done p{font-size:14.5px;color:var(--ink2)}
+.rfqerr{border-left:4px solid var(--acc);background:var(--sheet);padding:10px 14px;font-size:14.5px;margin-bottom:14px}
+.rfqerr[hidden]{display:none}
+.help{margin-top:16px;font-size:14.5px;color:var(--prose)}
+.help p{margin-top:8px}
+.vjump{position:fixed;left:16px;bottom:16px;z-index:99;display:flex;gap:4px;align-items:center;background:var(--sheet);border:1px solid var(--rule);padding:8px}
+.vjump span{font-size:12px;color:var(--ink2);margin-right:4px}
+.vjump a{font-family:'Hanken Grotesk';font-weight:600;color:var(--ink);text-decoration:none;font-size:12.5px;padding:3px 7px}
+.vjump a:hover,.vjump a.on{background:var(--acc);color:var(--accink)}
+@media(max-width:900px){.hero-d .st{grid-template-columns:repeat(2,1fr)}.apps-d,.rec{grid-template-columns:1fr}.certd{grid-template-columns:1fr}}
+@media(max-width:768px){.mast nav{flex-wrap:wrap;padding-left:16px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.cta-d{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
+.btnd.sec-d{background:transparent;border:1.5px solid var(--heavy);color:var(--ink)}
+.entries-d{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+.entries-d a{font-family:'Hanken Grotesk';font-weight:500;font-size:15.5px;text-decoration:none;color:var(--ink);background:var(--sheet);border-top:3px solid var(--heavy);padding:16px}
+.entries-d a:hover{border-color:var(--acc)}
+@media(max-width:900px){.entries-d{grid-template-columns:1fr}}
+.alts{margin-top:24px;border-top:2px solid var(--heavy);padding-top:12px}
+.alts h3{font-family:'Hanken Grotesk';font-weight:700;font-size:17px}
+.alts h3 span{display:block;font-family:'Newsreader';font-weight:400;font-size:14px;color:var(--ink2);margin-top:2px}
+.alts table{width:100%;border-collapse:collapse;font-size:14.5px;margin-top:10px}
+.alts th{font-family:'Hanken Grotesk';font-weight:600;font-size:13px;text-align:left;padding:8px 6px;border-bottom:1px solid var(--rule)}
+.alts td{padding:8px 6px;border-bottom:1px solid var(--rule)}
+.alts a{text-decoration:none;font-family:'Hanken Grotesk';font-weight:600}
+.alts .match{color:var(--acc)}
+details.opt{border-top:2px solid var(--heavy);margin-top:8px}
+details.opt summary{font-family:'Hanken Grotesk';font-weight:500;padding:14px 0;font-size:15px;color:var(--ink2);cursor:pointer}
+details.opt fieldset{border-top:0;padding-top:6px}
+.tpl{font-family:'Hanken Grotesk';font-size:13.5px;margin-top:8px;color:var(--ink2)}
+</style></head><body><header class="mast"><div class="row1">
+<a class="wm" href="index.html">The Terminal Almanac<i> ·</i> HuanYu</a>
+<span class="ed mono">Edition 2026 · 75 sheets · 74 crosses</span></div>
+<nav><a href="index.html">Home</a><a href="catalogue.html" class="on">Catalogue</a><a href="index.html#company">Capabilities</a><a href="../../cross-references/">Cross method</a><a href="rfq.html">RFQ</a>
+<a class="cn tnum" href="rfq.html">RFQ list (<span id="cartn">0</span>)</a></nav></header><main class="wrap">
+<p style="font-size:14px;color:var(--ink2);margin-bottom:20px"><a href="index.html">Home</a> · <a href="catalogue.html">Catalogue</a> · <span class="mono">HY8835-2</span></p>
+<div class="spec3">
+  <div class="gal"><div style="display:grid;place-items:center;min-height:200px;color:var(--ink2)">Render on request</div></div>
+  <div>
+    <h1 class="mono" style="font-weight:500">HY8835-2</h1>
+    <p class="xref">Cross-reference to 7-1452668-1 (Aptiv)</p>
+    <p class="ser">HY883 series · Sealed micro terminals</p>
+    <table class="spectab"><tbody class="grp"><tr class="grp"><th colspan="2">Identity</th></tr><tr><th scope="row">Part number</th><td>HY8835-2</td></tr><tr><th scope="row">Cross-reference</th><td>7-1452668-1 (Aptiv)</td></tr></tbody><tbody class="grp"><tr class="grp"><th colspan="2">Material</th></tr><tr><th scope="row">Material</th><td>Copper alloy</td></tr><tr><th scope="row">Plating</th><td>pre-tinned</td></tr><tr><th scope="row">Thickness</th><td>0.2 mm</td></tr></tbody><tbody class="grp"><tr class="grp"><th colspan="2">Electrical</th></tr><tr><th scope="row">Wire range</th><td>0.5-0.75 mm²</td></tr><tr><th scope="row">Sealed</th><td>Yes (waterproof)</td></tr></tbody><tbody class="grp"><tr class="grp"><th colspan="2">Packaging</th></tr><tr><th scope="row">Packaging</th><td>5000/盘 4盘20000/箱</td></tr></tbody></table>
+    <div class="alts"><h3>Same-series alternatives <span>same HY883 line — wire-range matches marked ✓</span></h3>
+  <table><thead><tr><th>Part no.</th><th>Cross</th><th>Wire mm²</th><th>Sealed</th></tr></thead><tbody><tr><td><a href="spec-hy8831-1.html">HY8831-1</a></td>
+      <td class="tnum">5-968221-1</td>
+      <td><b class="match">✓ 0.5-0.75</b></td>
+      <td>Yes</td></tr><tr><td><a href="spec-hy8831-2.html">HY8831-2</a></td>
+      <td class="tnum">5-968220-1</td>
+      <td>0.2-0.35</td>
+      <td>Yes</td></tr><tr><td><a href="spec-hy8833-1.html">HY8833-1</a></td>
+      <td class="tnum">1241374-1</td>
+      <td>0.5-1.0</td>
+      <td>No</td></tr><tr><td><a href="spec-hy8833-2.html">HY8833-2</a></td>
+      <td class="tnum">1564980-1</td>
+      <td>0.2-0.35</td>
+      <td>No</td></tr></tbody></table></div>
+    <div class="spec-cta"><button class="btnd" type="button" data-add="HY8835-2" data-ref="7-1452668-1">Add HY8835-2 to RFQ list</button><a class="btnd ink" href="rfq.html?q=hy8835-2">Request sample / datasheet</a></div>
+    <p style="margin-top:14px;font-size:14.5px;color:var(--ink2)"><a href="spec-hy8835-1.html">← HY8835-1</a> · <a href="catalogue.html">All terminals</a> · <a href="spec-hy8836-1.html">HY8836-1 →</a></p>
+  </div>
+</div></main>
+<footer class="ftrd"><span>HuanYu Connector Technology Co., Ltd · Jinan, Shandong · sales@uecable.com</span>
+<span><a href="index.html">Home</a> · <a href="catalogue.html">Catalogue</a> · <a href="rfq.html">RFQ</a> · <a href="https://uecable.com" target="_blank" rel="noopener">Cable products ↗</a></span></footer>
+<nav class="vjump" aria-label="Variant jump"><a href="../../" title="Variant A">A</a><a href="../instrument/" title="Variant B">B</a><a href="../quiet/" title="Variant C">C</a><a href="../almanac/" class="on" title="Variant D">D</a><a href="../review/" title="Variant review">R</a></nav><script>
+(function(){
+  var KEY='hy-cart';
+  function load(){try{return JSON.parse(localStorage.getItem(KEY))||[];}catch(e){return [];}}
+  function save(a){try{localStorage.setItem(KEY,JSON.stringify(a));}catch(e){}upd();}
+  window.HYV={add:function(sku,ref,qty){qty=qty||1;var a=load(),i=-1;for(var k=0;k<a.length;k++)if(a[k].sku===sku)i=k;
+    if(i>=0)a[i].qty+=qty;else a.push({sku:sku,ref:ref||'',qty:qty});save(a);},
+    items:load,save:save};
+  function upd(){var a=load();['cartn','cartn2'].forEach(function(id){var b=document.getElementById(id);if(b)b.textContent=a.length;});}
+  document.addEventListener('click',function(e){
+    var t=e.target.closest('[data-add]');
+    if(t){HYV.add(t.dataset.add,t.dataset.ref||'');var s=t.textContent;t.textContent='Added ✓';setTimeout(function(){t.textContent=s;},1400);upd();}
+    var c=e.target.closest('.rowpick');if(c){setTimeout(upd,0);}
+  });
+  upd();
+})();
+</script><script>
+(function(){
+  var input=document.getElementById('q'),hit=document.getElementById('qhit');
+  if(!input)return;
+  var norm=function(s){return (s||'').replace(/[！-～]/g,function(c){return String.fromCharCode(c.charCodeAt(0)-0xFEE0);}).replace(/[-—–\s]/g,'').toUpperCase();};
+  var idx=null;
+  function go(){var t=hit.querySelector('a');if(t)location.href=t.href;}
+  input.addEventListener('input',function(){var qv=norm(input.value);if(!qv){hit.innerHTML='';return;}
+    (idx||(idx=fetch('../../part-index.json').then(function(r){return r.json();}))).then(function(d){
+      var ks=Object.keys(d);
+      var k=ks.find(function(x){return x===qv;});
+      var list=k?[k]:ks.filter(function(x){return x.startsWith(qv);}).slice(0,4);
+      hit.innerHTML=list.length?'&rarr; '+list.map(function(x){return '<a href="spec-'+d[x].sku.toLowerCase()+'.html">'+d[x].sku+'</a>';}).join(' &middot; '):'No match. <a href="rfq.html?q='+encodeURIComponent(input.value)+'">Send us this number</a> — our engineers cross-reference it for you.';
+      hit.dataset.first=list.length?'spec-'+d[list[0]].sku.toLowerCase()+'.html':'';
+    });});
+  input.addEventListener('keydown',function(e){if(e.key==='Enter'&&hit.dataset.first)location.href=hit.dataset.first;});
+  hit.addEventListener('click',go);
+})();
+</script></body></html>
