@@ -1,0 +1,681 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<title>All terminals | HuanYu (Variant B Instrument)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+:root{--bg:#F5F7FA;--surface:#FFFFFF;--surface2:#E8EDF3;--ink:#0A2E4E;--ink2:#4A6377;--line:#D4DDE7;--acc:#1F6FEB;--accink:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font:16px/1.55 'IBM Plex Sans',sans-serif;overflow-x:clip}
+.tnum{font-feature-settings:'tnum' 1}
+a{color:var(--acc)}
+.util{display:flex;justify-content:space-between;padding:6px 24px;font-size:13.5px;color:var(--ink2);background:var(--surface2)}
+.util a{color:var(--ink2)}
+.hdr{display:flex;align-items:center;gap:20px;padding:14px 24px;background:var(--surface);border-bottom:1px solid var(--line)}
+.logo{font-weight:700;font-size:19px;color:var(--ink);text-decoration:none;letter-spacing:.02em}
+.logo span{color:var(--acc);margin-left:6px;font-weight:600;font-size:14px}
+.search{flex:1;position:relative}
+.search input{width:100%;padding:11px 14px;border:1px solid var(--line);background:var(--bg);font:15px 'IBM Plex Sans';color:var(--ink)}
+.search input:focus{outline:2px solid var(--acc);outline-offset:-1px}
+.qh{position:absolute;top:100%;left:0;right:0;background:var(--surface);border:1px solid var(--line);border-top:0;padding:8px 14px;font-size:15px;z-index:30;display:none}
+.qh:has(a){display:block}
+.cartlink{white-space:nowrap;text-decoration:none;color:var(--ink);font-weight:600;font-size:15px;border:1px solid var(--line);background:var(--surface);padding:10px 14px}
+.cartlink b{background:var(--acc);color:var(--accink);padding:1px 8px;margin-left:4px}
+.mnav{display:flex;gap:4px;padding:0 24px;background:var(--surface);border-bottom:1px solid var(--line);overflow-x:auto}
+.mnav a{padding:11px 14px;font-size:15px;font-weight:500;text-decoration:none;color:var(--ink2);white-space:nowrap;border-bottom:2px solid transparent}
+.mnav a.on,.mnav a:hover{color:var(--acc);border-color:var(--acc)}
+.hero{padding:64px 24px 48px;max-width:1280px;margin:0 auto}
+.hero .eyebrow{font-size:13.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--acc);margin-bottom:14px}
+.hero h1{font-size:clamp(36px,5.6vw,72px);line-height:1.06;font-weight:700;max-width:24ch}
+.hero p.lead{margin-top:16px;font-size:19px;color:var(--ink2);max-width:68ch}
+.hero .cta{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;font-size:15px;font-weight:600;text-decoration:none;border:1px solid var(--acc)}
+.btn-acc{background:var(--acc);color:var(--accink)}
+.btn-sec{color:var(--acc)}
+.sec{max-width:1280px;margin:0 auto;padding:48px 24px}
+.sec h2{font-size:26px;font-weight:700;margin-bottom:6px}
+.sec .sub{color:var(--ink2);margin-bottom:24px;font-size:16px}
+.trustbar{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.trustbar .cell{background:var(--surface);padding:18px 16px}
+.trustbar .v{font:600 22px 'IBM Plex Mono';color:var(--ink)}
+.trustbar .k{font-size:15px;color:var(--ink2);margin-top:4px}
+.cats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cat{background:var(--surface);border:1px solid var(--line);padding:22px;text-decoration:none;color:var(--ink);display:block}
+.cat:hover{border-color:var(--acc)}
+.cat .cid{font:600 13px 'IBM Plex Mono';color:var(--acc)}
+.cat h3{font-size:18px;margin:8px 0 6px}
+.cat p{font-size:14px;color:var(--ink2)}
+.cat .cnt{display:block;margin-top:12px;font-size:13px;color:var(--acc);font-weight:600}
+.apps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.app{background:var(--surface);border:1px solid var(--line)}
+.app img{width:100%;height:170px;object-fit:cover;display:block;filter:saturate(.85)}
+.app .ab{padding:16px 18px}
+.app h3{font-size:16px;margin-bottom:6px}
+.app p{font-size:15.5px;color:var(--ink2)}
+.cap3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cap{background:var(--surface);border-left:3px solid var(--acc);padding:18px 20px}
+.cap h3{font-size:16px;margin-bottom:6px}
+.cap p{font-size:15.5px;color:var(--ink2)}
+.cert{display:grid;grid-template-columns:340px 1fr;gap:24px;align-items:start}
+.cert img{width:100%;background:#fff;border:1px solid var(--line);display:block}
+.cert table{width:100%;border-collapse:collapse;font-size:14px}
+.cert th,.cert td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+.cert th{color:var(--ink2);font-weight:500;width:130px}
+.ctaband{background:var(--ink);color:#fff;padding:56px 24px;text-align:center;margin-top:48px}
+.ctaband h2{font-size:28px;margin-bottom:10px}
+.ctaband p{color:#B9CBD9;margin-bottom:22px}
+.ftr{border-top:1px solid var(--line);background:var(--surface);padding:28px 24px;font-size:14.5px;color:var(--ink2)}
+.ftr-links{margin-top:8px}
+.ftr a{color:var(--ink2)}
+/* 目录 */
+.cat-head{display:flex;justify-content:space-between;align-items:end;gap:16px;padding:36px 24px 12px;max-width:1160px;margin:0 auto;flex-wrap:wrap}
+.cat-head h1{font-size:34px}
+.cat-head .meta{font-size:14px;color:var(--ink2)}
+.pickbar{position:sticky;bottom:0;z-index:20;background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:10px 24px;display:flex;justify-content:space-between;align-items:center;font-size:14px;color:var(--ink2)}
+.pickbar b{color:var(--ink)}
+.tblwrap{max-width:1160px;margin:0 auto 48px;padding:0 24px;overflow-x:auto}
+table.grid{width:100%;min-width:860px;border-collapse:collapse;font-size:14px;background:var(--surface);border:1px solid var(--line)}
+.grid th,.grid td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left}
+.grid thead th{font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--ink2);position:sticky;top:0;background:var(--surface)}
+.grid tbody tr:hover{background:var(--bg)}
+.grid a{font-weight:600;text-decoration:none}
+.grid .pickc{width:38px}
+.grid input[type=checkbox]{accent-color:var(--acc);width:17px;height:17px}
+/* 规格单 */
+.spec{max-width:1080px;margin:0 auto;padding:36px 24px 64px;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:28px}
+.spec .crumb{grid-column:1/3;font-size:13px;color:var(--ink2)}
+.spec h1{font-size:40px}
+.spec .xref{color:var(--acc);font-weight:600;margin-top:6px}
+.spec .ser{color:var(--ink2);margin-top:6px;font-size:15px}
+.spec .gal{background:#fff;border:1px solid var(--line);padding:14px}
+.spec .gal img.main{width:100%;display:block}
+.spec .gal .th{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:8px}
+.spec .gal .th img{width:100%;display:block}
+.spectab{width:100%;border-collapse:collapse;font-size:15px}
+.spectab th,.spectab td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+.spectab td{font-weight:500}
+.spectab .grp th{font-size:12.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink2);padding-top:18px}
+.spectab th[scope=row]{color:var(--ink2);font-weight:500;width:160px}
+.spec-cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+/* RFQ */
+.rfq{max-width:1080px;margin:0 auto;padding:36px 24px 64px;display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:32px;align-items:start}
+.rfq h1{font-size:36px;margin-bottom:8px}
+.rfq .hint{color:var(--ink2);font-size:15px;margin-bottom:22px}
+fieldset{border:0;border-top:1px solid var(--line);padding:18px 0 6px}
+legend{font-size:13px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--acc);padding:0 8px 0 0}
+.fg2{display:grid;grid-template-columns:1fr 1fr;gap:12px 16px}
+label{font-size:14px;font-weight:600;display:block;margin:10px 0 6px}
+input[type=text],input[type=email],input[type=tel],select,textarea{width:100%;padding:10px 12px;border:1px solid var(--line);background:var(--surface);font:15px 'IBM Plex Sans';color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--acc);outline-offset:-1px}
+textarea{min-height:110px}
+.req{color:var(--acc)}
+.cartbox{border:1px solid var(--line);background:var(--surface);padding:16px}
+.cartbox h2{font-size:15px;text-transform:uppercase;letter-spacing:.04em}
+.rt{width:100%;border-collapse:collapse;font-size:14px;margin-top:10px}
+.rt th,.rt td{text-align:left;padding:7px 6px;border-bottom:1px solid var(--line)}
+.cq{display:inline-flex;align-items:center;gap:6px}
+.cq button{width:26px;height:26px;border:1px solid var(--line);background:var(--bg);cursor:pointer}
+.crm{background:none;border:0;color:var(--ink2);font-size:12.5px;text-decoration:underline;cursor:pointer}
+.empty{font-size:14px;color:var(--ink2);margin:12px 0}
+.done{border:1px solid var(--acc);background:var(--surface);padding:20px;margin-top:22px}
+.done[hidden]{display:none}
+.done textarea{width:100%;min-height:150px;margin:10px 0;font:13px/1.5 'IBM Plex Mono'}
+.rfqerr{border-left:3px solid #C0392B;background:var(--surface);padding:10px 14px;font-size:14px;margin-bottom:14px}
+.rfqerr[hidden]{display:none}
+.aside-help{background:var(--surface);border:1px solid var(--line);padding:16px;font-size:14px;color:var(--ink2)}
+.aside-help h2{font-size:15px;color:var(--ink);text-transform:none;letter-spacing:0;margin-bottom:8px}
+.aside-help p{margin-bottom:8px}
+/* vjump */
+.vjump{position:fixed;left:16px;bottom:16px;z-index:99;display:flex;gap:4px;align-items:center;background:var(--surface);border:1px solid var(--line);padding:8px}
+.vjump span{font-size:12px;color:var(--ink2);margin-right:4px}
+.vjump a{color:var(--ink);text-decoration:none;font-size:13px;font-weight:600;padding:4px 8px}
+.vjump a:hover,.vjump a.on{background:var(--acc);color:var(--accink)}
+@media(max-width:900px){
+  .trustbar{grid-template-columns:repeat(3,1fr)}
+  .cats,.apps,.cap3{grid-template-columns:1fr}
+  .cert{grid-template-columns:1fr}
+  .spec{grid-template-columns:1fr}
+  .spec .crumb{grid-column:auto}
+  .rfq{grid-template-columns:1fr}
+  .hdr{flex-wrap:wrap}
+  .search{order:3;flex-basis:100%}
+  .util{display:none}
+  .fg2{grid-template-columns:1fr}
+}
+/* 学习清单骨架：hero 大搜索 + 三卡分流；详情替代区；RFQ 分层 */
+@keyframes fadeup{from{opacity:0}to{opacity:1}}
+.hero>*,.sec>*{animation:fadeup .5s ease-out both}
+.sec>*:nth-child(2){animation-delay:.08s}.sec>*:nth-child(3){animation-delay:.14s}
+.util,.hdr,.mnav,.ftr{max-width:1280px;margin-left:auto;margin-right:auto;width:100%}
+.mnav{padding-right:16px}
+.pg-home .hdr .search{display:none}
+.herosearch{margin-top:26px;max-width:720px;position:relative}
+.herosearch input{width:100%;padding:16px 18px;border:1px solid var(--line);background:var(--surface);font:17px 'IBM Plex Sans';color:var(--ink)}
+.herosearch input:focus{outline:2px solid var(--acc);outline-offset:-1px}
+.hero-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px}
+.hcard{background:var(--surface);border:1px solid var(--line);padding:20px;text-decoration:none;color:var(--ink);display:block}
+.hcard:hover{border-color:var(--acc)}
+.hcard h3{font-size:17px;margin:0 0 4px}
+.hcard p{font-size:15px;color:var(--ink2)}
+.alts{margin-top:24px;border:1px solid var(--line);background:var(--surface);padding:16px 18px}
+.alts h3{font-size:15px;margin-bottom:4px}
+.alts h3 span{display:block;font-size:12.5px;color:var(--ink2);font-weight:400;margin-top:2px}
+.alts table{width:100%;border-collapse:collapse;font-size:14px;margin-top:10px}
+.alts th,.alts td{text-align:left;padding:7px 8px;border-bottom:1px solid var(--line)}
+.alts th{font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:var(--ink2)}
+.alts a{text-decoration:none;font-weight:600}
+.alts .match{color:var(--acc)}
+details.opt{border:1px solid var(--line);background:var(--surface);margin-top:4px}
+details.opt summary{padding:14px 16px;font-size:14.5px;font-weight:600;cursor:pointer;color:var(--ink2)}
+details.opt[open] summary{border-bottom:1px solid var(--line)}
+details.opt fieldset{margin:0 16px}
+.tpl{font-size:13.5px;margin-top:8px;color:var(--ink2)}
+@media(max-width:900px){.hero-cards{grid-template-columns:1fr}}
+@media(max-width:768px){.mnav{flex-wrap:wrap}}
+.vjump{padding:4px;gap:2px}
+.vjump a{padding:3px 7px;font-size:12.5px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style></head><body>
+<div class="util"><span>IATF 16949 group · Jinan, Shandong</span><a href="mailto:sales@uecable.com">sales@uecable.com</a></div>
+<header class="hdr">
+  <a class="logo" href="index.html">HUANYU<span>CONNECTOR</span></a>
+  <div class="search"><input id="q" type="text" placeholder="Part number search — TE, Aptiv, Yazaki or HY" aria-label="Part number search"><p class="qh" id="qhit" aria-live="polite"></p></div>
+  <a class="cartlink tnum" href="rfq.html">RFQ list <b id="cartn">0</b></a>
+</header>
+<nav class="mnav"><a href="index.html">Home</a><a href="catalogue.html" class="on">Catalogue</a><a href="index.html#company">Capabilities</a><a href="../../cross-references/">Cross method</a><a href="rfq.html">RFQ</a></nav>
+<main>
+<div class="cat-head">
+  <div><h1>All 75 terminals</h1><p class="meta">74 cross numbers · every spec published · tick rows to build your RFQ list</p></div>
+  <div><a class="btn btn-acc" href="rfq.html">Go to RFQ →</a></div>
+</div>
+<div class="pickbar"><span>Tick rows — they go straight to your <b>RFQ list</b> (<span id="cartn2">0</span> picked)</span>
+  <label style="font-size:13px;display:flex;align-items:center;gap:6px"><input type="checkbox" id="selall"> Select all</label></div>
+<div class="tblwrap">
+<table class="grid">
+  <thead><tr><th class="pickc"></th><th>Part no.</th><th>Cross-reference</th><th>OEM</th><th>Material</th><th>Plating</th><th>Wire mm²</th><th>Sealed</th><th>Pack</th></tr></thead>
+  <tbody><tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8801-1" data-ref="964284-2" aria-label="Tick HY8801-1"></td>
+  <td><a href="spec-hy8801-1.html">HY8801-1</a></td>
+  <td class="tnum">964284-2</td><td>TE</td>
+  <td>Phosphor bronze</td><td>pre-tinned</td><td class="tnum">0.5-1.0</td>
+  <td>No</td><td>Reel</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8801-2" data-ref="965999-2" aria-label="Tick HY8801-2"></td>
+  <td><a href="spec-hy8801-2.html">HY8801-2</a></td>
+  <td class="tnum">965999-2</td><td>TE</td>
+  <td>Phosphor bronze</td><td>pre-tinned</td><td class="tnum">1.0-2.5</td>
+  <td>No</td><td>Reel</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8802-1" data-ref="929974-1" aria-label="Tick HY8802-1"></td>
+  <td><a href="spec-hy8802-1.html">HY8802-1</a></td>
+  <td class="tnum">929974-1</td><td>TE</td>
+  <td>Phosphor bronze</td><td>pre-tinned</td><td class="tnum">0.75-1.5</td>
+  <td>Yes</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8802-2" data-ref="929974-1" aria-label="Tick HY8802-2"></td>
+  <td><a href="spec-hy8802-2.html">HY8802-2</a></td>
+  <td class="tnum">929974-1</td><td>TE</td>
+  <td>Phosphor bronze</td><td>pre-tinned</td><td class="tnum">0.5-1.0</td>
+  <td>Yes</td><td>Reel</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8802-3" data-ref="929975-1" aria-label="Tick HY8802-3"></td>
+  <td><a href="spec-hy8802-3.html">HY8802-3</a></td>
+  <td class="tnum">929975-1</td><td>TE</td>
+  <td>Phosphor bronze</td><td>pre-tinned</td><td class="tnum">1.5-2.5</td>
+  <td>Yes</td><td>Reel</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8802-4" data-ref="929974-9" aria-label="Tick HY8802-4"></td>
+  <td><a href="spec-hy8802-4.html">HY8802-4</a></td>
+  <td class="tnum">929974-9</td><td>TE</td>
+  <td>Phosphor bronze</td><td>pre-silvered</td><td class="tnum">0.5-1.0</td>
+  <td>Yes</td><td>Reel</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8803" data-ref="26538201141" aria-label="Tick HY8803"></td>
+  <td><a href="spec-hy8803.html">HY8803</a></td>
+  <td class="tnum">26538201141</td><td>Yazaki</td>
+  <td>Phosphor bronze</td><td>pre-silvered</td><td class="tnum">0.5-1.0</td>
+  <td>No</td><td>Reel</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8805-1" data-ref="928999-1" aria-label="Tick HY8805-1"></td>
+  <td><a href="spec-hy8805-1.html">HY8805-1</a></td>
+  <td class="tnum">928999-1</td><td>TE</td>
+  <td>Copper alloy</td><td>pre-tinned</td><td class="tnum">0.25-0.35</td>
+  <td>No</td><td>Reel</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8805-2" data-ref="963715-1" aria-label="Tick HY8805-2"></td>
+  <td><a href="spec-hy8805-2.html">HY8805-2</a></td>
+  <td class="tnum">963715-1</td><td>TE</td>
+  <td>Copper alloy</td><td>pre-tinned</td><td class="tnum">0.5-0.75</td>
+  <td>No</td><td>Reel</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8805-3" data-ref="962885-1" aria-label="Tick HY8805-3"></td>
+  <td><a href="spec-hy8805-3.html">HY8805-3</a></td>
+  <td class="tnum">962885-1</td><td>TE</td>
+  <td>Copper alloy</td><td>pre-tinned</td><td class="tnum">0.25-0.35</td>
+  <td>Yes</td><td>Reel</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8805-4" data-ref="965906-1" aria-label="Tick HY8805-4"></td>
+  <td><a href="spec-hy8805-4.html">HY8805-4</a></td>
+  <td class="tnum">965906-1</td><td>TE</td>
+  <td>Copper alloy</td><td>pre-tinned</td><td class="tnum">0.5-0.75</td>
+  <td>Yes</td><td>Reel</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8805-5" data-ref="1355717-1" aria-label="Tick HY8805-5"></td>
+  <td><a href="spec-hy8805-5.html">HY8805-5</a></td>
+  <td class="tnum">1355717-1</td><td>TE</td>
+  <td>Copper alloy</td><td>pre-tinned</td><td class="tnum">0.08-0.22</td>
+  <td>No</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8806-1" data-ref="929939-3" aria-label="Tick HY8806-1"></td>
+  <td><a href="spec-hy8806-1.html">HY8806-1</a></td>
+  <td class="tnum">929939-3</td><td>TE</td>
+  <td>Phosphor bronze</td><td>pre-tinned</td><td class="tnum">0.5-1.0</td>
+  <td>Yes</td><td>Reel</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8806-2" data-ref="929939-1" aria-label="Tick HY8806-2"></td>
+  <td><a href="spec-hy8806-2.html">HY8806-2</a></td>
+  <td class="tnum">929939-1</td><td>TE</td>
+  <td>Phosphor bronze</td><td>pre-tinned</td><td class="tnum">0.5-1.0</td>
+  <td>Yes</td><td>Reel</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8807-1" data-ref="964274-2" aria-label="Tick HY8807-1"></td>
+  <td><a href="spec-hy8807-1.html">HY8807-1</a></td>
+  <td class="tnum">964274-2</td><td>TE</td>
+  <td>Phosphor bronze</td><td>pre-tinned</td><td class="tnum">0.5-1.0</td>
+  <td>Yes</td><td>Reel</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8807-2" data-ref="964263-2" aria-label="Tick HY8807-2"></td>
+  <td><a href="spec-hy8807-2.html">HY8807-2</a></td>
+  <td class="tnum">964263-2</td><td>TE</td>
+  <td>Phosphor bronze</td><td>pre-tinned</td><td class="tnum">0.5-1.0</td>
+  <td>No</td><td>Reel</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8808-1" data-ref="171662-1" aria-label="Tick HY8808-1"></td>
+  <td><a href="spec-hy8808-1.html">HY8808-1</a></td>
+  <td class="tnum">171662-1</td><td>TE</td>
+  <td>Brass</td><td>pre-tinned</td><td class="tnum">0.5-1.25</td>
+  <td>Yes</td><td>Reel</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8808-2" data-ref="171630-1" aria-label="Tick HY8808-2"></td>
+  <td><a href="spec-hy8808-2.html">HY8808-2</a></td>
+  <td class="tnum">171630-1</td><td>TE</td>
+  <td>Brass</td><td>pre-tinned</td><td class="tnum">0.2-0.5</td>
+  <td>Yes</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8809-1" data-ref="730365-3" aria-label="Tick HY8809-1"></td>
+  <td><a href="spec-hy8809-1.html">HY8809-1</a></td>
+  <td class="tnum">730365-3</td><td>TE</td>
+  <td>Brass</td><td>pre-tinned</td><td class="tnum">0.3-0.5</td>
+  <td>No</td><td>Reel</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8809-2" data-ref="730502-3" aria-label="Tick HY8809-2"></td>
+  <td><a href="spec-hy8809-2.html">HY8809-2</a></td>
+  <td class="tnum">730502-3</td><td>TE</td>
+  <td>Brass</td><td>pre-tinned</td><td class="tnum">0.5-1.0</td>
+  <td>Yes</td><td>Reel</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8810-1" data-ref="12191811" aria-label="Tick HY8810-1"></td>
+  <td><a href="spec-hy8810-1.html">HY8810-1</a></td>
+  <td class="tnum">12191811</td><td>TE</td>
+  <td>Brass</td><td>pre-tinned</td><td class="tnum">0.3-0.5</td>
+  <td>No</td><td>Reel</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8810-2" data-ref="12191818" aria-label="Tick HY8810-2"></td>
+  <td><a href="spec-hy8810-2.html">HY8810-2</a></td>
+  <td class="tnum">12191818</td><td>TE</td>
+  <td>Brass</td><td>pre-tinned</td><td class="tnum">0.3-0.5</td>
+  <td>No</td><td>Reel</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8810-3" data-ref="12191819" aria-label="Tick HY8810-3"></td>
+  <td><a href="spec-hy8810-3.html">HY8810-3</a></td>
+  <td class="tnum">12191819</td><td>TE</td>
+  <td>Brass</td><td>pre-tinned</td><td class="tnum">0.5-1.0</td>
+  <td>No</td><td>Reel</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8811-1" data-ref="61113050" aria-label="Tick HY8811-1"></td>
+  <td><a href="spec-hy8811-1.html">HY8811-1</a></td>
+  <td class="tnum">61113050</td><td>TE</td>
+  <td>Brass</td><td>pre-tinned</td><td class="tnum">0.85-1.25</td>
+  <td>No</td><td>Reel</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8812-1" data-ref="171661-1" aria-label="Tick HY8812-1"></td>
+  <td><a href="spec-hy8812-1.html">HY8812-1</a></td>
+  <td class="tnum">171661-1</td><td>TE</td>
+  <td>Brass</td><td>pre-tinned</td><td class="tnum">0.85-1.25</td>
+  <td>Yes</td><td>Reel</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8812-2" data-ref="171631-1" aria-label="Tick HY8812-2"></td>
+  <td><a href="spec-hy8812-2.html">HY8812-2</a></td>
+  <td class="tnum">171631-1</td><td>TE</td>
+  <td>Brass</td><td>pre-tinned</td><td class="tnum">0.2-0.5</td>
+  <td>Yes</td><td>Reel</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8812-3" data-ref="171631-2" aria-label="Tick HY8812-3"></td>
+  <td><a href="spec-hy8812-3.html">HY8812-3</a></td>
+  <td class="tnum">171631-2</td><td>TE</td>
+  <td>Brass</td><td>gold-plated</td><td class="tnum">0.2-0.5</td>
+  <td>Yes</td><td>Reel</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8813-1" data-ref="1123343-1" aria-label="Tick HY8813-1"></td>
+  <td><a href="spec-hy8813-1.html">HY8813-1</a></td>
+  <td class="tnum">1123343-1</td><td>TE</td>
+  <td>Copper alloy</td><td>pre-tinned</td><td class="tnum">0.22-0.56</td>
+  <td>No</td><td>Reel</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8815-1" data-ref="964269-2" aria-label="Tick HY8815-1"></td>
+  <td><a href="spec-hy8815-1.html">HY8815-1</a></td>
+  <td class="tnum">964269-2</td><td>TE</td>
+  <td>Phosphor bronze</td><td>pre-tinned</td><td class="tnum">0.5-1.0</td>
+  <td>Yes</td><td>Reel</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8815-2" data-ref="964267-1" aria-label="Tick HY8815-2"></td>
+  <td><a href="spec-hy8815-2.html">HY8815-2</a></td>
+  <td class="tnum">964267-1</td><td>TE</td>
+  <td>Phosphor bronze</td><td>pre-tinned</td><td class="tnum">0.5-1.0</td>
+  <td>No</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8816-1" data-ref="192990-2490" aria-label="Tick HY8816-1"></td>
+  <td><a href="spec-hy8816-1.html">HY8816-1</a></td>
+  <td class="tnum">192990-2490</td><td>TE</td>
+  <td>Brass</td><td>pre-tinned</td><td class="tnum">16-18AWG</td>
+  <td>No</td><td>Reel</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8816-2" data-ref="192990-2530" aria-label="Tick HY8816-2"></td>
+  <td><a href="spec-hy8816-2.html">HY8816-2</a></td>
+  <td class="tnum">192990-2530</td><td>TE</td>
+  <td>Brass</td><td>pre-tinned</td><td class="tnum">16-18AWG</td>
+  <td>No</td><td>Reel</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8817-1" data-ref="175265-1" aria-label="Tick HY8817-1"></td>
+  <td><a href="spec-hy8817-1.html">HY8817-1</a></td>
+  <td class="tnum">175265-1</td><td>TE</td>
+  <td>Copper alloy</td><td>pre-tinned</td><td class="tnum">0.3-0.85</td>
+  <td>No</td><td>Reel</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8818-1" data-ref="" aria-label="Tick HY8818-1"></td>
+  <td><a href="spec-hy8818-1.html">HY8818-1</a></td>
+  <td class="tnum">—</td><td>—</td>
+  <td>Phosphor bronze</td><td>pre-tinned</td><td class="tnum">0.5-1.0</td>
+  <td>Yes</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8820-1" data-ref="282110-1" aria-label="Tick HY8820-1"></td>
+  <td><a href="spec-hy8820-1.html">HY8820-1</a></td>
+  <td class="tnum">282110-1</td><td>TE</td>
+  <td>Phosphor bronze</td><td>pre-tinned</td><td class="tnum">0.75-1.5</td>
+  <td>Yes</td><td>Reel</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8820-2" data-ref="282466-1" aria-label="Tick HY8820-2"></td>
+  <td><a href="spec-hy8820-2.html">HY8820-2</a></td>
+  <td class="tnum">282466-1</td><td>TE</td>
+  <td>Phosphor bronze</td><td>pre-tinned</td><td class="tnum">1.5-2.5</td>
+  <td>Yes</td><td>Reel</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8820-3" data-ref="282110-1" aria-label="Tick HY8820-3"></td>
+  <td><a href="spec-hy8820-3.html">HY8820-3</a></td>
+  <td class="tnum">282110-1</td><td>TE</td>
+  <td>Phosphor bronze</td><td>pre-tinned</td><td class="tnum">0.75-1.5</td>
+  <td>Yes</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8820-4" data-ref="282403-1" aria-label="Tick HY8820-4"></td>
+  <td><a href="spec-hy8820-4.html">HY8820-4</a></td>
+  <td class="tnum">282403-1</td><td>TE</td>
+  <td>Phosphor bronze</td><td>pre-tinned</td><td class="tnum">0.35-0.5</td>
+  <td>Yes</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8821-1" data-ref="26701201185" aria-label="Tick HY8821-1"></td>
+  <td><a href="spec-hy8821-1.html">HY8821-1</a></td>
+  <td class="tnum">26701201185</td><td>Yazaki</td>
+  <td>Phosphor bronze</td><td>pre-tinned</td><td class="tnum">0.5-1.0</td>
+  <td>Yes</td><td>Reel</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8821-2" data-ref="26705201185" aria-label="Tick HY8821-2"></td>
+  <td><a href="spec-hy8821-2.html">HY8821-2</a></td>
+  <td class="tnum">26705201185</td><td>Yazaki</td>
+  <td>Phosphor bronze</td><td>pre-tinned</td><td class="tnum">1.5-2.5</td>
+  <td>Yes</td><td>Reel</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8822-1" data-ref="2-964294-1" aria-label="Tick HY8822-1"></td>
+  <td><a href="spec-hy8822-1.html">HY8822-1</a></td>
+  <td class="tnum">2-964294-1</td><td>Aptiv</td>
+  <td>Iron bronze</td><td>pre-tinned</td><td class="tnum">0.5-1.0</td>
+  <td>No</td><td>Reel</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8822-2" data-ref="2-964296-1" aria-label="Tick HY8822-2"></td>
+  <td><a href="spec-hy8822-2.html">HY8822-2</a></td>
+  <td class="tnum">2-964296-1</td><td>Aptiv</td>
+  <td>Iron bronze</td><td>pre-tinned</td><td class="tnum">1.0-2.5</td>
+  <td>No</td><td>Reel</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8822-3" data-ref="2-964292-1" aria-label="Tick HY8822-3"></td>
+  <td><a href="spec-hy8822-3.html">HY8822-3</a></td>
+  <td class="tnum">2-964292-1</td><td>Aptiv</td>
+  <td>Iron bronze</td><td>pre-tinned</td><td class="tnum">0.2-0.5</td>
+  <td>No</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8823-1" data-ref="175091-1" aria-label="Tick HY8823-1"></td>
+  <td><a href="spec-hy8823-1.html">HY8823-1</a></td>
+  <td class="tnum">175091-1</td><td>TE</td>
+  <td>Brass</td><td>pre-tinned</td><td class="tnum">2.0-3.0</td>
+  <td>No</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8825-1" data-ref="1-968851-1" aria-label="Tick HY8825-1"></td>
+  <td><a href="spec-hy8825-1.html">HY8825-1</a></td>
+  <td class="tnum">1-968851-1</td><td>Aptiv</td>
+  <td>Copper alloy</td><td>pre-tinned</td><td class="tnum">1.5-2.5</td>
+  <td>No</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8825-2" data-ref="1-968849-1" aria-label="Tick HY8825-2"></td>
+  <td><a href="spec-hy8825-2.html">HY8825-2</a></td>
+  <td class="tnum">1-968849-1</td><td>Aptiv</td>
+  <td>Copper alloy</td><td>pre-tinned</td><td class="tnum">0.5-1.0</td>
+  <td>No</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8825-3" data-ref="1-968880-1" aria-label="Tick HY8825-3"></td>
+  <td><a href="spec-hy8825-3.html">HY8825-3</a></td>
+  <td class="tnum">1-968880-1</td><td>Aptiv</td>
+  <td>Copper alloy</td><td>pre-tinned</td><td class="tnum">0.2-0.5</td>
+  <td>No</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8825-4" data-ref="1-2141857-1" aria-label="Tick HY8825-4"></td>
+  <td><a href="spec-hy8825-4.html">HY8825-4</a></td>
+  <td class="tnum">1-2141857-1</td><td>Aptiv</td>
+  <td>Copper alloy</td><td>pre-tinned</td><td class="tnum">0.2-0.5</td>
+  <td>No</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8826-1" data-ref="927766-3" aria-label="Tick HY8826-1"></td>
+  <td><a href="spec-hy8826-1.html">HY8826-1</a></td>
+  <td class="tnum">927766-3</td><td>TE</td>
+  <td>Phosphor bronze</td><td>pre-tinned</td><td class="tnum">1.0-2.5</td>
+  <td>No</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8826-2" data-ref="927770-3" aria-label="Tick HY8826-2"></td>
+  <td><a href="spec-hy8826-2.html">HY8826-2</a></td>
+  <td class="tnum">927770-3</td><td>TE</td>
+  <td>Phosphor bronze</td><td>pre-tinned</td><td class="tnum">0.5-1.0</td>
+  <td>No</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8827-1" data-ref="173681-1" aria-label="Tick HY8827-1"></td>
+  <td><a href="spec-hy8827-1.html">HY8827-1</a></td>
+  <td class="tnum">173681-1</td><td>TE</td>
+  <td>Copper alloy</td><td>pre-tinned</td><td class="tnum">0.3-0.5</td>
+  <td>No</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8827-2" data-ref="175180-1" aria-label="Tick HY8827-2"></td>
+  <td><a href="spec-hy8827-2.html">HY8827-2</a></td>
+  <td class="tnum">175180-1</td><td>TE</td>
+  <td>Copper alloy</td><td>pre-tinned</td><td class="tnum">0.3-0.5</td>
+  <td>No</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8828-1" data-ref="928781-2" aria-label="Tick HY8828-1"></td>
+  <td><a href="spec-hy8828-1.html">HY8828-1</a></td>
+  <td class="tnum">928781-2</td><td>TE</td>
+  <td>Brass</td><td>pre-tinned</td><td class="tnum">1.0-2.8</td>
+  <td>No</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8828-2" data-ref="928930-2" aria-label="Tick HY8828-2"></td>
+  <td><a href="spec-hy8828-2.html">HY8828-2</a></td>
+  <td class="tnum">928930-2</td><td>TE</td>
+  <td>Brass</td><td>pre-tinned</td><td class="tnum">0.5-1.0</td>
+  <td>No</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8829-1" data-ref="1241380-1" aria-label="Tick HY8829-1"></td>
+  <td><a href="spec-hy8829-1.html">HY8829-1</a></td>
+  <td class="tnum">1241380-1</td><td>TE</td>
+  <td>Copper alloy</td><td>pre-tinned</td><td class="tnum">0.5-1.0</td>
+  <td>Yes</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8829-2" data-ref="1418884-1" aria-label="Tick HY8829-2"></td>
+  <td><a href="spec-hy8829-2.html">HY8829-2</a></td>
+  <td class="tnum">1418884-1</td><td>TE</td>
+  <td>Copper alloy</td><td>pre-tinned</td><td class="tnum">1.0-1.5</td>
+  <td>Yes</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8831-1" data-ref="5-968221-1" aria-label="Tick HY8831-1"></td>
+  <td><a href="spec-hy8831-1.html">HY8831-1</a></td>
+  <td class="tnum">5-968221-1</td><td>Aptiv</td>
+  <td>Copper alloy</td><td>pre-tinned</td><td class="tnum">0.5-0.75</td>
+  <td>Yes</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8831-2" data-ref="5-968220-1" aria-label="Tick HY8831-2"></td>
+  <td><a href="spec-hy8831-2.html">HY8831-2</a></td>
+  <td class="tnum">5-968220-1</td><td>Aptiv</td>
+  <td>Copper alloy</td><td>pre-tinned</td><td class="tnum">0.2-0.35</td>
+  <td>Yes</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8833-1" data-ref="1241374-1" aria-label="Tick HY8833-1"></td>
+  <td><a href="spec-hy8833-1.html">HY8833-1</a></td>
+  <td class="tnum">1241374-1</td><td>TE</td>
+  <td>Copper alloy</td><td>pre-tinned</td><td class="tnum">0.5-1.0</td>
+  <td>No</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8833-2" data-ref="1564980-1" aria-label="Tick HY8833-2"></td>
+  <td><a href="spec-hy8833-2.html">HY8833-2</a></td>
+  <td class="tnum">1564980-1</td><td>TE</td>
+  <td>Copper alloy</td><td>pre-tinned</td><td class="tnum">0.2-0.35</td>
+  <td>No</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8835-1" data-ref="7-1452665-1" aria-label="Tick HY8835-1"></td>
+  <td><a href="spec-hy8835-1.html">HY8835-1</a></td>
+  <td class="tnum">7-1452665-1</td><td>Aptiv</td>
+  <td>Copper alloy</td><td>pre-tinned</td><td class="tnum">0.25-0.35</td>
+  <td>Yes</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8835-2" data-ref="7-1452668-1" aria-label="Tick HY8835-2"></td>
+  <td><a href="spec-hy8835-2.html">HY8835-2</a></td>
+  <td class="tnum">7-1452668-1</td><td>Aptiv</td>
+  <td>Copper alloy</td><td>pre-tinned</td><td class="tnum">0.5-0.75</td>
+  <td>Yes</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8836-1" data-ref="1241402-1" aria-label="Tick HY8836-1"></td>
+  <td><a href="spec-hy8836-1.html">HY8836-1</a></td>
+  <td class="tnum">1241402-1</td><td>TE</td>
+  <td>Copper alloy</td><td>pre-tinned</td><td class="tnum">0.5-0.75</td>
+  <td>Yes</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8836-2" data-ref="1241404-1" aria-label="Tick HY8836-2"></td>
+  <td><a href="spec-hy8836-2.html">HY8836-2</a></td>
+  <td class="tnum">1241404-1</td><td>TE</td>
+  <td>Copper alloy</td><td>pre-tinned</td><td class="tnum">1.0-2.5</td>
+  <td>Yes</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8836-3" data-ref="1241406-1" aria-label="Tick HY8836-3"></td>
+  <td><a href="spec-hy8836-3.html">HY8836-3</a></td>
+  <td class="tnum">1241406-1</td><td>TE</td>
+  <td>Copper alloy</td><td>pre-tinned</td><td class="tnum">2.5-4.0</td>
+  <td>Yes</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8601-1" data-ref="1062-16-0122" aria-label="Tick HY8601-1"></td>
+  <td><a href="spec-hy8601-1.html">HY8601-1</a></td>
+  <td class="tnum">1062-16-0122</td><td>Yazaki</td>
+  <td>Phosphor bronze</td><td>nickel-plated</td><td class="tnum">0.75-1.5</td>
+  <td>No</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8602-1" data-ref="1062-20-0122" aria-label="Tick HY8602-1"></td>
+  <td><a href="spec-hy8602-1.html">HY8602-1</a></td>
+  <td class="tnum">1062-20-0122</td><td>Yazaki</td>
+  <td>Phosphor bronze</td><td>nickel-plated</td><td class="tnum">0.75-1.5</td>
+  <td>No</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8501-2" data-ref="1062-16-0144" aria-label="Tick HY8501-2"></td>
+  <td><a href="spec-hy8501-2.html">HY8501-2</a></td>
+  <td class="tnum">1062-16-0144</td><td>Yazaki</td>
+  <td>Phosphor bronze</td><td>semi-gold-nickel plated</td><td class="tnum">0.75-1.5</td>
+  <td>No</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8503-1" data-ref="1062-16-0622" aria-label="Tick HY8503-1"></td>
+  <td><a href="spec-hy8503-1.html">HY8503-1</a></td>
+  <td class="tnum">1062-16-0622</td><td>Yazaki</td>
+  <td>Phosphor bronze</td><td>nickel-plated</td><td class="tnum">0.35-0.5</td>
+  <td>No</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8504-1" data-ref="1062-16-1222" aria-label="Tick HY8504-1"></td>
+  <td><a href="spec-hy8504-1.html">HY8504-1</a></td>
+  <td class="tnum">1062-16-1222</td><td>Yazaki</td>
+  <td>Phosphor bronze</td><td>nickel-plated</td><td class="tnum">1.5-2.5</td>
+  <td>No</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8505-1" data-ref="1060-16-0122" aria-label="Tick HY8505-1"></td>
+  <td><a href="spec-hy8505-1.html">HY8505-1</a></td>
+  <td class="tnum">1060-16-0122</td><td>Yazaki</td>
+  <td>Phosphor bronze</td><td>nickel-plated</td><td class="tnum">0.75-1.5</td>
+  <td>No</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8505-2" data-ref="1060-16-0144" aria-label="Tick HY8505-2"></td>
+  <td><a href="spec-hy8505-2.html">HY8505-2</a></td>
+  <td class="tnum">1060-16-0144</td><td>Yazaki</td>
+  <td>Phosphor bronze</td><td>semi-gold-nickel plated</td><td class="tnum">0.75-1.5</td>
+  <td>No</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8506-2" data-ref="1060-16-0622" aria-label="Tick HY8506-2"></td>
+  <td><a href="spec-hy8506-2.html">HY8506-2</a></td>
+  <td class="tnum">1060-16-0622</td><td>Yazaki</td>
+  <td>Phosphor bronze</td><td>nickel-plated</td><td class="tnum">0.35-0.5</td>
+  <td>No</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8506-3" data-ref="1060-16-1222" aria-label="Tick HY8506-3"></td>
+  <td><a href="spec-hy8506-3.html">HY8506-3</a></td>
+  <td class="tnum">1060-16-1222</td><td>Yazaki</td>
+  <td>Phosphor bronze</td><td>nickel-plated</td><td class="tnum">1.5-2.5</td>
+  <td>No</td><td>—</td></tr>
+<tr>
+  <td class="pickc"><input type="checkbox" class="rowpick" data-sku="HY8507-1" data-ref="1060-20-0122" aria-label="Tick HY8507-1"></td>
+  <td><a href="spec-hy8507-1.html">HY8507-1</a></td>
+  <td class="tnum">1060-20-0122</td><td>Yazaki</td>
+  <td>Phosphor bronze</td><td>nickel-plated</td><td class="tnum">0.75-1.5</td>
+  <td>No</td><td>—</td></tr></tbody>
+</table></div></main>
+<footer class="ftr"><p>HuanYu Connector Technology Co., Ltd · a member of the Universal Cables group · sales@uecable.com</p>
+<p class="ftr-links"><a href="index.html">Home</a> · <a href="catalogue.html">Catalogue</a> · <a href="rfq.html">Batch RFQ</a> · <a href="../../cross-references/">Cross method</a> · <a href="https://uecable.com" target="_blank" rel="noopener">Cable products ↗</a></p></footer>
+<nav class="vjump" aria-label="Variant jump"><a href="../../" title="Variant A">A</a><a href="../instrument/" class="on" title="Variant B">B</a><a href="../quiet/" title="Variant C">C</a><a href="../almanac/" title="Variant D">D</a><a href="../review/" title="Variant review">R</a></nav><script>
+(function(){
+  var KEY='hy-cart';
+  function load(){try{return JSON.parse(localStorage.getItem(KEY))||[];}catch(e){return [];}}
+  function save(a){try{localStorage.setItem(KEY,JSON.stringify(a));}catch(e){}upd();}
+  window.HYV={add:function(sku,ref,qty){qty=qty||1;var a=load(),i=-1;for(var k=0;k<a.length;k++)if(a[k].sku===sku)i=k;
+    if(i>=0)a[i].qty+=qty;else a.push({sku:sku,ref:ref||'',qty:qty});save(a);},
+    items:load,save:save};
+  function upd(){var a=load();['cartn','cartn2'].forEach(function(id){var b=document.getElementById(id);if(b)b.textContent=a.length;});}
+  document.addEventListener('click',function(e){
+    var t=e.target.closest('[data-add]');
+    if(t){HYV.add(t.dataset.add,t.dataset.ref||'');var s=t.textContent;t.textContent='Added ✓';setTimeout(function(){t.textContent=s;},1400);upd();}
+    var c=e.target.closest('.rowpick');if(c){setTimeout(upd,0);}
+  });
+  upd();
+})();
+</script><script>
+(function(){
+  var input=document.getElementById('q'),hit=document.getElementById('qhit');
+  if(!input)return;
+  var norm=function(s){return (s||'').replace(/[！-～]/g,function(c){return String.fromCharCode(c.charCodeAt(0)-0xFEE0);}).replace(/[-—–\s]/g,'').toUpperCase();};
+  var idx=null;
+  function go(){var t=hit.querySelector('a');if(t)location.href=t.href;}
+  input.addEventListener('input',function(){var qv=norm(input.value);if(!qv){hit.innerHTML='';return;}
+    (idx||(idx=fetch('../../part-index.json').then(function(r){return r.json();}))).then(function(d){
+      var ks=Object.keys(d);
+      var k=ks.find(function(x){return x===qv;});
+      var list=k?[k]:ks.filter(function(x){return x.startsWith(qv);}).slice(0,4);
+      hit.innerHTML=list.length?'&rarr; '+list.map(function(x){return '<a href="spec-'+d[x].sku.toLowerCase()+'.html">'+d[x].sku+'</a>';}).join(' &middot; '):'No match. <a href="rfq.html?q='+encodeURIComponent(input.value)+'">Send us this number</a> — our engineers cross-reference it for you.';
+      hit.dataset.first=list.length?'spec-'+d[list[0]].sku.toLowerCase()+'.html':'';
+    });});
+  input.addEventListener('keydown',function(e){if(e.key==='Enter'&&hit.dataset.first)location.href=hit.dataset.first;});
+  hit.addEventListener('click',go);
+})();
+</script></body></html>
