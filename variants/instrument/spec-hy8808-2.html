@@ -1,0 +1,259 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<title>HY8808-2 terminal | HuanYu (Variant B Instrument)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+:root{--bg:#F5F7FA;--surface:#FFFFFF;--surface2:#E8EDF3;--ink:#0A2E4E;--ink2:#4A6377;--line:#D4DDE7;--acc:#1F6FEB;--accink:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font:16px/1.55 'IBM Plex Sans',sans-serif;overflow-x:clip}
+.tnum{font-feature-settings:'tnum' 1}
+a{color:var(--acc)}
+.util{display:flex;justify-content:space-between;padding:6px 24px;font-size:13.5px;color:var(--ink2);background:var(--surface2)}
+.util a{color:var(--ink2)}
+.hdr{display:flex;align-items:center;gap:20px;padding:14px 24px;background:var(--surface);border-bottom:1px solid var(--line)}
+.logo{font-weight:700;font-size:19px;color:var(--ink);text-decoration:none;letter-spacing:.02em}
+.logo span{color:var(--acc);margin-left:6px;font-weight:600;font-size:14px}
+.search{flex:1;position:relative}
+.search input{width:100%;padding:11px 14px;border:1px solid var(--line);background:var(--bg);font:15px 'IBM Plex Sans';color:var(--ink)}
+.search input:focus{outline:2px solid var(--acc);outline-offset:-1px}
+.qh{position:absolute;top:100%;left:0;right:0;background:var(--surface);border:1px solid var(--line);border-top:0;padding:8px 14px;font-size:15px;z-index:30;display:none}
+.qh:has(a){display:block}
+.cartlink{white-space:nowrap;text-decoration:none;color:var(--ink);font-weight:600;font-size:15px;border:1px solid var(--line);background:var(--surface);padding:10px 14px}
+.cartlink b{background:var(--acc);color:var(--accink);padding:1px 8px;margin-left:4px}
+.mnav{display:flex;gap:4px;padding:0 24px;background:var(--surface);border-bottom:1px solid var(--line);overflow-x:auto}
+.mnav a{padding:11px 14px;font-size:15px;font-weight:500;text-decoration:none;color:var(--ink2);white-space:nowrap;border-bottom:2px solid transparent}
+.mnav a.on,.mnav a:hover{color:var(--acc);border-color:var(--acc)}
+.hero{padding:64px 24px 48px;max-width:1280px;margin:0 auto}
+.hero .eyebrow{font-size:13.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--acc);margin-bottom:14px}
+.hero h1{font-size:clamp(36px,5.6vw,72px);line-height:1.06;font-weight:700;max-width:24ch}
+.hero p.lead{margin-top:16px;font-size:19px;color:var(--ink2);max-width:68ch}
+.hero .cta{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;font-size:15px;font-weight:600;text-decoration:none;border:1px solid var(--acc)}
+.btn-acc{background:var(--acc);color:var(--accink)}
+.btn-sec{color:var(--acc)}
+.sec{max-width:1280px;margin:0 auto;padding:48px 24px}
+.sec h2{font-size:26px;font-weight:700;margin-bottom:6px}
+.sec .sub{color:var(--ink2);margin-bottom:24px;font-size:16px}
+.trustbar{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.trustbar .cell{background:var(--surface);padding:18px 16px}
+.trustbar .v{font:600 22px 'IBM Plex Mono';color:var(--ink)}
+.trustbar .k{font-size:15px;color:var(--ink2);margin-top:4px}
+.cats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cat{background:var(--surface);border:1px solid var(--line);padding:22px;text-decoration:none;color:var(--ink);display:block}
+.cat:hover{border-color:var(--acc)}
+.cat .cid{font:600 13px 'IBM Plex Mono';color:var(--acc)}
+.cat h3{font-size:18px;margin:8px 0 6px}
+.cat p{font-size:14px;color:var(--ink2)}
+.cat .cnt{display:block;margin-top:12px;font-size:13px;color:var(--acc);font-weight:600}
+.apps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.app{background:var(--surface);border:1px solid var(--line)}
+.app img{width:100%;height:170px;object-fit:cover;display:block;filter:saturate(.85)}
+.app .ab{padding:16px 18px}
+.app h3{font-size:16px;margin-bottom:6px}
+.app p{font-size:15.5px;color:var(--ink2)}
+.cap3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cap{background:var(--surface);border-left:3px solid var(--acc);padding:18px 20px}
+.cap h3{font-size:16px;margin-bottom:6px}
+.cap p{font-size:15.5px;color:var(--ink2)}
+.cert{display:grid;grid-template-columns:340px 1fr;gap:24px;align-items:start}
+.cert img{width:100%;background:#fff;border:1px solid var(--line);display:block}
+.cert table{width:100%;border-collapse:collapse;font-size:14px}
+.cert th,.cert td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+.cert th{color:var(--ink2);font-weight:500;width:130px}
+.ctaband{background:var(--ink);color:#fff;padding:56px 24px;text-align:center;margin-top:48px}
+.ctaband h2{font-size:28px;margin-bottom:10px}
+.ctaband p{color:#B9CBD9;margin-bottom:22px}
+.ftr{border-top:1px solid var(--line);background:var(--surface);padding:28px 24px;font-size:14.5px;color:var(--ink2)}
+.ftr-links{margin-top:8px}
+.ftr a{color:var(--ink2)}
+/* 目录 */
+.cat-head{display:flex;justify-content:space-between;align-items:end;gap:16px;padding:36px 24px 12px;max-width:1160px;margin:0 auto;flex-wrap:wrap}
+.cat-head h1{font-size:34px}
+.cat-head .meta{font-size:14px;color:var(--ink2)}
+.pickbar{position:sticky;bottom:0;z-index:20;background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:10px 24px;display:flex;justify-content:space-between;align-items:center;font-size:14px;color:var(--ink2)}
+.pickbar b{color:var(--ink)}
+.tblwrap{max-width:1160px;margin:0 auto 48px;padding:0 24px;overflow-x:auto}
+table.grid{width:100%;min-width:860px;border-collapse:collapse;font-size:14px;background:var(--surface);border:1px solid var(--line)}
+.grid th,.grid td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left}
+.grid thead th{font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--ink2);position:sticky;top:0;background:var(--surface)}
+.grid tbody tr:hover{background:var(--bg)}
+.grid a{font-weight:600;text-decoration:none}
+.grid .pickc{width:38px}
+.grid input[type=checkbox]{accent-color:var(--acc);width:17px;height:17px}
+/* 规格单 */
+.spec{max-width:1080px;margin:0 auto;padding:36px 24px 64px;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:28px}
+.spec .crumb{grid-column:1/3;font-size:13px;color:var(--ink2)}
+.spec h1{font-size:40px}
+.spec .xref{color:var(--acc);font-weight:600;margin-top:6px}
+.spec .ser{color:var(--ink2);margin-top:6px;font-size:15px}
+.spec .gal{background:#fff;border:1px solid var(--line);padding:14px}
+.spec .gal img.main{width:100%;display:block}
+.spec .gal .th{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:8px}
+.spec .gal .th img{width:100%;display:block}
+.spectab{width:100%;border-collapse:collapse;font-size:15px}
+.spectab th,.spectab td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+.spectab td{font-weight:500}
+.spectab .grp th{font-size:12.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink2);padding-top:18px}
+.spectab th[scope=row]{color:var(--ink2);font-weight:500;width:160px}
+.spec-cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+/* RFQ */
+.rfq{max-width:1080px;margin:0 auto;padding:36px 24px 64px;display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:32px;align-items:start}
+.rfq h1{font-size:36px;margin-bottom:8px}
+.rfq .hint{color:var(--ink2);font-size:15px;margin-bottom:22px}
+fieldset{border:0;border-top:1px solid var(--line);padding:18px 0 6px}
+legend{font-size:13px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--acc);padding:0 8px 0 0}
+.fg2{display:grid;grid-template-columns:1fr 1fr;gap:12px 16px}
+label{font-size:14px;font-weight:600;display:block;margin:10px 0 6px}
+input[type=text],input[type=email],input[type=tel],select,textarea{width:100%;padding:10px 12px;border:1px solid var(--line);background:var(--surface);font:15px 'IBM Plex Sans';color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--acc);outline-offset:-1px}
+textarea{min-height:110px}
+.req{color:var(--acc)}
+.cartbox{border:1px solid var(--line);background:var(--surface);padding:16px}
+.cartbox h2{font-size:15px;text-transform:uppercase;letter-spacing:.04em}
+.rt{width:100%;border-collapse:collapse;font-size:14px;margin-top:10px}
+.rt th,.rt td{text-align:left;padding:7px 6px;border-bottom:1px solid var(--line)}
+.cq{display:inline-flex;align-items:center;gap:6px}
+.cq button{width:26px;height:26px;border:1px solid var(--line);background:var(--bg);cursor:pointer}
+.crm{background:none;border:0;color:var(--ink2);font-size:12.5px;text-decoration:underline;cursor:pointer}
+.empty{font-size:14px;color:var(--ink2);margin:12px 0}
+.done{border:1px solid var(--acc);background:var(--surface);padding:20px;margin-top:22px}
+.done[hidden]{display:none}
+.done textarea{width:100%;min-height:150px;margin:10px 0;font:13px/1.5 'IBM Plex Mono'}
+.rfqerr{border-left:3px solid #C0392B;background:var(--surface);padding:10px 14px;font-size:14px;margin-bottom:14px}
+.rfqerr[hidden]{display:none}
+.aside-help{background:var(--surface);border:1px solid var(--line);padding:16px;font-size:14px;color:var(--ink2)}
+.aside-help h2{font-size:15px;color:var(--ink);text-transform:none;letter-spacing:0;margin-bottom:8px}
+.aside-help p{margin-bottom:8px}
+/* vjump */
+.vjump{position:fixed;left:16px;bottom:16px;z-index:99;display:flex;gap:4px;align-items:center;background:var(--surface);border:1px solid var(--line);padding:8px}
+.vjump span{font-size:12px;color:var(--ink2);margin-right:4px}
+.vjump a{color:var(--ink);text-decoration:none;font-size:13px;font-weight:600;padding:4px 8px}
+.vjump a:hover,.vjump a.on{background:var(--acc);color:var(--accink)}
+@media(max-width:900px){
+  .trustbar{grid-template-columns:repeat(3,1fr)}
+  .cats,.apps,.cap3{grid-template-columns:1fr}
+  .cert{grid-template-columns:1fr}
+  .spec{grid-template-columns:1fr}
+  .spec .crumb{grid-column:auto}
+  .rfq{grid-template-columns:1fr}
+  .hdr{flex-wrap:wrap}
+  .search{order:3;flex-basis:100%}
+  .util{display:none}
+  .fg2{grid-template-columns:1fr}
+}
+/* 学习清单骨架：hero 大搜索 + 三卡分流；详情替代区；RFQ 分层 */
+@keyframes fadeup{from{opacity:0}to{opacity:1}}
+.hero>*,.sec>*{animation:fadeup .5s ease-out both}
+.sec>*:nth-child(2){animation-delay:.08s}.sec>*:nth-child(3){animation-delay:.14s}
+.util,.hdr,.mnav,.ftr{max-width:1280px;margin-left:auto;margin-right:auto;width:100%}
+.mnav{padding-right:16px}
+.pg-home .hdr .search{display:none}
+.herosearch{margin-top:26px;max-width:720px;position:relative}
+.herosearch input{width:100%;padding:16px 18px;border:1px solid var(--line);background:var(--surface);font:17px 'IBM Plex Sans';color:var(--ink)}
+.herosearch input:focus{outline:2px solid var(--acc);outline-offset:-1px}
+.hero-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px}
+.hcard{background:var(--surface);border:1px solid var(--line);padding:20px;text-decoration:none;color:var(--ink);display:block}
+.hcard:hover{border-color:var(--acc)}
+.hcard h3{font-size:17px;margin:0 0 4px}
+.hcard p{font-size:15px;color:var(--ink2)}
+.alts{margin-top:24px;border:1px solid var(--line);background:var(--surface);padding:16px 18px}
+.alts h3{font-size:15px;margin-bottom:4px}
+.alts h3 span{display:block;font-size:12.5px;color:var(--ink2);font-weight:400;margin-top:2px}
+.alts table{width:100%;border-collapse:collapse;font-size:14px;margin-top:10px}
+.alts th,.alts td{text-align:left;padding:7px 8px;border-bottom:1px solid var(--line)}
+.alts th{font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:var(--ink2)}
+.alts a{text-decoration:none;font-weight:600}
+.alts .match{color:var(--acc)}
+details.opt{border:1px solid var(--line);background:var(--surface);margin-top:4px}
+details.opt summary{padding:14px 16px;font-size:14.5px;font-weight:600;cursor:pointer;color:var(--ink2)}
+details.opt[open] summary{border-bottom:1px solid var(--line)}
+details.opt fieldset{margin:0 16px}
+.tpl{font-size:13.5px;margin-top:8px;color:var(--ink2)}
+@media(max-width:900px){.hero-cards{grid-template-columns:1fr}}
+@media(max-width:768px){.mnav{flex-wrap:wrap}}
+.vjump{padding:4px;gap:2px}
+.vjump a{padding:3px 7px;font-size:12.5px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style></head><body>
+<div class="util"><span>IATF 16949 group · Jinan, Shandong</span><a href="mailto:sales@uecable.com">sales@uecable.com</a></div>
+<header class="hdr">
+  <a class="logo" href="index.html">HUANYU<span>CONNECTOR</span></a>
+  <div class="search"><input id="q" type="text" placeholder="Part number search — TE, Aptiv, Yazaki or HY" aria-label="Part number search"><p class="qh" id="qhit" aria-live="polite"></p></div>
+  <a class="cartlink tnum" href="rfq.html">RFQ list <b id="cartn">0</b></a>
+</header>
+<nav class="mnav"><a href="index.html">Home</a><a href="catalogue.html" class="on">Catalogue</a><a href="index.html#company">Capabilities</a><a href="../../cross-references/">Cross method</a><a href="rfq.html">RFQ</a></nav>
+<main>
+<div class="spec">
+  <p class="crumb"><a href="index.html">Home</a> · <a href="catalogue.html">Catalogue</a> · HY8808-2</p>
+  <div class="gal">
+    <div style="display:grid;place-items:center;min-height:220px;color:var(--ink2)">Render on request</div>
+  </div>
+  <div>
+    <h1>HY8808-2</h1>
+    <p class="xref">Cross-reference to 171630-1 (TE)</p>
+    <p class="ser">HY880 series · Through-hole & board-lock signal terminals</p>
+    <table class="spectab">
+      <tbody class="grp"><tr class="grp"><th colspan="2">Identity</th></tr>
+        <tr><th scope="row">Part number</th><td>HY8808-2</td></tr><tr><th scope="row">Cross-reference</th><td>171630-1 (TE)</td></tr></tbody><tbody class="grp"><tr class="grp"><th colspan="2">Material</th></tr>
+        <tr><th scope="row">Material</th><td>Brass</td></tr><tr><th scope="row">Plating</th><td>pre-tinned</td></tr><tr><th scope="row">Thickness</th><td>0.3 mm</td></tr></tbody><tbody class="grp"><tr class="grp"><th colspan="2">Electrical</th></tr>
+        <tr><th scope="row">Wire range</th><td>0.2-0.5 mm²</td></tr><tr><th scope="row">Sealed</th><td>Yes (waterproof)</td></tr></tbody><tbody class="grp"><tr class="grp"><th colspan="2">Packaging</th></tr>
+        <tr><th scope="row">Packaging</th><td>6000/盘 4盘24000/箱</td></tr></tbody>
+    </table>
+    <div class="alts"><h3>Same-series alternatives <span>same HY880 line — wire-range matches marked ✓</span></h3>
+  <table><thead><tr><th>Part no.</th><th>Cross</th><th>Wire mm²</th><th>Sealed</th></tr></thead><tbody><tr><td><a href="spec-hy8801-1.html">HY8801-1</a></td>
+      <td class="tnum">964284-2</td>
+      <td>0.5-1.0</td>
+      <td>No</td></tr><tr><td><a href="spec-hy8801-2.html">HY8801-2</a></td>
+      <td class="tnum">965999-2</td>
+      <td>1.0-2.5</td>
+      <td>No</td></tr><tr><td><a href="spec-hy8802-1.html">HY8802-1</a></td>
+      <td class="tnum">929974-1</td>
+      <td>0.75-1.5</td>
+      <td>Yes</td></tr><tr><td><a href="spec-hy8802-2.html">HY8802-2</a></td>
+      <td class="tnum">929974-1</td>
+      <td>0.5-1.0</td>
+      <td>Yes</td></tr></tbody></table></div>
+    <div class="spec-cta">
+      <button class="btn btn-acc" type="button" data-add="HY8808-2" data-ref="171630-1">Add HY8808-2 to RFQ list</button>
+      <a class="btn btn-sec" href="rfq.html?q=hy8808-2">Request sample / datasheet</a>
+    </div>
+    <p style="margin-top:14px;font-size:14px;color:var(--ink2)">
+      <a href="spec-hy8808-1.html">← HY8808-1</a> · <a href="catalogue.html">All terminals</a> · <a href="spec-hy8809-1.html">HY8809-1 →</a></p>
+  </div>
+</div></main>
+<footer class="ftr"><p>HuanYu Connector Technology Co., Ltd · a member of the Universal Cables group · sales@uecable.com</p>
+<p class="ftr-links"><a href="index.html">Home</a> · <a href="catalogue.html">Catalogue</a> · <a href="rfq.html">Batch RFQ</a> · <a href="../../cross-references/">Cross method</a> · <a href="https://uecable.com" target="_blank" rel="noopener">Cable products ↗</a></p></footer>
+<nav class="vjump" aria-label="Variant jump"><a href="../../" title="Variant A">A</a><a href="../instrument/" class="on" title="Variant B">B</a><a href="../quiet/" title="Variant C">C</a><a href="../almanac/" title="Variant D">D</a><a href="../review/" title="Variant review">R</a></nav><script>
+(function(){
+  var KEY='hy-cart';
+  function load(){try{return JSON.parse(localStorage.getItem(KEY))||[];}catch(e){return [];}}
+  function save(a){try{localStorage.setItem(KEY,JSON.stringify(a));}catch(e){}upd();}
+  window.HYV={add:function(sku,ref,qty){qty=qty||1;var a=load(),i=-1;for(var k=0;k<a.length;k++)if(a[k].sku===sku)i=k;
+    if(i>=0)a[i].qty+=qty;else a.push({sku:sku,ref:ref||'',qty:qty});save(a);},
+    items:load,save:save};
+  function upd(){var a=load();['cartn','cartn2'].forEach(function(id){var b=document.getElementById(id);if(b)b.textContent=a.length;});}
+  document.addEventListener('click',function(e){
+    var t=e.target.closest('[data-add]');
+    if(t){HYV.add(t.dataset.add,t.dataset.ref||'');var s=t.textContent;t.textContent='Added ✓';setTimeout(function(){t.textContent=s;},1400);upd();}
+    var c=e.target.closest('.rowpick');if(c){setTimeout(upd,0);}
+  });
+  upd();
+})();
+</script><script>
+(function(){
+  var input=document.getElementById('q'),hit=document.getElementById('qhit');
+  if(!input)return;
+  var norm=function(s){return (s||'').replace(/[！-～]/g,function(c){return String.fromCharCode(c.charCodeAt(0)-0xFEE0);}).replace(/[-—–\s]/g,'').toUpperCase();};
+  var idx=null;
+  function go(){var t=hit.querySelector('a');if(t)location.href=t.href;}
+  input.addEventListener('input',function(){var qv=norm(input.value);if(!qv){hit.innerHTML='';return;}
+    (idx||(idx=fetch('../../part-index.json').then(function(r){return r.json();}))).then(function(d){
+      var ks=Object.keys(d);
+      var k=ks.find(function(x){return x===qv;});
+      var list=k?[k]:ks.filter(function(x){return x.startsWith(qv);}).slice(0,4);
+      hit.innerHTML=list.length?'&rarr; '+list.map(function(x){return '<a href="spec-'+d[x].sku.toLowerCase()+'.html">'+d[x].sku+'</a>';}).join(' &middot; '):'No match. <a href="rfq.html?q='+encodeURIComponent(input.value)+'">Send us this number</a> — our engineers cross-reference it for you.';
+      hit.dataset.first=list.length?'spec-'+d[list[0]].sku.toLowerCase()+'.html':'';
+    });});
+  input.addEventListener('keydown',function(e){if(e.key==='Enter'&&hit.dataset.first)location.href=hit.dataset.first;});
+  hit.addEventListener('click',go);
+})();
+</script></body></html>
