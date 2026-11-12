@@ -172,6 +172,48 @@ details.opt fieldset{margin:0 16px}
 @media(max-width:768px){.mnav{flex-wrap:wrap}}
 .vjump{padding:4px;gap:2px}
 .vjump a{padding:3px 7px;font-size:12.5px}
+/* 材料补全：ISO 图排 / 车间实拍 / LCD promo 与 LCD 页 */
+.iso-figs{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:16px}
+.iso-figs figure{background:#fff;border:1px solid var(--line);padding:16px}
+.iso-figs img{width:100%;max-height:380px;object-fit:contain;display:block}
+.iso-figs figcaption{font-size:13.5px;color:var(--ink2);padding-top:8px}
+.iso-figs figcaption b{display:block;font-size:15px;color:var(--ink);margin-bottom:2px}
+.iso-note-b{margin-top:12px;font-size:13.5px;color:var(--ink2)}
+.floor-shots{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:16px}
+.floor-shots figure{background:#fff;border:1px solid var(--line);padding:12px}
+.floor-shots img{width:100%;display:block}
+.floor-shots figcaption{font-size:13.5px;color:var(--ink2);padding-top:8px}
+.floor-shots figcaption b{display:block;font-size:15px;color:var(--ink);margin-bottom:2px}
+.lcd-promo-b{margin-top:32px;background:var(--surface);border-left:3px solid var(--acc);padding:20px 24px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.lcd-promo-b h3{font-size:17px}
+.lcd-promo-b p{font-size:15px;color:var(--ink2);margin-top:6px;max-width:64ch}
+.lcd-page{max-width:1080px;margin:0 auto;padding:36px 24px 72px}
+.lcd-page h1{font-size:clamp(32px,4.6vw,56px);line-height:1.04;max-width:20ch}
+.lcd-bread{font-size:14px;color:var(--ink2);margin-bottom:20px}
+.lcd-lede{margin-top:14px;font-size:18px;color:var(--ink2);max-width:60ch}
+.lcd-fig{background:#fff;border:1px solid var(--line);padding:14px;margin-top:28px}
+.lcd-fig img{width:100%;display:block}
+.lcd-fig figcaption{font-size:13.5px;color:var(--ink2);padding-top:8px}
+.lcd-steps2{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px}
+.lcd-steps2>div{background:var(--surface);border-top:3px solid var(--acc);padding:20px}
+.lcd-steps2 b{font:600 13px 'IBM Plex Mono';color:var(--acc)}
+.lcd-steps2 h3{font-size:17px;margin:8px 0 6px}
+.lcd-steps2 p{font-size:15px;color:var(--ink2)}
+.lcd-page h2{font-size:24px;margin-top:48px}
+.lcd-t{width:100%;border-collapse:collapse;font-size:15px;margin-top:14px;background:var(--surface)}
+.lcd-t th,.lcd-t td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line)}
+.lcd-t thead th{font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:var(--ink2)}
+.lcd-t td b{color:var(--acc)}
+.lcd-ul{list-style:none;display:grid;gap:10px;margin-top:14px}
+.lcd-ul li{font-size:15.5px;color:var(--ink2)}
+.lcd-ul b{color:var(--ink)}
+.lcd-duo{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:36px}
+.lcd-duo figure{background:#fff;border:1px solid var(--line);padding:14px}
+.lcd-duo img{width:100%;display:block}
+.lcd-duo figcaption{font-size:14px;color:var(--ink2);padding-top:8px}
+.lcd-cta2{margin-top:36px;display:flex;gap:12px;flex-wrap:wrap}
+.lcd-src2{margin-top:20px;font-size:13px;color:var(--ink2)}
+@media(max-width:900px){.iso-figs,.floor-shots,.lcd-steps2,.lcd-duo{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style></head><body>
 <div class="util"><span>IATF 16949 group · Jinan, Shandong</span><a href="mailto:sales@uecable.com">sales@uecable.com</a></div>
@@ -240,7 +282,7 @@ details.opt fieldset{margin:0 16px}
   </aside>
 </div></main>
 <footer class="ftr"><p>HuanYu Connector Technology Co., Ltd · a member of the Universal Cables group · sales@uecable.com</p>
-<p class="ftr-links"><a href="index.html">Home</a> · <a href="catalogue.html">Catalogue</a> · <a href="rfq.html">Batch RFQ</a> · <a href="../../cross-references/">Cross method</a> · <a href="https://uecable.com" target="_blank" rel="noopener">Cable products ↗</a></p></footer>
+<p class="ftr-links"><a href="index.html">Home</a> · <a href="catalogue.html">Catalogue</a> · <a href="rfq.html">Batch RFQ</a> · <a href="lcd.html">LCD wiring boards</a> · <a href="../../cross-references/">Cross method</a> · <a href="https://uecable.com" target="_blank" rel="noopener">Cable products ↗</a></p></footer>
 <nav class="vjump" aria-label="Variant jump"><a href="../../" title="Variant A">A</a><a href="../instrument/" class="on" title="Variant B">B</a><a href="../quiet/" title="Variant C">C</a><a href="../almanac/" title="Variant D">D</a><a href="../review/" title="Variant review">R</a></nav><script>
 (function(){
   var KEY='hy-cart';
