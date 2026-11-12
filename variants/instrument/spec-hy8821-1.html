@@ -150,7 +150,7 @@ textarea{min-height:110px}
 .herosearch{margin-top:26px;max-width:720px;position:relative}
 .herosearch input{width:100%;padding:16px 18px;border:1px solid var(--line);background:var(--surface);font:17px 'IBM Plex Sans';color:var(--ink)}
 .herosearch input:focus{outline:2px solid var(--acc);outline-offset:-1px}
-.hero-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px}
+.hero-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:36px}
 .hcard{background:var(--surface);border:1px solid var(--line);padding:20px;text-decoration:none;color:var(--ink);display:block}
 .hcard:hover{border-color:var(--acc)}
 .hcard h3{font-size:17px;margin:0 0 4px}
@@ -172,7 +172,21 @@ details.opt fieldset{margin:0 16px}
 @media(max-width:768px){.mnav{flex-wrap:wrap}}
 .vjump{padding:4px;gap:2px}
 .vjump a{padding:3px 7px;font-size:12.5px}
-/* 材料补全：ISO 图排 / 车间实拍 / LCD promo 与 LCD 页 */
+/* 交叉方法论页（本版自渲染） */
+.x-page{max-width:1000px;margin:0 auto;padding:36px 24px 72px}
+.x-bread{font-size:14px;color:var(--ink2);margin-bottom:20px}
+.x-page h1{font-size:clamp(32px,4.4vw,56px);line-height:1.04;max-width:20ch}
+.x-lede{margin-top:14px;font-size:18px;color:var(--ink2);max-width:62ch}
+.x-rules{display:grid;gap:12px;margin-top:32px}
+.x-row{background:var(--surface);padding:20px 24px;border-left:3px solid var(--acc)}
+.x-row h3{font-size:17px;margin-bottom:6px}
+.x-row p{font-size:15.5px;color:var(--ink2)}
+.x-fig{background:#fff;border:1px solid var(--line);padding:16px;margin-top:28px;display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.x-fig img{width:100%;display:block}
+.x-fig figcaption{grid-column:1/3;font-size:13.5px;color:var(--ink2);padding-top:4px}
+.x-close{margin-top:24px;font-size:16px;color:var(--ink2);max-width:70ch}
+@media(max-width:800px){.x-fig{grid-template-columns:1fr}.x-fig figcaption{grid-column:auto}}
+/* 材料增补：ISO 图排 / 车间实拍 / LCD promo 与 LCD 页 */
 .iso-figs{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:16px}
 .iso-figs figure{background:#fff;border:1px solid var(--line);padding:16px}
 .iso-figs img{width:100%;max-height:380px;object-fit:contain;display:block}
@@ -222,7 +236,7 @@ details.opt fieldset{margin:0 16px}
   <div class="search"><input id="q" type="text" placeholder="Part number search — TE, Aptiv, Yazaki or HY" aria-label="Part number search"><p class="qh" id="qhit" aria-live="polite"></p></div>
   <a class="cartlink tnum" href="rfq.html">RFQ list <b id="cartn">0</b></a>
 </header>
-<nav class="mnav"><a href="index.html">Home</a><a href="catalogue.html" class="on">Catalogue</a><a href="index.html#company">Capabilities</a><a href="../../cross-references/">Cross method</a><a href="rfq.html">RFQ</a></nav>
+<nav class="mnav"><a href="index.html">Home</a><a href="catalogue.html" class="on">Catalogue</a><a href="index.html#company">Capabilities</a><a href="cross.html">Cross method</a><a href="lcd.html">LCD boards</a><a href="rfq.html">RFQ</a></nav>
 <main>
 <div class="spec">
   <p class="crumb"><a href="index.html">Home</a> · <a href="catalogue.html">Catalogue</a> · HY8821-1</p>
