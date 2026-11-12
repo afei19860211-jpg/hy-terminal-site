@@ -143,6 +143,39 @@ details.opt{border-top:2px solid var(--heavy);margin-top:8px}
 details.opt summary{font-family:'Hanken Grotesk';font-weight:500;padding:14px 0;font-size:15px;color:var(--ink2);cursor:pointer}
 details.opt fieldset{border-top:0;padding-top:6px}
 .tpl{font-family:'Hanken Grotesk';font-size:13.5px;margin-top:8px;color:var(--ink2)}
+.floor-d{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:20px}
+.floor-d figure{background:var(--sheet);border:1px solid var(--rule)}
+.floor-d img{width:100%;height:170px;object-fit:cover;display:block}
+.floor-d figcaption{padding:12px 14px;font-family:'Newsreader';font-size:14.5px;color:var(--prose)}
+.floor-d figcaption b{display:block;font-family:'Hanken Grotesk';font-weight:600;font-size:15px;color:var(--ink);margin-bottom:2px}
+.lcd-card-d{display:block;background:var(--heavy);color:#F4F5F8;text-decoration:none;padding:20px}
+.lcd-card-d:hover{background:var(--acc)}
+.lcd-card-d span{font-family:'IBM Plex Mono';font-size:12px;color:#B9BFD4}
+.lcd-card-d b{display:block;font-family:'Hanken Grotesk';font-weight:700;font-size:17px;margin:8px 0 6px}
+.lcd-card-d p{font-family:'Newsreader';font-size:14.5px;color:#C9CEE0}
+.lcd-wrap-d h1{font-size:clamp(34px,4.6vw,58px);font-weight:800;letter-spacing:-.02em;max-width:20ch}
+.lcd-bread{font-size:14px;color:var(--ink2);margin-bottom:20px}
+.lcd-lede{font-family:'Newsreader';font-size:19px;color:var(--prose);max-width:60ch;margin-top:14px}
+.lcd-fig,.lcd-duo figure{background:var(--sheet);border:1px solid var(--rule);padding:14px;margin-top:26px}
+.lcd-fig img,.lcd-duo img{width:100%;display:block}
+.lcd-fig figcaption,.lcd-duo figcaption{font-family:'Newsreader';font-size:14px;color:var(--prose);padding-top:8px}
+.lcd-steps2{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:36px}
+.lcd-steps2>div{background:var(--sheet);border-top:3px solid var(--heavy);padding:20px}
+.lcd-steps2 b{font-family:'IBM Plex Mono';font-size:12.5px;color:var(--acc)}
+.lcd-steps2 h3{font-family:'Hanken Grotesk';font-weight:700;font-size:18px;margin:8px 0 6px}
+.lcd-steps2 p{font-family:'Newsreader';font-size:15px;color:var(--prose)}
+.lcd-wrap-d h2{font-family:'Hanken Grotesk';font-weight:800;font-size:24px;margin-top:48px;border-bottom:2px solid var(--heavy);padding-bottom:8px}
+.lcd-t{width:100%;border-collapse:collapse;font-size:15px;margin-top:14px}
+.lcd-t th{font-family:'Hanken Grotesk';font-weight:600;font-size:13.5px;text-align:left;padding:9px 8px;border-bottom:2px solid var(--heavy)}
+.lcd-t td{padding:9px 8px;border-bottom:1px solid var(--rule)}
+.lcd-t td b{color:var(--acc)}
+.lcd-ul{list-style:none;display:grid;gap:10px;margin-top:14px}
+.lcd-ul li{font-family:'Newsreader';font-size:15.5px;color:var(--prose)}
+.lcd-ul b{font-family:'Hanken Grotesk';font-weight:600;color:var(--ink)}
+.lcd-duo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:8px}
+.lcd-cta2{margin-top:36px;display:flex;gap:12px;flex-wrap:wrap}
+.lcd-src2{margin-top:20px;font-family:'Newsreader';font-size:13.5px;color:var(--ink2)}
+@media(max-width:900px){.floor-d{grid-template-columns:1fr}.lcd-steps2,.lcd-duo{grid-template-columns:1fr}}
 </style></head><body><header class="mast"><div class="row1">
 <a class="wm" href="index.html">The Terminal Almanac<i> ·</i> HuanYu</a>
 <span class="ed mono">Edition 2026 · 75 sheets · 74 crosses</span></div>
@@ -175,7 +208,7 @@ details.opt fieldset{border-top:0;padding-top:6px}
   </div>
 </div></main>
 <footer class="ftrd"><span>HuanYu Connector Technology Co., Ltd · Jinan, Shandong · sales@uecable.com</span>
-<span><a href="index.html">Home</a> · <a href="catalogue.html">Catalogue</a> · <a href="rfq.html">RFQ</a> · <a href="https://uecable.com" target="_blank" rel="noopener">Cable products ↗</a></span></footer>
+<span><a href="index.html">Home</a> · <a href="catalogue.html">Catalogue</a> · <a href="rfq.html">RFQ</a> · <a href="lcd.html">LCD wiring boards</a> · <a href="https://uecable.com" target="_blank" rel="noopener">Cable products ↗</a></span></footer>
 <nav class="vjump" aria-label="Variant jump"><a href="../../" title="Variant A">A</a><a href="../instrument/" title="Variant B">B</a><a href="../quiet/" title="Variant C">C</a><a href="../almanac/" class="on" title="Variant D">D</a><a href="../review/" title="Variant review">R</a></nav><script>
 (function(){
   var KEY='hy-cart';
