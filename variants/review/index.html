@@ -134,5 +134,14 @@ a{color:var(--acc)}
 <li><b>购物车功能实测</b>（CDP 真浏览器流）：目录勾 2 行→批量加入→抽屉 2 行带交叉号；步进 +1；RFQ 页明细表渲染 2 行；规格页 Add 累加同 SKU 数量——全链路通过，localStorage 跨页共享。</li>
 </ul>
 
+<h2>2026-11-12 三轮：旧 B/C/D 否决 → 全站重做（成熟 B2B 范式）</h2>
+<ul>
+<li><b>用户判定旧 B/C/D 出局</b>（丑/单页壳/子页跳回 A/首页堆产品图）→ 重做为<b>三个完整站</b>：每版 78 页（首页+目录 75 行+75 张规格单+RFQ），子页永不离开本版；RFQ list 跨版本共享（勾选跟随）。</li>
+<li><b>基准骨架</b>（按 2026-11-12 学习清单，TE/Molex/Protolabs/Xometry/FasTest/Digi-Key/Yazaki EMEA 七家解剖）：①首页 hero=料号大搜索+「Paste a BOM list」次入口+三卡分流（按系列/批量询价/能力），零产品图墙 ②导航 5 项无 About（Home/Catalogue/Capabilities/Cross method/RFQ）③规格单=分组参数表+<b>同系替代区块</b>（线径一致标 ✓）+「Add to RFQ」「Request sample / datasheet」双 CTA ④RFQ=<b>两层表单</b>（必填四项在前，需求/贸易条款折叠）+CSV BOM 模板下载+「received, 24 business hours」确认文案 ⑤检索无结果=<b>「Send us this number」兜底</b>（带查询词直跳 RFQ 预填）。</li>
+<li><b>技能分工</b>：B=<b>impeccable</b>·仪表蓝（工程密度，TE/Phoenix 气质）；C=<b>design-taste-frontend</b>·quiet-instrument 方向（Work Sans 砂苔单列静仪器，方向 sheet 实抽）；D=<b>hallmark</b>·Almanac 主题（重抽 deal：Hanken Grotesk+Newsreader+mono 数字+图表洋红，fit 命中 catalogue/tables/specifications）。</li>
+<li><b>门禁</b>（insp-v2-*）：C 0 FAIL；B/D 各剩 1 条 covered-text——<b>CDP 16 点×逐 h2 滚动采样证实零覆盖</b>（与 A 站首页当年已证伪的同款截图伪影），记录放行。豁免项均属 B2B 参数目录范式刻意为之：hairline（表头/卡片 1px 规线）、mono（参数数字等宽）、outlined-box（表格与卡片描边）、quiet 另有方向 sheet 钦定的 off-centre/few-pictures/empty-screens。</li>
+<li>生成器：<code>scripts/gen_v2_sites.mjs</code>（共享引擎）+<code>gen_v2_cd.mjs</code>（C/D+装配），235 文件；旧 hallmark/brutal/specimen 已删；线上 7 路径全 200 抽验过。</li>
+</ul>
+
 <p style="margin-top:56px"><a href="../">← 返回四方向对比页</a></p>
 </body></html>
