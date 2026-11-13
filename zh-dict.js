@@ -188,6 +188,47 @@ window.ZH_DICT = {
     '——仅 1.6 千克胶带缠绕机，体积轻巧，操作灵活；多档速度、两种模式智能化设计，刀片隐藏式；可搭配液晶布线系统使用，提高工作效率。',
   'Do you cross to TE, Aptiv and Yazaki?': '是否对标 TE、Aptiv、Yazaki？',
   'The wiring board,digitized.': '智能液晶布线系统',
+  'Paste any TE, Aptiv or Yazaki number and the HuanYu sheet opens. 75 automotive harness terminal SKUs, cross-referenced to TE, Aptiv and Yazaki part numbers — every spec we publish is the spec we stamp.':
+    '粘贴任意 TE、Aptiv、Yazaki 料号，直达对应寰宇规格单。75 个车用端子料号，全部标注对应型号——规格全部公开、如实标注。',
+  // ===== B/C/D 首页标题与导语（原文实句，不用创意句翻译）=====
+  'Find the terminal. Get the number.': '核心产品——车用端子',
+  'Paste any TE, Aptiv or Yazaki part number — the HuanYu equivalent opens with its full spec sheet. 75 SKUs, 74 published crosses, nothing behind a form.':
+    '粘贴任意 TE、Aptiv、Yazaki 料号，直达对应寰宇规格单。75 个料号、74 个交叉号，全部公开，无表单拦截。',
+  'Terminals, kept quietly.': '寰宇车用端子',
+  '75 stamped vehicle-terminal SKUs, 74 published TE / Aptiv / Yazaki crosses, every specification on its page. No gates, no forms in front of the numbers.':
+    '做可靠的产品，提供可靠的服务——让连接更可靠。75 个料号、74 个交叉号，规格全部印在页面上。',
+  'Every terminal, on the record.': '寰宇端子目录',
+  'A reference catalogue of 75 stamped vehicle-terminal SKUs from the HuanYu plant in Jinan: 74 published cross numbers to TE, Aptiv and Yazaki, with materials, plating and packaging stated sheet by sheet.':
+    '济南寰宇工厂 75 个冲压车用端子料号；74 个 TE/Aptiv/Yazaki 交叉号；材质、表面处理、包装量逐单注明。',
+  'By series — six terminal lines': '按系列——六大产品系列',
+  'Batch RFQ — paste a list, one reply': '批量询价——粘贴清单，逐行报价',
+  'Capabilities — tooling, plating, inspection': '制造能力——模具、电镀、检测',
+  'LCD wiring boards — 1:1 CAD on screen': '液晶布线系统——CAD 图纸 1:1 上屏',
+  'browse →': '浏览 →', 'quote →': '询价 →', 'see →': '查看 →', 'open →': '打开 →',
+  'Six terminal lines': '六大产品系列', 'Grouped by mounting and ecosystem — every line cross-referenced where the tooling matches.':
+    '按安装方式与对应体系分系列；模具匹配的系列全部标注交叉号。',
+  'Where the terminals work': '应用领域', 'Manufactured alongside the group cable works since 1993.': '与集团线缆公司（1993 年起）同园区制造。',
+  'The index': '系列索引', 'Plant record': '工厂记录', 'Fields of use': '应用领域',
+  'Certificates on file': '资质证书', 'Facts on file, latest audited figures.': '以下为经审核的最新事实数字。',
+  'Six lines by mounting and ecosystem; every line cross-referenced where the tooling matches.':
+    '按安装方式与对应体系分六大系列；模具匹配的系列全部标注交叉号。',
+  'Line': '系列', 'Description': '说明', 'SKUs': '料号数', 'Crossed': '已标交叉号',
+  'Put your BOM on the record.': '把您的 BOM 交给我们。',
+  'Quotes within 24 hours, line by line, from a sales engineer.': '销售工程师 24 小时内逐行报价。',
+  'Edition 2026 · 75 sheets · 74 crosses': '2026 版 · 75 张规格单 · 74 个交叉号',
+  'One yard, two factories': '一个园区，两座工厂',
+  'The numbers, plainly': '事实数字',
+  'Certified, stated precisely': '资质证书（如实标注）',
+  'The catalogue': '产品目录', '75 sheets · 74 crosses · tick rows to build your RFQ list': '75 张规格单 · 74 个交叉号 · 勾选料号即可加入询价清单',
+  'Also on file:': '另有：',
+  'The UE LINK Smart LCD Wiring Board System →': 'UE LINK 智能液晶布线系统 →',
+  '1:1 CAD on screen, fixtures on glass — built for harness plants.': 'CAD 图纸 1:1 上屏、治具上玻璃——为线束厂打造。',
+  'Automotive harness terminals · Jinan, Shandong': '车用端子 · 山东济南',
+  'One family of stamped vehicle terminals: every sheet carries the cross number, material, wire range and reel packaging. Series pages below; the full table follows.':
+    '同一族冲压车用端子：每张规格单均注明对应型号、材质、适用线径与包装量。先看系列，后看总表。',
+  'All 75': '全部 75', 'terminals': '端子',
+  '74 cross numbers · every spec published · tick rows to build your RFQ list': '74 个交叉号 · 规格全部公开 · 勾选料号加入询价清单',
+  'Nothing picked yet': '还没有选择料号',
   // ===== 404 / 其它界面 =====
   'Nothing at': '该地址', 'this address.': '不存在。',
   'Main destinations': '主要入口',
