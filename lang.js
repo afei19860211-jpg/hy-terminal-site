@@ -25,11 +25,27 @@
     Object.keys(d).forEach(function (k) { if (REV[d[k]] === undefined) REV[d[k]] = k; });
   })();
 
-  function swapText(node, d) {
+  // 带变量的句型（中英双向）
+  var PATTERNS = [
+    [/^Add (HY[0-9A-Z-]+|LCD-WIRING-SYSTEM) to RFQ list$/, '将 $1 加入询价清单'],
+    [/^Cross-reference to ([0-9A-Z-]+( \([A-Za-z]+\))?)$/, '对应其它型号 $1'],
+    [/^Request sample \/ datasheet$/, '申请样品 / 规格书'],
+    [/^Request a sample$/, '申请样品'],
+  ];
+  var PATTERNS_R = [
+    [/^将 (HY[0-9A-Z-]+|LCD-WIRING-SYSTEM) 加入询价清单$/, 'Add $1 to RFQ list'],
+    [/^对应其它型号 ([0-9A-Z-]+( \([A-Za-z]+\))?)$/, 'Cross-reference to $1'],
+  ];
+  function swapText(node, d, zh) {
     var v = node.nodeValue.trim();
     if (!v) return;
-    var t = d[v];
-    if (t !== undefined) node.nodeValue = node.nodeValue.replace(v, t);
+    var norm = v.replace(/\s+/g, ' '); // 源码换行不阻碍整句匹配
+    var t = d[norm];
+    if (t !== undefined) { node.nodeValue = t; return; }
+    var ps = zh ? PATTERNS : PATTERNS_R;
+    for (var i = 0; i < ps.length; i++) {
+      if (ps[i][0].test(norm)) { node.nodeValue = norm.replace(ps[i][0], ps[i][1]); return; }
+    }
   }
   function apply() {
     var zh = (document.documentElement.dataset.lang || 'en') === 'zh';
@@ -40,7 +56,7 @@
     var w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null);
     var list = [], n;
     while ((n = w.nextNode())) if (n.nodeValue.trim()) list.push(n);
-    list.forEach(function (t) { swapText(t, d); });
+    list.forEach(function (t) { swapText(t, d, zh); });
     // placeholder / aria-label / title
     document.querySelectorAll('[placeholder],[title],[aria-label]').forEach(function (el) {
       ['placeholder', 'title', 'aria-label'].forEach(function (a) {
@@ -79,7 +95,7 @@
             if (nd.id === 'langbtn') return;
             var w2 = document.createTreeWalker(nd, NodeFilter.SHOW_TEXT, null);
             var t2;
-            while ((t2 = w2.nextNode())) swapText(t2, d);
+            while ((t2 = w2.nextNode())) swapText(t2, d, true);
           });
         });
       });
