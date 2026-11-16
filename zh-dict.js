@@ -3,7 +3,7 @@
 // ISO 证书原文、公司事实卡。原始资料没有的界面词用 B2B 通用中文；自写长段落宁可不翻不硬翻。
 window.ZH_DICT = {
   // ===== 目录册官方字段名（产品页中文模板）=====
-  'Part no.': '寰宇料号', 'Part number': '寰宇料号', 'Cross-reference': '对应其它型号', 'OEM': '对应型号',
+  'Part no.': '寰宇料号', 'Part number': '寰宇料号', 'Cross-reference': '对应其它型号', 'OEM': '对应体系',
   'Ecosystem': '对应体系', 'Material': '材质', 'Plating': '表面处理', 'Wire mm²': '适用线径',
   'Sealed': '防水', 'Packaging': '包装量', 'Pack': '包装量', 'Cross': '对应型号',
   'Identity': '基本参数', 'Electrical': '电气参数', 'Specification': '规格',
@@ -17,7 +17,7 @@ window.ZH_DICT = {
   'semi-gold-nickel plated': '半金镍', 'gold-plated': '镀金', 'tinned': '镀锡',
   // ===== 系列名（目录册无官方系列名，用「HY880 系列」体例）=====
   'Through-hole & board-lock signal terminals': 'HY880 系列端子', 'Compact signal terminals': 'HY881 系列紧凑端子',
-  'Wide-range power & signal terminals': 'HY882 系列宽范围端子', 'Sealed micro terminals': 'HY883 系列防水微型端子',
+  'Wide-range power & signal terminals': 'HY882 系列宽范围端子', 'Sealed micro terminals': 'HY883 系列微型端子', 'Micro terminals, sealed and open': 'HY883 系列微型端子',
   'Yazaki-ecosystem terminals': 'HY850 系列（Yazaki 体系）', 'Yazaki-ecosystem power terminals': 'HY860 系列（Yazaki 体系电力）',
   'series': '系列',
   // ===== 导航（界面词）=====
@@ -29,14 +29,14 @@ window.ZH_DICT = {
   'LCD wiring board system': '液晶布线系统', 'LCD wiring boards': '液晶布线系统',
   // ===== A 首页（口号取目录册原文「让连接更可靠」）=====
   'One number.': '让连接', 'One sheet.': '更可靠。',
-  'IATF 16949 group · molds cut in-house · every reel optically inspected': 'IATF 16949 集团体系 · 模具自制 · 每盘全检',
+  'IATF 16949 group · molds cut in-house · every reel optically inspected': 'IATF 16949（集团线缆公司）· 模具自制 · 每盘全检', 'IATF 16949 (group cable works) · molds cut in-house · stamped from pre-plated strip': 'IATF 16949（集团线缆公司）· 模具自制 · 预镀材冲压',
   'Have a list? Paste a BOM →': '有清单？粘贴 BOM →',
   'By series': '按系列浏览', 'See the plant →': '查看工厂 →', 'See the system →': '查看系统 →',
   'Open the catalogue': '打开产品目录', 'Open the RFQ': '打开询价单', 'Browse the catalogue': '浏览产品目录',
   'Build the RFQ': '填写询价单', 'Get a quote': '获取报价',
   'Six terminal lines, every sheet published.': '六大系列，规格全部公开。',
   'Paste a list or tick rows — one reply, line by line.': '粘贴清单或在目录勾选——一次提交，逐行报价。',
-  'In-house tooling, plating and 100% optical inspection.': '模具、电镀、检测全部厂内完成。',
+  'In-house tooling, plating and 100% optical inspection.': '模具自制、预镀材料、100% 光学检测，同园区完成。', 'In-house tooling, pre-plated materials and 100% optical inspection on one campus.': '模具自制、预镀材料、100% 光学检测，同园区完成。',
   'The UE LINK system for harness plants — 1:1 CAD on screen.': '线束厂专用 UE LINK 系统——CAD 图纸 1:1 上屏。',
   'Every sheet tells all: material, plating, wire range, thickness, seal and reel count — on the page, not behind a form.':
     '材质、表面处理、适用线径、料厚、防水、包装量——全部印在页面上，不藏在表单后。',
@@ -45,7 +45,7 @@ window.ZH_DICT = {
   'Certified where it counts': '资质证书', 'How buying works.': '采购流程。', 'Asked straight.': '常见问答。',
   'The tool room,': '模具车间与', 'the floor.': '生产车间。',
   // ===== 事实瓦片（事实卡语汇）=====
-  'group founded': '集团创立', 'connector plant': '连接器公司成立', 'production floor': '生产面积',
+  'group founded': '集团起步', 'group roots': '集团起步', 'connector plant': '连接器公司成立', 'production floor': '生产面积',
   'group staff': '集团员工', 'group revenue, 2020': '集团营收（2020）', 'patents filed / granted': '专利 申请/授权',
   // ===== 目录页 =====
   'All': '全部', 'terminals.': '端子。',
@@ -173,13 +173,13 @@ window.ZH_DICT = {
     '高端精密冲压模具自主设计、加工制造；冲压、电镀与 100% 光学检测在济南园区完成。冲压采用进口立式高端冲床、高速精密冲床，转速可达每分钟 500-1800 转。',
   'Every reel passes self-built vision systems (generation 1 and 2) before it ships.':
     '端子生产全程视觉检测（自研一代/二代设备），保证每一个产品 100% 检测后出货。',
-  'In-house plating': '原材料与预镀工艺',
+  'In-house plating': '预镀材料', 'Pre-plated materials': '预镀材料', 'Pre-plated materials': '预镀材料',
   'Pre-tin, silver, nickel and semi-gold plating lines run on campus — no outsourced finish.':
     '行业内高精度最优铜板材，回流镀锡、预镀材等尖端技术；电镀产线厂内自有，不外发。',
   'OEM-grade process control': '国际品牌代工品控体系',
   'Process management inherited from contract manufacturing for international brands.':
     '寰宇端子脱胎于国际一流厂家代工生产经历，完整继承其严格的品控及过程管理。',
-  'Qualification paperwork': '认证文件支持',
+  'Qualification paperwork': '认证文件支持', 'Compliance documents on request; PPAP/IMDS capability being confirmed with the plant.': '合规文件可来函索取；PPAP/IMDS 能力正在与工厂确认。',
   'PPAP documentation and IMDS reporting available on request for qualification projects.':
     '可应认证项目要求提供 PPAP 文件与 IMDS 报告。',
   '— aviation-grade aluminium; 3 kg pull at 100 mm single-point, 15 kg+ with connector plates. Quick-release, re-usable soft pads.':
@@ -189,7 +189,7 @@ window.ZH_DICT = {
   'Do you cross to TE, Aptiv and Yazaki?': '是否对标 TE、Aptiv、Yazaki？',
   'The wiring board,digitized.': '智能液晶布线系统',
   'Paste any TE, Aptiv or Yazaki number and the HuanYu sheet opens. 75 automotive harness terminal SKUs, cross-referenced to TE, Aptiv and Yazaki part numbers — every spec we publish is the spec we stamp.':
-    '粘贴任意 TE、Aptiv、Yazaki 料号，直达对应寰宇规格单。75 个车用端子料号，全部标注对应型号——规格全部公开、如实标注。',
+    '粘贴任意 TE、Aptiv、Yazaki 料号，直达对应寰宇规格单。75 个车用端子料号，74 个标注对应型号——规格全部公开、如实标注。',
   // ===== B/C/D 首页标题与导语（原文实句，不用创意句翻译）=====
   'Find the terminal. Get the number.': '核心产品——车用端子',
   'Paste any TE, Aptiv or Yazaki part number — the HuanYu equivalent opens with its full spec sheet. 75 SKUs, 74 published crosses, nothing behind a form.':
