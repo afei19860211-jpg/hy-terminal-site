@@ -235,6 +235,10 @@ window.ZH_DICT = {
   'Added ✓': '已加入 ✓', 'pcs in total': '件合计', 'selected': '已选',
   'You paste the BOM.': '您粘贴 BOM。', 'We quote within 24 hours.': '我们 24 小时内报价。',
   'You approve the samples.': '您确认样品。', 'Reels ship on time.': '按盘按时发货。',
+  'Search': '搜索',
+  'IATF 16949 (group cable works)': 'IATF 16949（集团线缆公司持有）',
+  'Jinan plant, est. 2016': '济南工厂 · 2016 年成立',
+  '75 SKUs — 74 carry a published cross number; nothing behind a form.': '75 个 SKU——其中 74 个带公开交叉型号；资料不设门槛。',
 };
 // 页面 <title> 映射（中→标题用官方名）
 window.ZH_TITLES = [
