@@ -31,6 +31,10 @@ a{color:var(--ink)}
 .lookd{margin-top:28px;max-width:640px}
 .lookd input{width:100%;padding:14px 16px;border:1px solid var(--ink);background:var(--sheet);font:16px 'Hanken Grotesk';color:var(--ink)}
 .lookd input:focus-visible{outline:3px solid var(--acc);outline-offset:1px}
+.lookd .lrow{display:flex;gap:12px}
+.lookd .lrow input{flex:1;min-width:0}
+.lookd .qgo{padding:14px 26px;background:var(--heavy);border:0;color:var(--sheet);font:600 15px 'Hanken Grotesk';cursor:pointer}
+.lookd .qgo:hover{background:var(--acc)}
 .lookd .hit{font-size:14.5px;margin-top:8px;color:var(--ink2);min-height:1.3em}
 .lookd .hit a{color:var(--acc);font-weight:600}
 .secd{margin-top:56px}
@@ -197,7 +201,7 @@ details.opt fieldset{border-top:0;padding-top:6px}
 </style></head><body><header class="mast"><div class="row1">
 <a class="wm" href="index.html">The Terminal Almanac<i> ·</i> HuanYu</a>
 <span class="ed mono">Edition 2026 · 75 sheets · 74 crosses</span></div>
-<nav><a href="index.html">Home</a><a href="catalogue.html" class="on">Catalogue</a><a href="index.html#company">Capabilities</a><a href="cross.html">Cross method</a><a href="lcd.html">LCD boards</a><a href="rfq.html">RFQ</a>
+<nav><a href="index.html">Home</a><a href="catalogue.html" class="on">Catalogue</a><a href="index.html#company">Capabilities</a><a href="cross.html">Cross method</a><a href="lcd.html">LCD boards</a>
 <a class="cn tnum" href="rfq.html">RFQ list (<span id="cartn">0</span>)</a></nav></header><main class="wrap">
 <p style="font-size:14px;color:var(--ink2);margin-bottom:20px"><a href="index.html">Home</a> · <a href="catalogue.html">Catalogue</a> · <span class="mono">HY8825-1</span></p>
 <div class="spec3">
@@ -259,6 +263,7 @@ details.opt fieldset{border-top:0;padding-top:6px}
       hit.dataset.first=list.length?'spec-'+d[list[0]].sku.toLowerCase()+'.html':'';
     });});
   input.addEventListener('keydown',function(e){if(e.key==='Enter'&&hit.dataset.first)location.href=hit.dataset.first;});
+  var gb=document.querySelector('.qgo');if(gb)gb.addEventListener('click',function(){if(!norm(input.value)){input.focus();return;}if(hit.dataset.first){location.href=hit.dataset.first;}else{input.dispatchEvent(new Event('input'));setTimeout(function(){if(hit.dataset.first)location.href=hit.dataset.first;},350);}});
   hit.addEventListener('click',go);
 })();
 </script><script src="../../zh-dict.js"></script><script src="../../lang.js"></script></body></html>
