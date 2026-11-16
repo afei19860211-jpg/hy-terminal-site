@@ -207,7 +207,7 @@ details.opt fieldset{border-top:0;padding-top:6px}
   <h1>Every terminal, on the record.</h1>
   <p class="lede">A reference catalogue of 75 stamped vehicle-terminal SKUs from the HuanYu plant in Jinan:
     74 published cross numbers to TE, Aptiv and Yazaki, with materials, plating and packaging stated sheet by sheet.</p>
-  <div class="lookd"><div class="lrow"><input id="q" type="text" placeholder="Look up a number — 964284-2, 1062-16-0144, HY8801-1" aria-label="Part number lookup"><button class="qgo" type="button">Search</button></div><p class="hit" id="qhit" aria-live="polite"></p></div>
+  <div class="lookd" data-lookup><div class="lrow"><input data-q type="text" placeholder="Look up a number — 964284-2, 1062-16-0144, HY8801-1" aria-label="Part number lookup"><button class="qgo" type="button">Search</button></div><p class="hit" data-qhit aria-live="polite"></p></div>
   <div class="cta-d"><a class="btnd" href="rfq.html">Paste a BOM list</a><a class="btnd sec-d" href="catalogue.html">Open the catalogue</a></div>
   <div class="entries-d">
     <a href="catalogue.html">By series — six terminal lines</a>
@@ -267,21 +267,28 @@ details.opt fieldset{border-top:0;padding-top:6px}
 })();
 </script><script>
 (function(){
-  var input=document.getElementById('q'),hit=document.getElementById('qhit');
-  if(!input)return;
   var norm=function(s){return (s||'').replace(/[！-～]/g,function(c){return String.fromCharCode(c.charCodeAt(0)-0xFEE0);}).replace(/[-—–\s]/g,'').toUpperCase();};
-  var idx=null;
-  function go(){var t=hit.querySelector('a');if(t)location.href=t.href;}
-  input.addEventListener('input',function(){var qv=norm(input.value);if(!qv){hit.innerHTML='';return;}
-    (idx||(idx=fetch('../../part-index.json').then(function(r){return r.json();}))).then(function(d){
-      var ks=Object.keys(d);
-      var k=ks.find(function(x){return x===qv;});
-      var list=k?[k]:ks.filter(function(x){return x.startsWith(qv);}).slice(0,4);
-      hit.innerHTML=list.length?'&rarr; '+list.map(function(x){return '<a href="spec-'+d[x].sku.toLowerCase()+'.html">'+d[x].sku+'</a>';}).join(' &middot; '):'No match. <a href="rfq.html?q='+encodeURIComponent(input.value)+'">Send us this number</a> — our engineers cross-reference it for you.';
-      hit.dataset.first=list.length?'spec-'+d[list[0]].sku.toLowerCase()+'.html':'';
-    });});
-  input.addEventListener('keydown',function(e){if(e.key==='Enter'&&hit.dataset.first)location.href=hit.dataset.first;});
-  var gb=document.querySelector('.qgo');if(gb)gb.addEventListener('click',function(){if(!norm(input.value)){input.focus();return;}if(hit.dataset.first){location.href=hit.dataset.first;}else{input.dispatchEvent(new Event('input'));setTimeout(function(){if(hit.dataset.first)location.href=hit.dataset.first;},350);}});
-  hit.addEventListener('click',go);
+  document.querySelectorAll('input[data-q]').forEach(function(input){
+    var wrap=input.closest('[data-lookup]');
+    var hit=wrap&&wrap.querySelector('[data-qhit]');if(!hit)return;
+    var idx=null;
+    input.addEventListener('input',function(){var qv=norm(input.value);if(!qv){hit.innerHTML='';delete hit.dataset.first;return;}
+      (idx||(idx=fetch('../../part-index.json').then(function(r){return r.json();}))).then(function(d){
+        var ks=Object.keys(d);
+        var k=ks.find(function(x){return x===qv;});
+        var list=k?[k]:ks.filter(function(x){return x.startsWith(qv);}).slice(0,4);
+        hit.innerHTML=list.length?'&rarr; '+list.map(function(x){return '<a href="spec-'+d[x].sku.toLowerCase()+'.html">'+d[x].sku+'</a>';}).join(' &middot; '):'No match. <a href="rfq.html?q='+encodeURIComponent(input.value)+'">Send us this number</a> — our engineers cross-reference it for you.';
+        hit.dataset.first=list.length?'spec-'+d[list[0]].sku.toLowerCase()+'.html':'';
+      });});
+    input.addEventListener('keydown',function(e){if(e.key==='Enter'&&hit.dataset.first)location.href=hit.dataset.first;});
+    hit.addEventListener('click',function(){var t=hit.querySelector('a');if(t)location.href=t.href;});
+    var gb=input.parentElement.querySelector('.qgo');
+    if(gb)gb.addEventListener('click',function(){
+      if(!norm(input.value)){input.focus();return;}
+      if(hit.dataset.first){location.href=hit.dataset.first;return;}
+      input.dispatchEvent(new Event('input'));
+      var n=0,tm=setInterval(function(){n++;if(hit.dataset.first){clearInterval(tm);location.href=hit.dataset.first;}else if(n>20){clearInterval(tm);}},100);
+    });
+  });
 })();
 </script><script src="../../zh-dict.js"></script><script src="../../lang.js"></script></body></html>
