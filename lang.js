@@ -31,6 +31,7 @@
     [/^Cross-reference to ([0-9A-Z-]+( \([A-Za-z]+\))?)$/, '对应其它型号 $1'],
     [/^Request sample \/ datasheet$/, '申请样品 / 规格书'],
     [/^Request a sample$/, '申请样品'],
+    [/^Browse all (\d+) spec sheets →$/, '浏览全部 $1 张规格单 →'],
     [/(\d+) SKUs — (\d+) carry a published cross number; nothing behind a form\./, '$1 个 SKU——其中 $2 个带公开交叉型号；资料不设门槛。'],
   ];
   var PATTERNS_R = [
