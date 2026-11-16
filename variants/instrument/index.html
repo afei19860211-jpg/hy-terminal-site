@@ -151,6 +151,10 @@ textarea{min-height:110px}
 .herosearch{margin-top:26px;max-width:720px;position:relative}
 .herosearch input{width:100%;padding:16px 18px;border:1px solid var(--line);background:var(--surface);font:17px 'IBM Plex Sans';color:var(--ink)}
 .herosearch input:focus{outline:2px solid var(--acc);outline-offset:-1px}
+.hsrow{display:flex;gap:10px}
+.hsrow input{flex:1;min-width:0}
+.qgo{padding:16px 26px;background:var(--acc);border:0;color:var(--accink);font:600 16px 'IBM Plex Sans';cursor:pointer}
+.qgo:hover{filter:brightness(1.1)}
 .hero-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:36px}
 .hcard{background:var(--surface);border:1px solid var(--line);padding:20px;text-decoration:none;color:var(--ink);display:block}
 .hcard:hover{border-color:var(--acc)}
@@ -245,8 +249,8 @@ details.opt fieldset{margin:0 16px}
   <p class="eyebrow">Automotive harness terminals · Jinan, Shandong</p>
   <h1>Find the terminal. Get the number.</h1>
   <p class="lead">Paste any TE, Aptiv or Yazaki part number — the HuanYu equivalent opens with its full spec sheet.
-    75 SKUs, 74 published crosses, nothing behind a form.</p>
-  <div class="herosearch"><input id="q" type="text" placeholder="Part number search — TE, Aptiv, Yazaki or HY" aria-label="Part number search"><p class="qh" id="qhit" aria-live="polite"></p></div>
+    75 SKUs — 74 carry a published cross number; nothing behind a form.</p>
+  <div class="herosearch"><div class="hsrow"><input id="q" type="text" placeholder="Part number search — TE, Aptiv, Yazaki or HY" aria-label="Part number search"><p class="qh" id="qhit" aria-live="polite"></p><button class="qgo" type="button">Search</button></div></div>
   <div class="cta"><a class="btn btn-acc" href="rfq.html">Paste a BOM list</a>
     <a class="btn btn-sec" href="catalogue.html">Browse the catalogue</a></div>
   <div class="hero-cards">
@@ -358,6 +362,7 @@ details.opt fieldset{margin:0 16px}
       hit.dataset.first=list.length?'spec-'+d[list[0]].sku.toLowerCase()+'.html':'';
     });});
   input.addEventListener('keydown',function(e){if(e.key==='Enter'&&hit.dataset.first)location.href=hit.dataset.first;});
+  var gb=document.querySelector('.qgo');if(gb)gb.addEventListener('click',function(){if(!norm(input.value)){input.focus();return;}if(hit.dataset.first){location.href=hit.dataset.first;}else{input.dispatchEvent(new Event('input'));setTimeout(function(){if(hit.dataset.first)location.href=hit.dataset.first;},350);}});
   hit.addEventListener('click',go);
 })();
 </script><script src="../../zh-dict.js"></script><script src="../../lang.js"></script></body></html>
