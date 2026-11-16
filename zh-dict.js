@@ -238,7 +238,6 @@ window.ZH_DICT = {
   'Search': '搜索',
   'IATF 16949 (group cable works)': 'IATF 16949（集团线缆公司持有）',
   'Jinan plant, est. 2016': '济南工厂 · 2016 年成立',
-  '75 SKUs — 74 carry a published cross number; nothing behind a form.': '75 个 SKU——其中 74 个带公开交叉型号；资料不设门槛。',
 };
 // 页面 <title> 映射（中→标题用官方名）
 window.ZH_TITLES = [
