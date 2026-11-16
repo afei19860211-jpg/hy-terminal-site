@@ -31,6 +31,7 @@
     [/^Cross-reference to ([0-9A-Z-]+( \([A-Za-z]+\))?)$/, '对应其它型号 $1'],
     [/^Request sample \/ datasheet$/, '申请样品 / 规格书'],
     [/^Request a sample$/, '申请样品'],
+    [/(\d+) SKUs — (\d+) carry a published cross number; nothing behind a form\./, '$1 个 SKU——其中 $2 个带公开交叉型号；资料不设门槛。'],
   ];
   var PATTERNS_R = [
     [/^将 (HY[0-9A-Z-]+|LCD-WIRING-SYSTEM) 加入询价清单$/, 'Add $1 to RFQ list'],
