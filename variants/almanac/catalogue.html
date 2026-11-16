@@ -692,4 +692,18 @@ details.opt fieldset{border-top:0;padding-top:6px}
   input.addEventListener('keydown',function(e){if(e.key==='Enter'&&hit.dataset.first)location.href=hit.dataset.first;});
   hit.addEventListener('click',go);
 })();
-</script>Catalogue<script src="../../zh-dict.js"></script><script src="../../lang.js"></script></body></html>
+</script><script>
+(function(){
+  document.querySelectorAll('.rowpick').forEach(function(c){
+    c.addEventListener('change',function(){
+      var a=HYV.items(),i=-1;for(var k=0;k<a.length;k++)if(a[k].sku===c.dataset.sku)i=k;
+      if(c.checked&&i<0)HYV.add(c.dataset.sku,c.dataset.ref||'');
+      if(!c.checked&&i>=0){a.splice(i,1);HYV.save(a);}
+    });
+  });
+  var all=document.getElementById('selall');
+  if(all)all.addEventListener('change',function(){
+    document.querySelectorAll('.rowpick').forEach(function(c){c.checked=all.checked;c.dispatchEvent(new Event('change'));});
+  });
+})();
+</script><script src="../../zh-dict.js"></script><script src="../../lang.js"></script></body></html>
