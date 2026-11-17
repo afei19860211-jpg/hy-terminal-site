@@ -243,7 +243,7 @@ details.opt fieldset{border-top:0;padding-top:6px}
   function upd(){var a=load();['cartn','cartn2'].forEach(function(id){var b=document.getElementById(id);if(b)b.textContent=a.length;});}
   document.addEventListener('click',function(e){
     var t=e.target.closest('[data-add]');
-    if(t){HYV.add(t.dataset.add,t.dataset.ref||'');var s=t.textContent;t.textContent='Added ✓';setTimeout(function(){t.textContent=s;},1400);upd();}
+    if(t){HYV.add(t.dataset.add,t.dataset.ref||'');window.hyTrack&&hyTrack('add_rfq',{sku:t.dataset.add});var s=t.textContent;t.textContent='Added ✓';setTimeout(function(){t.textContent=s;},1400);upd();}
     var c=e.target.closest('.rowpick');if(c){setTimeout(upd,0);}
   });
   upd();
@@ -262,6 +262,7 @@ details.opt fieldset{border-top:0;padding-top:6px}
         var list=k?[k]:ks.filter(function(x){return x.startsWith(qv);}).slice(0,4);
         hit.innerHTML=list.length?'&rarr; '+list.map(function(x){return '<a href="spec-'+d[x].sku.toLowerCase()+'.html">'+d[x].sku+'</a>';}).join(' &middot; '):'No match. <a href="rfq.html?q='+encodeURIComponent(input.value)+'">Send us this number</a> — our engineers cross-reference it for you.';
         hit.dataset.first=list.length?'spec-'+d[list[0]].sku.toLowerCase()+'.html':'';
+        window.hyTrack&&hyTrack(list.length?'search_hit':'search_miss',{q:input.value});
       });});
     input.addEventListener('keydown',function(e){if(e.key==='Enter'&&hit.dataset.first)location.href=hit.dataset.first;});
     hit.addEventListener('click',function(){var t=hit.querySelector('a');if(t)location.href=t.href;});
@@ -274,4 +275,7 @@ details.opt fieldset{border-top:0;padding-top:6px}
     });
   });
 })();
+</script><script>
+window.hyTrack=window.hyTrack||function(e,d){try{window.umami&&umami.track(e,d||{})}catch(_){}};
+document.addEventListener('click',function(e){var v=e.target.closest&&e.target.closest('.vjump a');if(v)hyTrack('vjump',{to:(v.textContent||'').trim()});},false);
 </script><script src="../../zh-dict.js"></script><script src="../../lang.js"></script></body></html>
