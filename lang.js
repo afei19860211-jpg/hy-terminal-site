@@ -75,7 +75,7 @@
     }
   }
   function set(lang) {
-    document.documentElement.dataset.lang = lang;
+    document.documentElement.dataset.lang = lang; try { window.hyTrack && hyTrack('lang_toggle', { to: lang }); } catch (e) {}
     try { localStorage.setItem(KEY, lang); } catch (e) {}
     apply();
   }
