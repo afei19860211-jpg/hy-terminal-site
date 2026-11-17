@@ -21,7 +21,7 @@ window.ZH_DICT = {
   'Yazaki-ecosystem terminals': 'HY850 系列（Yazaki 体系）', 'Yazaki-ecosystem power terminals': 'HY860 系列（Yazaki 体系电力）',
   'series': '系列',
   // ===== 导航（界面词）=====
-  'Home': '首页', 'Terminals': '车用端子', 'Catalogue': '产品目录', 'Capabilities': '制造能力',
+  'Home': '首页', 'Products': '产品', 'Terminals': '车用端子', 'Catalogue': '产品目录', 'Capabilities': '制造能力',
   'Cross method': '交叉号说明', 'LCD boards': '液晶布线系统', 'RFQ': '询价',
   'Batch RFQ': '批量询价', 'RFQ list': '询价清单', 'All terminals': '全部端子',
   'Cables ↗': '线缆产品 ↗', 'Cable products ↗': '线缆产品 ↗', 'How to buy': '采购方式',
