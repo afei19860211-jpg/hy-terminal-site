@@ -231,6 +231,7 @@ window.ZH_DICT = {
   'Nothing picked yet': '还没有选择料号',
   // ===== 404 / 其它界面 =====
   'Nothing at': '该地址', 'this address.': '不存在。',
+  'Insulation dia.': '绝缘线径', 'Interface style': '接口朝向',
   'Main destinations': '主要入口',
   'Added ✓': '已加入 ✓', 'pcs in total': '件合计', 'selected': '已选',
   'You paste the BOM.': '您粘贴 BOM。', 'We quote within 24 hours.': '我们 24 小时内报价。',
