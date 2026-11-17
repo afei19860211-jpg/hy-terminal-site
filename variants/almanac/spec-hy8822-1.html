@@ -18,6 +18,13 @@ a{color:var(--ink)}
 .mast nav{display:flex;gap:4px;margin:16px -32px 0;padding:0 48px 0 32px;overflow-x:auto}
 .mast nav a{font-family:'Hanken Grotesk';font-weight:500;font-size:14.5px;color:var(--ink2);text-decoration:none;padding:10px 12px;border-bottom:3px solid transparent;white-space:nowrap}
 .mast nav a.on{color:var(--ink);border-color:var(--acc)}
+.navdrop{position:relative}
+.navdrop .drop-m{display:none;position:absolute;top:100%;left:0;min-width:210px;background:var(--sheet);border:1px solid var(--rule);z-index:60;padding:6px 0;box-shadow:0 12px 28px rgba(27,35,64,.12)}
+.navdrop:hover .drop-m,.navdrop:focus-within .drop-m{display:block}
+.navdrop .drop-m a{display:block;padding:10px 15px;font-family:'Hanken Grotesk';font-size:14px;color:var(--ink2);text-decoration:none;white-space:nowrap}
+.navdrop .drop-m a:hover{color:var(--acc);background:var(--bg)}
+.navdrop .drop-t.on{color:var(--acc)}
+.crt{font-size:10px;opacity:.7}
 .mast nav .cn{font-weight:600;color:var(--ink)}
 .wrap{max-width:1240px;margin:0 auto;padding:48px 32px 72px}
 .hero-d{border-bottom:2px solid var(--heavy);padding-bottom:40px}
@@ -201,7 +208,7 @@ details.opt fieldset{border-top:0;padding-top:6px}
 </style></head><body><header class="mast"><div class="row1">
 <a class="wm" href="index.html">The Terminal Almanac<i> ·</i> HuanYu</a>
 <span class="ed mono">Edition 2026 · 75 sheets · 74 crosses</span></div>
-<nav><a href="index.html">Home</a><a href="catalogue.html" class="on">Catalogue</a><a href="index.html#company">Capabilities</a><a href="cross.html">Cross method</a><a href="lcd.html">LCD boards</a>
+<nav><div class="navdrop"><a class="drop-t on" href="catalogue.html">Products <span class="crt">&#9662;</span></a><div class="drop-m"><a href="catalogue.html">Terminals</a><a href="lcd.html">LCD wiring boards</a></div></div><a href="index.html">Home</a><a href="index.html#company">Capabilities</a><a href="certificates.html">Certificates</a>
 <a class="cn tnum" href="rfq.html">RFQ list (<span id="cartn">0</span>)</a></nav></header><main class="wrap">
 <p style="font-size:14px;color:var(--ink2);margin-bottom:20px"><a href="index.html">Home</a> · <a href="catalogue.html">Catalogue</a> · <span class="mono">HY8822-1</span></p>
 <div class="spec3">
