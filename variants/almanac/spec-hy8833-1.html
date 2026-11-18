@@ -15,7 +15,8 @@ a{color:var(--ink)}
 .mast .ed{font-size:14px;color:var(--ink2)}
 @keyframes fadeup{from{opacity:0}to{opacity:1}}
 .hero-d>*,.secd>*{animation:fadeup .5s ease-out both}
-.mast nav{display:flex;gap:4px;margin:16px -32px 0;padding:0 48px 0 32px;overflow-x:auto}
+.mast nav{display:flex;gap:4px;margin:16px -32px 0;padding:0 48px 0 32px}
+@media(max-width:768px){.mast nav{overflow-x:auto}.mast nav .navdrop .drop-m{position:static;display:block;border:0;box-shadow:none;padding:0 0 0 14px;background:var(--sheet)}.mast nav .navdrop .drop-m a{padding:9px 12px}}
 .mast nav a{font-family:'Hanken Grotesk';font-weight:500;font-size:14.5px;color:var(--ink2);text-decoration:none;padding:10px 12px;border-bottom:3px solid transparent;white-space:nowrap}
 .mast nav a.on{color:var(--ink);border-color:var(--acc)}
 .navdrop{position:relative}
