@@ -20,7 +20,8 @@ a{color:var(--acc)}
 .qh:has(a){display:block}
 .cartlink{white-space:nowrap;text-decoration:none;color:var(--ink);font-weight:600;font-size:15px;border:1px solid var(--line);background:var(--surface);padding:10px 14px}
 .cartlink b{background:var(--acc);color:var(--accink);padding:1px 8px;margin-left:4px}
-.mnav{display:flex;gap:4px;padding:0 24px;background:var(--surface);border-bottom:1px solid var(--line);overflow-x:auto}
+.mnav{display:flex;gap:4px;padding:0 24px;background:var(--surface);border-bottom:1px solid var(--line)}
+@media(max-width:768px){.mnav{overflow-x:auto}.mnav .navdrop .drop-m{position:static;display:block;border:0;box-shadow:none;padding:0 0 0 14px;background:var(--surface)}.mnav .navdrop .drop-m a{padding:9px 12px}}
 .navdrop{position:relative}
 .navdrop .drop-m{display:none;position:absolute;top:100%;left:0;min-width:220px;background:var(--surface);border:1px solid var(--line);box-shadow:0 12px 28px rgba(10,46,78,.14);z-index:60;padding:6px 0}
 .navdrop:hover .drop-m,.navdrop:focus-within .drop-m{display:block}
@@ -327,4 +328,4 @@ details.opt fieldset{margin:0 16px}
 </script><script>
 window.hyTrack=window.hyTrack||function(e,d){try{window.umami&&umami.track(e,d||{})}catch(_){}};
 document.addEventListener('click',function(e){var v=e.target.closest&&e.target.closest('.vjump a');if(v)hyTrack('vjump',{to:(v.textContent||'').trim()});},false);
-</script><script src="../../zh-dict.js"></script><script src="../../lang.js"></script></body></html>
+</script><script src="../../zh-dict.js?v=20261118"></script><script src="../../lang.js?v=20261118"></script></body></html>
