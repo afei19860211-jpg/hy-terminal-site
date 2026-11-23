@@ -236,6 +236,8 @@ window.ZH_DICT = {
   'Tape type': '料带型式', 'Pack method': '包装方式', 'Material reports': '材质与环保报告',
   'Horizontal': '横式', 'Vertical': '直式', '连续卷': '连续卷带',
   'Material reports': '材质与环保报告',
+  'UE LINK LCD wiring boards': 'UE LINK 智能液晶布线系统',
+  'The harness assembly board, digitized: 1:1 CAD on the glass, fixtures on screen, drawings switched by computer.': '线束工装板数字化：玻璃屏上 1:1 图纸、屏上定位治具、电脑切换图纸。',
   'Main destinations': '主要入口',
   'Added ✓': '已加入 ✓', 'pcs in total': '件合计', 'selected': '已选',
   'You paste the BOM.': '您粘贴 BOM。', 'We quote within 24 hours.': '我们 24 小时内报价。',
