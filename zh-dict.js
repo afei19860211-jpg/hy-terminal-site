@@ -27,6 +27,7 @@ window.ZH_DICT = {
   'Cables ↗': '线缆产品 ↗', 'Cable products ↗': '线缆产品 ↗', 'How to buy': '采购方式',
   'Certificates': '资质证书', 'The factory': '工厂实景', 'How we cross-reference': '交叉号说明',
   'LCD wiring board system': '液晶布线系统', 'LCD wiring boards': '液晶布线系统',
+  'Deutsch-compatible': '德驰兼容端子', 'Battery terminals': '电瓶端子',
   // ===== A 首页（口号取目录册原文「让连接更可靠」）=====
   'One number.': '让连接', 'One sheet.': '更可靠。',
   'IATF 16949 group · molds cut in-house · every reel optically inspected': 'IATF 16949（集团线缆公司）· 模具自制 · 每盘全检', 'IATF 16949 (group cable works) · molds cut in-house · stamped from pre-plated strip': 'IATF 16949（集团线缆公司）· 模具自制 · 预镀材冲压',
@@ -232,6 +233,9 @@ window.ZH_DICT = {
   // ===== 404 / 其它界面 =====
   'Nothing at': '该地址', 'this address.': '不存在。',
   'Insulation dia.': '绝缘线径', 'Interface style': '接口朝向',
+  'Tape type': '料带型式', 'Pack method': '包装方式', 'Material reports': '材质与环保报告',
+  'Horizontal': '横式', 'Vertical': '直式', '连续卷': '连续卷带',
+  'Material reports': '材质与环保报告',
   'Main destinations': '主要入口',
   'Added ✓': '已加入 ✓', 'pcs in total': '件合计', 'selected': '已选',
   'You paste the BOM.': '您粘贴 BOM。', 'We quote within 24 hours.': '我们 24 小时内报价。',
