@@ -245,6 +245,33 @@ window.ZH_DICT = {
   'Search': '搜索',
   'IATF 16949 (group cable works)': 'IATF 16949（集团线缆公司持有）',
   'Jinan plant, est. 2016': '济南工厂 · 2016 年成立',
+  // ===== 2026-11-24 中文补全（原始资料口径）=====
+  'Batch RFQ →': '批量询价 →', 'Request quote for these': '对所选型号询价',
+  'Yazaki types': '矢崎系端子',
+  'HuanYu Connector Technology Co., Ltd': '山东寰宇连接器科技有限公司',
+  'Zhangqiu District, Jinan, Shandong, China': '山东省济南市章丘区',
+  'sales@uecable.com · +86 531 8861 2778': 'sales@uecable.com · +86 531 8861 2778',
+  'A member of the Universal Cables group': '寰宇线缆集团成员',
+  '© 2026 HuanYu Connector Technology. Terminals manufactured to customer specification.': '© 2026 山东寰宇连接器科技有限公司 · 端子按客户规格制造。',
+  'Get a quote': '获取报价', 'how we cross-reference': '交叉号说明',
+  'ISO 14001:2015': 'ISO 14001:2015 环境管理体系', 'ISO 45001:2018': 'ISO 45001:2018 职业健康安全管理体系',
+  'Connector entity — primary': '连接器主体（主证）', 'Cable entity — group': '集团线缆主体',
+  'IATF 16949:2016 · No. 0496963 · NQA (UK) · valid through 2027-01-20': 'IATF 16949:2016 · 证书号 0496963 · NQA（英国）· 有效期至 2027-01-20',
+  'No. 033823E00937R0SUNSLMQ · Shandong Huanyu Cable Co., Ltd · automobile special wire and cable · valid through 2026-11-19': '证书号 033823E00937R0SUNSLMQ · 山东寰宇线缆有限公司 · 汽车专用电线电缆 · 有效期至 2026-11-19',
+  'No. 033823S00799R0SPAGTRF · Shandong Huanyu Cable Co., Ltd · same scope · valid through 2026-11-19': '证书号 033823S00799R0SPAGTRF · 山东寰宇线缆有限公司 · 同范围 · 有效期至 2026-11-19',
+  'Certificates,': '证书，', 'stated precisely.': '口径如实。',
+  // 材质/镀层值（spec 表英文字段 → 目录册原始中文）
+  'Phosphor bronze': '磷青铜', 'Brass': '黄铜', 'Copper alloy': '合金铜', 'Iron bronze': '铁青铜',
+  'pre-tinned': '预镀锡', 'gold-plated': '镀金', 'pre-silvered': '预镀银',
+  'Yes (waterproof)': '防水（密封型）', 'Horizontal': '横式', 'Vertical': '直式', 'Continuous reel': '连续卷带',
+  'RoHS / REACH / ELV (C51100 & C7025, CN/EN)': '材质与环保报告可提供（RoHS/REACH/ELV，C51100 与 C7025，中英文版）',
+  'Wire range': '适用线径', 'Current rating': '额定电流', 'Crimp type': '压接方式', 'Temperature': '工作温度',
+  'Thickness': '料厚', 'Plating': '表面处理', 'Material': '材质', 'Sealed': '防水', 'Packaging': '包装量',
+  'On request': '可索取', 'Specification': '规格', 'Record': '证书信息',
+  'Cross-reference': '对应其它型号', 'Part number': '寰宇料号', 'Identity': '标识', 'Electrical': '电气',
+  'OEM build numbers': 'OEM 代工图号', 'Battery terminals (D-series lugs)': '电瓶端子（D 系接线鼻）',
+  'Deutsch-compatible series (Yazaki 1062 crosses)': '德驰系列（对应矢崎 1062 系）',
+
 };
 // 页面 <title> 映射（中→标题用官方名）
 window.ZH_TITLES = [
