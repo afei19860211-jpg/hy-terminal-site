@@ -61,7 +61,7 @@
     document.documentElement.lang = zh ? 'zh-CN' : 'en';
     btn.textContent = zh ? 'EN' : '中';
     // 文本节点（双向：zh=替换为中文；en=还原英文）
-    var w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null);
+    var w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, function (n) { var p = n.parentElement; return (p && /^(SCRIPT|STYLE)$/.test(p.tagName)) ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT; });
     var list = [], n;
     while ((n = w.nextNode())) if (n.nodeValue.trim()) list.push(n);
     list.forEach(function (t) { swapText(t, d, zh); });
@@ -101,7 +101,7 @@
           m.addedNodes.forEach(function (nd) {
             if (nd.nodeType !== 1) return;
             if (nd.id === 'langbtn') return;
-            var w2 = document.createTreeWalker(nd, NodeFilter.SHOW_TEXT, null);
+            var w2 = document.createTreeWalker(nd, NodeFilter.SHOW_TEXT, function (n) { var p = n.parentElement; return (p && /^(SCRIPT|STYLE)$/.test(p.tagName)) ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT; });
             var t2;
             while ((t2 = w2.nextNode())) swapText(t2, d, true);
           });
