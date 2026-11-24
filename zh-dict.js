@@ -339,6 +339,43 @@ window.ZH_DICT = {
   'picked': '已选', 'Select all': '全选', 'Open the RFQ →': '打开询价 →',
   'Request quote for these': '对所选型号询价', 'Added ✓': '已加入 ✓',
 
+  // ===== 2026-11-24c 终极补齐（键=完整节点文本）=====
+  'Paste any TE, Aptiv or Yazaki number and the HuanYu sheet opens. 148 automotive harness terminal SKUs, cross-referenced to TE, Aptiv and Yazaki part numbers — every spec we publish is the spec we stamp.': '粘贴 TE、Aptiv 或矢崎的任意料号，寰宇规格单随即打开。148 个车用线束端子料号，交叉对标 TE、Aptiv 与矢崎——我们发布的每一项规格，就是我们冲压的规格。',
+  'IATF 16949 — connector entity No. 0496963 · molds cut in-house · stamped from pre-plated strip': 'IATF 16949——连接器主体 0496963 · 模具自制 · 预镀带料冲压',
+  'TE · Aptiv · Yazaki numbers all resolve. No number at hand?': 'TE · Aptiv · 矢崎料号均可查询。手头没有料号？',
+  'spec sheets,': '张规格单，',
+  'numbers on the page': '数据就在页面上',
+  'We are the terminal plant behind harness builders: stamping phosphor bronze, brass and iron bronze on molds we cut ourselves, stamped from pre-plated strip, inspecting every reel optically before it ships. This site is the whole catalogue: every sheet, every cross number, no login. Paste a competitor number in the box above and you are one click from the drawing data. If your BOM is longer than one line, the Batch RFQ takes the whole list and returns a quotation within 24 hours on business days.': '我们是线束厂背后的端子工厂：磷青铜、黄铜、铁青铜在自制模具上冲压，预镀带料成型，每盘发货前光学全检。本站即完整目录：每张规格单、每个交叉号，无需登录。上方输入框粘贴竞品料号，一键直达图纸数据；BOM 超过一行时，批量询价一次接收整单，工作日 24 小时内逐行报价。',
+  'Connector IATF, No. 0496963': '连接器 IATF，号 0496963',
+  'Press and floor photographs from the HuanYu terminal catalogue; tooling and campus photographs from the group\'s 2021 brochure.': '冲床与车间照片摘自寰宇端子目录册；模具与园区照片摘自集团 2021 年简介册。',
+  'IATF 16949:2016 No. 0496963 held by the connector entity (wire harnesses and connectors); the group cable company holds No. $0543831 (PVC insulated low-voltage wires). See also': 'IATF 16949:2016 0496963 由连接器主体持有（线束及连接器的生产）；集团线缆公司持有 0543831（PVC 绝缘低压电线）。模具自主设计线切割；电镀与 100% 光学全检均在厂内。',
+  'Yes: 147 published cross numbers across 148 SKUs. Type any of them into the lookup: 964284-2, 2-964294-1, 1062-16-0144 all resolve to the HuanYu equivalent. Cross-references are stated as equivalents, not as the OEM part itself.': '是：148 个料号共 147 个公开交叉号。任填一个到查询框：964284-2、2-964294-1、1062-16-0144 均解析到寰宇对应型号。交叉号仅表示等同关系，不代表 OEM 原厂件。',
+  'Every RFQ is answered by a sales engineer within 24 hours on business days (GMT+8), from sales@uecable.com. Batch RFQ lists are answered in one reply, line by line.': '每份询价由销售工程师在工作日（GMT+8）24 小时内回复，发件箱 sales@uecable.com。批量询价单一次回复、逐行报价。',
+  'Evaluation samples can be arranged for qualification. Tell us the SKUs and the destination in the RFQ and the reply will carry the sample terms for each.': '可安排评估样品用于认证。在询价单中注明料号与目的地，回复中将附各型号样品条款。',
+  'HuanYu Connector Technology Co., Ltd, Jinan, the connector company of the Universal Cables group (founded 2000, 400+ staff, group IATF 16949 No. 0543831). Molds are designed and cut in our own tool room; plating and 100% optical inspection are in-house.': '山东寰宇连接器科技有限公司，济南，寰宇线缆集团旗下连接器公司（2000 年创立，400+ 员工，集团 IATF 16949）。模具自主设计线切割；电镀与 100% 光学全检均在厂内。',
+  'Close': '关闭',
+  'Empty. Tick part numbers in the catalogue, or press "Add to RFQ list" on a spec sheet.': '清单为空。在目录中勾选料号，或在规格单上点「加入询价清单」。',
+  'TE · TE / AMP · Yazaki': 'TE · TE/AMP · 矢崎',
+  'TE · TE / AMP': 'TE · TE/AMP',
+  'TE / AMP': 'TE/AMP',
+  'TE · Yazaki · Aptiv · TE / AMP': 'TE · 矢崎 · Aptiv · TE/AMP',
+  'Aptiv · TE / AMP · TE': 'Aptiv · TE/AMP · TE',
+  'Yazaki · TE / AMP': '矢崎 · TE/AMP',
+  'HUANYU': 'HUANYU',
+  'CONNECTOR': 'CONNECTOR',
+  'styles': 'styles',
+  'Copper': 'Copper',
+
+  // ===== 产品展示区中文 =====
+  'Product line 01': '产品线 01', 'Product line 02': '产品线 02',
+  'Automotive': '车用', 'terminals.': '端子。',
+  'UE LINK LCD': 'UE LINK 液晶', 'wiring boards.': '布线系统。',
+  '148 SKUs across 11 series — TE / AMP / Yazaki cross-referenced, stamped from pre-plated phosphor bronze, brass and iron bronze, every reel optically inspected. Deutsch-compatible and battery-terminal lines included.': '148 个料号、11 大系列——交叉对标 TE/AMP/矢崎，预镀磷青铜、黄铜、铁青铜冲压成型，每盘光学全检。含德驰系与电瓶端子两条产品线。',
+  'The harness assembly board, digitized: 1:1 CAD shown on the glass, fixtures positioned on screen, drawings switched by computer. Built for harness plants — wood boards out, screens in.': '线束工装板数字化：玻璃屏显示 1:1 图纸、屏上定位治具、电脑切换图纸。为线束工厂而造——淘汰木板，换上屏幕。',
+  '148 SKUs': '148 个料号', '11 series': '11 大系列', '147 crosses': '147 个交叉号',
+  '1:1 CAD': '1:1 图纸', 'Fixtures on glass': '屏上治具', 'For harness plants': '面向线束厂',
+  'Browse terminals': '浏览端子目录', 'See the system': '查看系统',
+
 };
 // 页面 <title> 映射（中→标题用官方名）
 window.ZH_TITLES = [
