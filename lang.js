@@ -35,6 +35,9 @@
     [/([\d,]+) pcs per reel(?: · (\d+) reels \/ ([\d,]+) pcs per carton)?/, function (m, a, b, c) { var n = function (x) { return x ? x.replace(/,/g, '') : x; }; return c ? n(a) + '/盘 ' + b + '盘' + n(c) + '/箱' : n(a) + ' 只/盘'; }],
     [/^(HY\d{3,4}|HY88) series$/, '$1 系列'],
     [/No\. ([A-Z0-9]+) · valid through ([\d-]+)/, '证书号 $1 · 有效期至 $2'],
+    [/^All (\d+) terminals\.$/, '全部 $1 个端子。'],
+    [/^(HY[0-9]{3,4}|OEM|DEUTSCH|BATT) · (\d+) SKUs?$/, '$1 · $2 个料号'],
+    [/^Same-series alternatives/, '同系列替代型号'],
     [/(\d+) SKUs — (\d+) carry a published cross number; nothing behind a form\./, '$1 个 SKU——其中 $2 个带公开交叉型号；资料不设门槛。'],
   ];
   var PATTERNS_R = [
