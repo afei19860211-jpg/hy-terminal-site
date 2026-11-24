@@ -370,7 +370,7 @@ window.ZH_DICT = {
   'Product line 01': '产品线 01', 'Product line 02': '产品线 02',
   'Automotive': '车用', 'terminals.': '端子。',
   'UE LINK LCD': 'UE LINK 液晶', 'wiring boards.': '布线系统。',
-  '148 SKUs across 11 series — TE / AMP / Yazaki cross-referenced, stamped from pre-plated phosphor bronze, brass and iron bronze, every reel optically inspected. Deutsch-compatible and battery-terminal lines included.': '148 个料号、11 大系列——交叉对标 TE/AMP/矢崎，预镀磷青铜、黄铜、铁青铜冲压成型，每盘光学全检。含德驰系与电瓶端子两条产品线。',
+  '148 SKUs across 11 series — TE / AMP / Yazaki cross-referenced, stamped from pre-plated phosphor bronze, brass and iron bronze, every reel optically inspected. Deutsch-compatible and battery-terminal lines sit on their own catalogue pages.': '148 个料号、11 大系列——交叉对标 TE/AMP/矢崎，预镀磷青铜、黄铜、铁青铜冲压成型，每盘光学全检。德驰系与电瓶端子两条产品线各自单独成册。',
   'The harness assembly board, digitized: 1:1 CAD shown on the glass, fixtures positioned on screen, drawings switched by computer. Built for harness plants — wood boards out, screens in.': '线束工装板数字化：玻璃屏显示 1:1 图纸、屏上定位治具、电脑切换图纸。为线束工厂而造——淘汰木板，换上屏幕。',
   '148 SKUs': '148 个料号', '11 series': '11 大系列', '147 crosses': '147 个交叉号',
   '1:1 CAD': '1:1 图纸', 'Fixtures on glass': '屏上治具', 'For harness plants': '面向线束厂',
@@ -454,6 +454,37 @@ window.ZH_DICT = {
   'Need a copy': '询价时',
   'with your RFQ?': '需要证书副本吗？',
   'Tell us the SKUs — the reply carries the certificate copies and the sample terms for each.': '告诉我们 SKU——回复中会附上证书副本及各型号的样品条款。',
+  // ===== 2026-11-24 产品细分（用户评审：德驰/电瓶端子单独成页）=====
+  // 德驰子页
+  'Deutsch-compatible terminals.': '德驰兼容端子。',
+  'The HuanYu Deutsch-compatible line: 13 SKUs crossed to Yazaki 1062 / 1060-series part numbers — 0.3–3.3 mm² wire range, phosphor bronze, semi-gold-nickel and nickel plating. Every sheet below; cross numbers on the page.':
+    '寰宇德驰兼容产品线：13 个料号对应矢崎 1062/1060 系交叉号——线径 0.3–3.3 mm²，磷青铜，半金镍与镀镍表面。规格单如下，交叉号全部公开。',
+  '· Deutsch-compatible series': '· 德驰兼容系列',
+  'mm² wire range': 'mm² 线径范围',
+  'Deutsch-compatible terminals →': '德驰兼容端子 →',
+  'Deutsch-compatible series': '德驰兼容系列',
+  '13 SKUs · Yazaki 1062/1060 crosses · 0.3–3.3 mm²': '13 个料号 · 矢崎 1062/1060 交叉 · 0.3–3.3 mm²',
+  'Open the Deutsch catalogue →': '打开德驰目录 →',
+  // 电瓶子页
+  'Battery terminals.': '电瓶端子。',
+  'D-series lugs, 1450 studs and DJ491 types: 7 SKUs in copper alloy for 35–50 mm² battery cable, crossed to TE / AMP part numbers. Every sheet below — tick rows to build the RFQ.':
+    'D 系接线鼻、1450 与 DJ491 桩头端子：7 个料号，合金铜材质，适用 35–50 mm² 电瓶线缆，对应 TE/AMP 型号。规格单如下——勾选行即可加入询价清单。',
+  '· Battery terminals': '· 电瓶端子',
+  'mm² cable': 'mm² 线缆',
+  'Battery terminals →': '电瓶端子 →',
+  '7 SKUs · D-series lugs, 1450/DJ491 studs · 35–50 mm²': '7 个料号 · D 系接线鼻、1450/DJ491 桩头 · 35–50 mm²',
+  'Open the battery catalogue →': '打开电瓶端子目录 →',
+  // 两子页共用
+  '← All terminals': '← 全部端子',
+  'cross numbers on the page': '交叉号全部公开',
+  // 常规目录页（细分后）
+  'The conventional stamped-terminal family: every sheet carries the cross number, material, wire range and reel packaging. Series pages below; the full table follows. Deutsch-compatible and battery-terminal lines are catalogued on their own pages.':
+    '常规冲压端子一族：每张规格单均注明对应型号、材质、适用线径与包装量。先看系列，后看总表。德驰兼容与电瓶端子两条产品线在各自页面单独成册。',
+  'Eleven lines': '十一个系列',
+  // 首页
+  'Eleven HY series plus Deutsch and battery lines — every sheet, every cross number, no login.':
+    '十一个 HY 系列加德驰与电瓶产品线——每张规格单、每个交叉号，无需登录。',
+  'Deutsch-compatible →': '德驰兼容端子 →',
 };
 // 页面 <title> 映射（中→标题用官方名）
 window.ZH_TITLES = [
@@ -482,6 +513,9 @@ window.ZH_TITLES = [
   ['Batch RFQ', '批量询价'], ['How we cross-reference — Method | HuanYu Connector', '交叉号说明 | 寰宇连接器'],
   ['Smart LCD Wiring Board System — for harness plants | HuanYu', '智能液晶布线系统 | 寰宇'],
   ['All Terminals — 75 Spec Sheets | HuanYu Connector', '产品目录——75 张规格单 | 寰宇连接器'],
+  ['Terminals — 128 Conventional Spec Sheets | HuanYu Connector', '产品目录——128 张常规端子规格单 | 寰宇连接器'],
+  ['Deutsch-Compatible Terminals — 13 Spec Sheets | HuanYu Connector', '德驰兼容端子——13 张规格单 | 寰宇连接器'],
+  ['Battery Terminals — 7 Spec Sheets | HuanYu Connector', '电瓶端子——7 张规格单 | 寰宇连接器'],
   ['Not found — try the lookup | HuanYu Connector', '页面不存在 | 寰宇连接器'],
   ['Terminals, cross-referenced', '车用端子 · 交叉号查询'],
   ['The terminal almanac', '寰宇端子年鉴'],
