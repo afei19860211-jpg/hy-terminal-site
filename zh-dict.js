@@ -485,6 +485,60 @@ window.ZH_DICT = {
   'Eleven HY series plus Deutsch and battery lines — every sheet, every cross number, no login.':
     '十一个 HY 系列加德驰与电瓶产品线——每张规格单、每个交叉号，无需登录。',
   'Deutsch-compatible →': '德驰兼容端子 →',
+  // ===== 2026-11-25 公司介绍独立页 + 首页三分（用户五项拍板）=====
+  'Company': '公司', 'The company': '公司介绍', '· Company': '· 公司',
+  'The company, in full →': '公司介绍全览 →',
+  'HY8801-1 · phosphor bronze': 'HY8801-1 · 磷青铜',
+  'Make the connection': '让连接', 'more reliable.': '更可靠。',
+  'HuanYu Connector Technology (est. 2016) stamps every terminal in this catalogue in Jinan, Shandong — a wholly-owned subsidiary of HuanYu Technology Group. Molds cut in-house, every reel optically inspected before it ships.':
+    '寰宇连接器科技（2016 年成立）在山东济南冲压本目录册中的每一只端子——寰宇科技集团全资子公司。模具自制，每盘出货前光学全检。',
+  'One campus, two works · molds cut in-house · every reel optically inspected': '一个园区两座工厂 · 模具自制 · 每盘光学全检',
+  'works on one campus': '同园区两厂',
+  'The floor,': '车间，', 'as it runs.': '真实运转。',
+  'Shot on the plant floor — phones, no staging. What the vision lines, the measuring lab and the presses actually do all day.':
+    '车间实拍——手机直录，无摆拍。视觉检测线、测量室与冲压机的日常。',
+  'Every reel passes self-built vision lines (generation 1 and 2) before it ships.': '每盘出货前经自研视觉检测线（一代/二代）全检。',
+  'The measuring lab': '测量实验室',
+  'Dimensional checks on the AD32Ls stage — linear motor drive.': 'AD32Ls 测量台（直线电机驱动）上的尺寸检测。',
+  'High-speed press, monitored': '高速冲压，屏前监控',
+  'Imported vertical presses running 500–1,800 strokes a minute, screen-checked at the line.': '进口立式高速冲床 500–1,800 冲次/分钟，线端屏幕监控。',
+  'CCD check — round composite terminals': 'CCD 检测——圆形复合端子',
+  'Stamped and screened at 200K pieces per day.': '冲压并全检，日产 20 万件。',
+  'Cable works — payout stands': '线缆厂——放线工位',
+  'Cable works — winding line': '线缆厂——绕线产线',
+  'Group cable company, same campus.': '集团线缆公司，同一园区。',
+  'Five things': '五件事，', 'we keep in-house.': '不出厂门。',
+  'Self-built vision lines, generation 1 and 2, check every reel before it ships — reliability, stability, consistency. (Catalogue p8)':
+    '自研视觉检测线一代/二代逐盘全检——可靠性、稳定性、一致性。（目录册 p8）',
+  'Molds, cut in-house': '模具自制',
+  'High-precision stamping dies are designed, machined and finished in our own tool room — wire-cut EDM on site. (Catalogue p9)':
+    '高精密冲压模具自主设计、加工与精加工——线切割放电加工就在厂内。（目录册 p9）',
+  'OEM process pedigree': 'OEM 工艺血统',
+  'Process management inherited intact from contract manufacturing for international brands. (Catalogue p8)':
+    '完整继承国际品牌代工生产的严格品控与过程管理。（目录册 p8）',
+  'Import-substitution economics': '进口替代经济性',
+  'Large spot stocks — no 3–4 month lead waits — and 72-hour delivery to most of China. (Catalogue p10)':
+    '大量现货——免去 3–4 个月期货等待——国内大部分地区 72 小时到货。（目录册 p10）',
+  'Cable works next door': '隔壁就是线缆厂',
+  'Shandong Universal Cables on the same campus: one yard, two factories — strip to harness to reel.':
+    '山东环球线缆同园区：一个院子，两个工厂——从线材到线束到端子盘。',
+  'Terminal floor panorama': '端子车间全景', 'Presses and inspection, Jinan': '冲压与检测，济南',
+  'The terminal floor — presses and inspection': '端子车间——冲压与检测',
+  'Wire-cut EDM row': '线切割机床列', 'Precision die machining': '精密模具加工',
+  'The mold library': '模具库', 'Dies racked and numbered': '模具上架编号管理',
+  'Inspection area': '检测区', 'Vision lines and measuring': '视觉检测线与测量',
+  'Packed and racked': '包装入库', 'Reels boxed, ready to ship': '端子装箱待发',
+  'Catalogue and brochure photographs as credited on the homepage; floor photographs taken on site, February 2023 and 2024.':
+    '目录册与简介照片出处见首页标注；车间照片为 2023 年 2 月与 2024 年现场实拍。',
+  'certificates page': '证书专页',
+  'Who we': '我们', 'supply.': '供应谁。',
+  'Siemens · Tesla · China National Heavy Duty Truck Group Jinan Commercial Vehicle · FAW Commercial Vehicle · Lingong Heavy Industry · Shaanxi Automobile · SAIC-GM-Wuling · Foton Daimler · Foton · Xugong · Golden Dragon Bus':
+    '西门子 · 特斯拉 · 中国重汽济南商用车 · 一汽商用车 · 临工重机 · 陕汽 · 上汽通用五菱 · 福田戴姆勒 · 福田 · 徐工 · 金龙客车',
+  'Customer names as published in the HuanYu connector catalogue (p4), alongside the company introduction and the same list of core products. Names state supply relationships, not endorsements.':
+    '客户名单出自《寰宇连接器端子目录》p4，与公司介绍及核心产品清单同页刊出。名单仅说明供货关系，不代表客户背书。',
+  'Judge the': '眼见', 'reels yourself.': '为实。',
+  'Evaluation samples can be arranged for qualification — tell us the SKUs and the destination, and the reply carries the sample terms for each.':
+    '可安排评估样品做认证——告知料号与目的地，回复中将附每款样品条款。',
 };
 // 页面 <title> 映射（中→标题用官方名）
 window.ZH_TITLES = [
@@ -516,6 +570,7 @@ window.ZH_TITLES = [
   ['Terminals — 128 Conventional Spec Sheets | HuanYu Connector', '产品目录——128 张常规端子规格单 | 寰宇连接器'],
   ['Deutsch-Compatible Terminals — 13 Spec Sheets | HuanYu Connector', '德驰兼容端子——13 张规格单 | 寰宇连接器'],
   ['Battery Terminals — 7 Spec Sheets | HuanYu Connector', '电瓶端子——7 张规格单 | 寰宇连接器'],
+  ['The Company — One Campus, Two Works | HuanYu Connector', '公司介绍——一个园区两座工厂 | 寰宇连接器'],
   ['Not found — try the lookup | HuanYu Connector', '页面不存在 | 寰宇连接器'],
   ['Terminals, cross-referenced', '车用端子 · 交叉号查询'],
   ['The terminal almanac', '寰宇端子年鉴'],
