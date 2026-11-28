@@ -539,6 +539,10 @@ window.ZH_DICT = {
   'Judge the': '眼见', 'reels yourself.': '为实。',
   'Evaluation samples can be arranged for qualification — tell us the SKUs and the destination, and the reply carries the sample terms for each.':
     '可安排评估样品做认证——告知料号与目的地，回复中将附每款样品条款。',
+  // 2026-11-27 首页系列卡（方案C）+ 公司页数字条（方案A）
+  'DEUTSCH · Deutsch-compatible series · 13 SKUs': 'DEUTSCH · 德驰兼容系列 · 13 个料号',
+  'BATT · Battery terminals · 7 SKUs': 'BATT · 电瓶端子 · 7 个料号',
+  'patents, 28 granted': '专利申请 · 28 项已授权',
 };
 // 页面 <title> 映射（中→标题用官方名）
 window.ZH_TITLES = [
